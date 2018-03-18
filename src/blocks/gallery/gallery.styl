@@ -1,0 +1,78 @@
+@media screen and (max-width 700px)
+    .menu__item
+        margin 0
+
+.col-1 
+    width 10%
+    height 100%
+    background #A25021
+.col-3
+    width 10%
+    height 100%
+    background #A25021
+.col-2 
+    width 80%
+    height 100%
+    background -webkit-linear-gradient(#F3ECE8, #D8C8B8)
+    border #452505 solid
+    border-width 0 2px 0 2px
+.header
+    width 100%
+.menu
+    width 50%
+    padding 0
+    margin 5px auto 0
+    display flex
+    justify-content space-between
+    &__item
+        position relative
+        font-family 'Conv_Lato-Regular'
+        display inline-block
+        margin 0 20px
+        background #A25021
+        width 100px
+        height 35px
+        line-height 30px
+        text-align center
+        border-radius 5px 5px 0 0
+        border #452505 solid 2px
+        border-bottom 0
+        cursor pointer
+        z-index 1
+        &:hover
+            font-family 'Conv_Lato-Italic'
+            background -webkit-linear-gradient(#D69B60, #A25021)
+            z-index 3
+    &__link
+        text-decoration none
+        color #ffffff
+.header__board
+    position relative
+    width 98%
+    height 100px
+    margin -5px auto 0
+    background #A25021
+    border #452505 solid 2px
+    border-radius 5px 5px 0 0
+    z-index 2
+.flex-container
+    display flex
+    align-items center
+    justify-content space-around
+    width 70%
+    height 100px
+.header__search
+    position absolute
+    top 10px
+    right 10px
+.header__emblem
+    display inline-block
+    background url('../images/emblem.png') no-repeat 50% 50%
+    background-size cover
+    height 80px
+    width @height
+.header__text
+    display inline-block
+    font-family 'Conv_Lato-ThinItalic'
+    color #F3ECE8
+    font-size 3.5em
