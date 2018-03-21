@@ -28,9 +28,9 @@ module.exports = {
                 }
             },
             {
-                test: /\.(jpe?g|png|gif)$/i,   //to support eg. background-image property 
+                test: /\.(jpg|png|gif)$/,
                 loader:"file-loader",
-                query:{
+                options:{
                   name:'[name].[ext]',
                   outputPath:'images/'
                 }

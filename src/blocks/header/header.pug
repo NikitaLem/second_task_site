@@ -1,0 +1,16 @@
+include ../search/search.pug
+mixin header(title)
+    .header
+            ul.menu
+                li.menu__item
+                    a(href='#' class='menu__link') Link
+                li.menu__item
+                    a(href='#' class='menu__link') Link
+                li.menu__item
+                    a(href='#' class='menu__link') Link
+            .header__board
+                .flex-container
+                    .header__emblem
+                    .header__text=title
+                .header__search
+                    +search('grey', 'Search...')
