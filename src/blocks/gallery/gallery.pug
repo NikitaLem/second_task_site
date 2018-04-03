@@ -1,17 +1,15 @@
 include ../header/header.pug
 include ../arw-buttons/arw-buttons.pug
-.col-1
-.col-2
-    +header('Welcome to Gallery')
-    .gallery__text Очерк
-    .gallery__images
-        img(src="images/1.png" class="image image_show" alt="Очерк")
-        img(src="images/2.png" class="image" alt="Фельетон")
-        img(src="images/3.png" class="image" alt="Эссе")
-        img(src="images/4.png" class="image" alt="Зарисовка")
-        img(src="images/5.png" class="image" alt="Памфлет")
-        img(src="images/6.png" class="image" alt="Некролог")
-    .gallery__buttons
-        +arw-buttons('green', 'left')
-        +arw-buttons('green', 'right')
-.col-3
+
++header('Альп-клуб бродяг Сансары')
+.gallery__text Очерк
+.gallery__images
+    img(src="images/1.png" class="image image_show" alt="Очерк")
+    img(src="images/2.png" class="image" alt="Фельетон")
+    img(src="images/3.png" class="image" alt="Эссе")
+    img(src="images/4.png" class="image" alt="Зарисовка")
+    img(src="images/5.png" class="image" alt="Памфлет")
+    img(src="images/6.png" class="image" alt="Некролог")
+.gallery__buttons
+    +arw-buttons('green', 'left')
+    +arw-buttons('green', 'right')

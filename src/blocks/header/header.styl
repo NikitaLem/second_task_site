@@ -1,42 +1,41 @@
 .header
     width 100%
+    background-image url('../img/header.jpg')
+    background-repeat no-repeat
+    background-size cover
+    padding-bottom 10%
+    padding-top 2%
 .menu
     width 50%
     padding 0
-    margin 5px auto 0
+    margin 0 auto
     display flex
     justify-content space-between
     &__item
         position relative
         font-family 'Conv_Lato-Regular'
         display inline-block
-        margin 0 20px
-        background #A25021
-        width 100px
+        padding 0 15px
+        background rgba(75, 75, 75, 0.5)
         height 35px
         line-height 30px
         text-align center
         border-radius 5px 5px 0 0
-        border #452505 solid 2px
+        border rgba(40, 40, 40, 1) solid 2px
         border-bottom 0
         cursor pointer
-        z-index 1
         &:hover
-            font-family 'Conv_Lato-Italic'
-            background -webkit-linear-gradient(#D69B60, #A25021)
-            z-index 3
+            background -webkit-linear-gradient(rgba(125, 125, 125, 0.5), rgba(45, 45, 45, 0.5))
     &__link
         text-decoration none
         color #F3ECE8
 .header__board
     position relative
     width 98%
-    height 100px
-    margin -5px auto 0
-    background #A25021
-    border #452505 solid 2px
+    margin 0 auto
+    background rgba(75, 75, 75, 0.5)
+    border rgba(40, 40, 40, 1) solid 2px
     border-radius 5px 5px 0 0
-    z-index 2
 .flex-container
     display flex
     align-items center
@@ -58,6 +57,19 @@
     font-family 'Conv_Lato-ThinItalic'
     color #F3ECE8
     font-size 3.5em
+.header__audio
+    width 30%
+    margin 0 auto 1%
+.header__btn
+    display inline-block
+    background rgba(75, 75, 75, 1)
+    padding 5px 10px
+    margin-right 5px
+    cursor pointer
+    border-radius 5px
+    color #fff
+    &:hover
+        background rgba(40, 40, 40, 1)
 
 @media screen and (max-width 700px)
     .menu__item
