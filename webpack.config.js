@@ -58,7 +58,7 @@ module.exports = {
                 collapseWhitespace: true
             },
             hash: true,
-            template: 'src/blocks/index.pug',
+            template: 'src/index.pug',
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',

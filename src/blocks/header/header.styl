@@ -1,6 +1,6 @@
 .header
     width 100%
-    background-image url('../img/header.jpg')
+    background-image url('img/header.jpg')
     background-repeat no-repeat
     background-size cover
     padding-bottom 10%
@@ -48,7 +48,7 @@
     right 10px
 .header__emblem
     display inline-block
-    background url('../img/emblem.png') no-repeat 50% 50%
+    background url('img/emblem.png') no-repeat 50% 50%
     background-size cover
     height 80px
     width @height
@@ -58,10 +58,11 @@
     color #F3ECE8
     font-size 3.5em
 .header__audio
-    width 30%
+    display flex
+    justify-content space-between
+    width 40%
     margin 0 auto 1%
-.header__btn
-    display inline-block
+.audio__btn
     background rgba(75, 75, 75, 1)
     padding 5px 10px
     margin-right 5px
@@ -70,6 +71,20 @@
     color #fff
     &:hover
         background rgba(40, 40, 40, 1)
+#songVolume
+    margin-left 5px
+    width 35px
+.audio__slider
+    flex-grow 1
+.audio__timer
+    font-family 'Conv_Lato-Black'
+    background rgba(75, 75, 75, 1)
+    padding 5px 10px
+    border-radius 5px
+    color #fff
+    margin-left 10px
+.audio__volume-meter
+    margin-top -5px
 
 @media screen and (max-width 700px)
     .menu__item

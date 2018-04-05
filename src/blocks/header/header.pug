@@ -1,5 +1,6 @@
 script(defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous")
 include ../search/search.pug
+include ../sliders/sliders.pug
 
 mixin header(title)
     .header
@@ -19,9 +20,16 @@ mixin header(title)
                 .header__search
                     +search('grey', 'Search...')
                 .header__audio
-                    audio(id='song' width="500" height="50" ontimeupdate="updateTime()" preload="metadata")
-                        source(src="../audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3" type="audio/mpeg")
-                    div(class="header__btn" id="songPlay") 
+                    audio(class="audio" id='song' preload="metadata")
+                        source(src="audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3" type="audio/mpeg")
+                    div(class="audio__btn" id="songPlay") 
                         i(class="fas fa-play")
-                    div(class="header__btn" id="songStop")
+                    div(class="audio__btn" id="songStop")
                         i(class="fas fa-stop")
+                    .audio__slider
+                        +sliders('red', 'none', 'popup', 'none', 'song-meter')
+                    div(class="audio__timer") 0:00
+                    div(class="audio__btn" id="songVolume")
+                        i(class="fas fa-volume-up")
+                    .audio__volume-meter
+                        +sliders('green', 'grade', 'none', 'track', 'song-volume')

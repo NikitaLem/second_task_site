@@ -1,9 +1,10 @@
 import greet from './greeter.js';
 import '../blocks/gallery/gallery.js';
 import '../blocks/header/header.js';
+import '../blocks/sliders/sliders.js';
 
-var html = require('../blocks/index.pug');
-const css = require('../blocks/index.styl');
+var html = require('../index.pug');
+const css = require('../index.styl');
 
 console.log("I'm the enty point");
 greet();
