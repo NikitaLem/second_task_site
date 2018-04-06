@@ -1,30 +1,27 @@
+.wrapper
+    width 90%
+    margin 0 auto
+.gallery__title
+    padding 0
+    margin-top 20px
+    font-family 'Conv_SourceSansPro-Regular', sans-serif
+    font-size 3em
+    color rgba(40, 40, 40, 1)
+    text-align center
 .gallery__images
     position relative
-    margin-top 3%
-    display flex
-    justify-content center
-    width 100%
-    height 300px
-.image
-    position absolute
-    opacity 0
-    transition opacity 0.5s
-    border #452505 solid 2px
-    border-radius 3px
-    box-shadow 5px 5px 10px #565656
-    &_show
-        opacity 1
-.gallery__buttons
+    padding-bottom 50px
     display flex
     justify-content space-between
-    width 300px
-    margin 10px auto 0
-.gallery__text
-    margin 5% auto 0
-    text-align center
-    line-height 50px
-    height 50px
-    width 200px
-    font-family 'Conv_Lato-Italic'
-    font-size 3em
-    color #A25021
+    flex-wrap wrap
+    width 100%
+.imgages__container
+    flex-basis 18%
+    padding 10px 0
+.image
+    width 100%
+    height 100%
+    transition .3s
+    &:hover
+        cursor pointer
+        transform scale(1.1)

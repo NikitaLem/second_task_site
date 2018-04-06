@@ -2,14 +2,37 @@ include ../header/header.pug
 include ../arw-buttons/arw-buttons.pug
 
 +header('Альп-клуб бродяг Сансары')
-.gallery__text Очерк
-.gallery__images
-    img(src="images/1.png" class="image image_show" alt="Очерк")
-    img(src="images/2.png" class="image" alt="Фельетон")
-    img(src="images/3.png" class="image" alt="Эссе")
-    img(src="images/4.png" class="image" alt="Зарисовка")
-    img(src="images/5.png" class="image" alt="Памфлет")
-    img(src="images/6.png" class="image" alt="Некролог")
-.gallery__buttons
-    +arw-buttons('green', 'left')
-    +arw-buttons('green', 'right')
+.wrapper
+    h2.gallery__title Моменты наших мероприятий
+    .gallery__images
+        .imgages__container
+            a(href="images/1.jpg" data-lightbox="gallery")
+                img(src="images/1.jpg" class="image" alt="Очерк")
+        .imgages__container    
+            a(href="images/2.jpg" data-lightbox="gallery")
+                img(src="images/2.jpg" class="image" alt="Фельетон")
+        .imgages__container
+            a(href="images/3.jpg" data-lightbox="gallery")
+                img(src="images/3.jpg" class="image" alt="Эссе")
+        .imgages__container
+            a(href="images/4.jpg" data-lightbox="gallery")
+                img(src="images/4.jpg" class="image" alt="Зарисовка")
+        .imgages__container
+            a(href="images/5.jpg" data-lightbox="gallery")
+                img(src="images/5.jpg" class="image" alt="Памфлет")
+        .imgages__container
+            a(href="images/6.jpg" data-lightbox="gallery")
+                img(src="images/6.jpg" class="image" alt="Некролог")
+        .imgages__container
+            a(href="images/7.jpg" data-lightbox="gallery")
+                img(src="images/7.jpg" class="image" alt="Некролог")
+        .imgages__container
+            a(href="images/8.jpg" data-lightbox="gallery")
+                img(src="images/8.jpg" class="image" alt="Некролог")
+        .imgages__container
+            a(href="images/9.jpg" data-lightbox="gallery")
+                img(src="images/9.jpg" class="image" alt="Некролог")
+        .imgages__container
+            a(href="images/10.jpg" data-lightbox="gallery")
+                img(src="images/10.jpg" class="image" alt="Некролог")
+include ../footer/footer.pug

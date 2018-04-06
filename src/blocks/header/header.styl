@@ -1,6 +1,6 @@
 .header
     width 100%
-    background-image url('img/header.jpg')
+    background-image url('images/header.jpg')
     background-repeat no-repeat
     background-size cover
     padding-bottom 10%
@@ -12,7 +12,6 @@
     display flex
     justify-content space-between
     &__item
-        position relative
         font-family 'Conv_Lato-Regular'
         display inline-block
         padding 0 15px
@@ -48,7 +47,7 @@
     right 10px
 .header__emblem
     display inline-block
-    background url('img/emblem.png') no-repeat 50% 50%
+    background url('images/emblem.png') no-repeat 50% 50%
     background-size cover
     height 80px
     width @height
@@ -87,25 +86,27 @@
     margin-top -5px
 
 @media screen and (max-width 700px)
+    .menu
+        width 90%
+        padding 0
+        margin 0 auto
+        display flex
+        justify-content space-between
     .menu__item
-        margin 0
-        position relative
-        font-family 'Conv_Lato-Regular'
         display inline-block
-        background #A25021
-        width 100px
+        margin 0
+        font-family 'Conv_Lato-Regular'
+        padding 0 15px
+        background rgba(75, 75, 75, 0.5)
         height 35px
         line-height 30px
         text-align center
         border-radius 5px 5px 0 0
-        border #452505 solid 2px
+        border rgba(40, 40, 40, 1) solid 2px
         border-bottom 0
         cursor pointer
-        z-index 1
         &:hover
-            font-family 'Conv_Lato-Italic'
-            background -webkit-linear-gradient(#D69B60, #A25021)
-            z-index 3
+            background -webkit-linear-gradient(rgba(125, 125, 125, 0.5), rgba(45, 45, 45, 0.5))
     .header__board
         position relative
         width 98%
@@ -113,10 +114,9 @@
         flex-direction column
         justify-content center
         margin -5px auto 0
-        background #A25021
-        border #452505 solid 2px
+        background rgba(75, 75, 75, 0.5)
+        border rgba(40, 40, 40, 1) solid 2px
         border-radius 5px 5px 0 0
-        z-index 2
     .flex-container
         display flex
         flex-direction column
@@ -134,3 +134,8 @@
         color #F3ECE8
         font-size 2em
         margin-top -8%
+    .header__audio
+        display flex
+        justify-content space-between
+        width 96%
+        margin 0 auto 1%

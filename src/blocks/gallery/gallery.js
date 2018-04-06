@@ -1,4 +1,4 @@
-var i = 0;
+/*var i = 0;
 
 document.querySelector('.arw-btn_right').addEventListener('click', next_img);
 document.querySelector('.arw-btn_left').addEventListener('click', prev_img);
@@ -21,4 +21,4 @@ function prev_img() {
 		i=image.length-1;
     image[i].classList.add('image_show');
     document.querySelector('.gallery__text').innerText = document.querySelector('.image_show').alt;;
-}
+}*/
