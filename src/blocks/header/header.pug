@@ -2,36 +2,35 @@ script(defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integri
 include ../search/search.pug
 include ../sliders/sliders.pug
 
-mixin header(title)
-    .header
-            ul.menu
-                li.menu__item
-                    a(href='#' class='menu__link') Главная
-                li.menu__item
-                    a(href='#' class='menu__link') Галлерея
-                li.menu__item
-                    a(href='#' class='menu__link') Клубяне
-                li.menu__item
-                    a(href='#' class='menu__link') Кельдым
-                li.menu__item
-                    a(href='#' class='menu__link') О нас
-            .header__board
-                .flex-container
-                    .header__emblem
-                    .header__text=title
-                .header__search
-                    +search('grey', 'Search...')
-                .header__audio
-                    audio(class="audio" id='song' preload="metadata")
-                        source(src="audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3" type="audio/mpeg")
-                    div(class="audio__btn" id="songPlay") 
-                        i(class="fas fa-play")
-                    div(class="audio__btn" id="songStop")
-                        i(class="fas fa-stop")
-                    .audio__slider
-                        +sliders('red', 'none', 'popup', 'none', 'song-meter')
-                    div(class="audio__timer") 0:00
-                    div(class="audio__btn" id="songVolume")
-                        i(class="fas fa-volume-up")
-                    .audio__volume-meter
-                        +sliders('green', 'grade', 'none', 'track', 'song-volume')
+.header
+    ul.menu
+        li.menu__item
+            a(href='index.html' class='menu__link') Главная
+        li.menu__item
+            a(href='gallery.html' class='menu__link') Галлерея
+        li.menu__item
+            a(href='#' class='menu__link') Клубяне
+        li.menu__item
+            a(href='#' class='menu__link') Кельдым
+        li.menu__item
+            a(href='#' class='menu__link') О нас
+    .header__board
+        .flex-container
+            .header__emblem
+            .header__text Альп-клуб бродяг Сансары
+        .header__search
+            +search('grey', 'Search...')
+        .header__audio
+            audio(class="audio" id='song' preload="metadata")
+                source(src="audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3" type="audio/mpeg")
+            div(class="audio__btn" id="songPlay") 
+                i(class="fas fa-play")
+            div(class="audio__btn" id="songStop")
+                i(class="fas fa-stop")
+            .audio__slider
+                +sliders('red', 'none', 'popup', 'none', 'song-meter')
+            div(class="audio__timer") 0:00
+            div(class="audio__btn" id="songVolume")
+                i(class="fas fa-volume-up")
+            .audio__volume-meter
+                +sliders('green', 'grade', 'none', 'track', 'song-volume')

@@ -1,6 +1,4 @@
 import greet from './greeter.js';
-import '../blocks/gallery/gallery.js';
-import '../blocks/gallery/lightbox-plus-jquery.min.js';
 import '../blocks/header/header.js';
 import '../blocks/sliders/sliders.js';
 

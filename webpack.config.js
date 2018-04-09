@@ -3,9 +3,12 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: './src/js/index.js',
+    entry: { 
+            index: './src/js/index.js',
+            gallery: './src/gallery.js'
+    },
     output: {
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'docs')
     },
     module: {
@@ -58,7 +61,18 @@ module.exports = {
                 collapseWhitespace: true
             },
             hash: true,
+            excludeChunks: ['gallery'],
             template: 'src/index.pug',
+        }),
+        new HtmlWebpackPlugin({
+            title: 'For Lera',
+            minify: {
+                collapseWhitespace: true
+            },
+            hash: true,
+            chunks: ['gallery'],
+            filename: 'gallery.html',
+            template: 'src/gallery.pug',
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
