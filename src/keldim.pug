@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title My Site
+    body
+        include blocks/header/header.pug
+        .wrapper
+            h1.keldim__title Кельдым
+            .pie-chart__container
+                include blocks/prc-charts/pie-charts.pug
+            .keldim__stock
+                .keldim__item.keldim__item_left
+                    .image__container.image__container_left
+                        img(class="keldim__img" src="./images/rope.jpg")
+                    h1.image__title Веревки
+                .keldim__item.keldim__item_right
+                    .image__container.image__container_right
+                        img(class="keldim__img" src="./images/karabin.jpg")
+                    h1.image__title Карабины
+        include blocks/footer/footer.pug

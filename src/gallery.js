@@ -4,5 +4,3 @@ import './blocks/sliders/sliders.js';
 
 var html = require('./gallery.pug');
 const css = require('./gallery.styl');
-
-console.log("I'm the enty point");

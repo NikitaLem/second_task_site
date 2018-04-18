@@ -5,7 +5,8 @@ var webpack = require('webpack');
 module.exports = {
     entry: { 
             index: './src/js/index.js',
-            gallery: './src/gallery.js'
+            gallery: './src/gallery.js',
+            keldim: './src/keldim.js'
     },
     output: {
         filename: '[name].bundle.js',
@@ -61,7 +62,7 @@ module.exports = {
                 collapseWhitespace: true
             },
             hash: true,
-            excludeChunks: ['gallery'],
+            excludeChunks: ['gallery', 'keldim'],
             template: 'src/index.pug',
         }),
         new HtmlWebpackPlugin({
@@ -73,6 +74,16 @@ module.exports = {
             chunks: ['gallery'],
             filename: 'gallery.html',
             template: 'src/gallery.pug',
+        }),
+        new HtmlWebpackPlugin({
+            title: 'For Lera',
+            minify: {
+                collapseWhitespace: true
+            },
+            hash: true,
+            chunks: ['keldim'],
+            filename: 'keldim.html',
+            template: 'src/keldim.pug',
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
