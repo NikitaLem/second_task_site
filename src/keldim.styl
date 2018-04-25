@@ -8,6 +8,7 @@
     box-sizing border-box
 body
     font-family 'Conv_SourceSansPro-Regular', sans-serif
+    color rgba(40, 40, 40, 1)
     padding 0
     margin 0
 .wrapper
@@ -15,19 +16,31 @@ body
     margin 0 auto
 .keldim__title
     padding 0
-    margin-top 20px
+    margin 20px 0 0 0
     font-size 3em
-    color rgba(40, 40, 40, 1)
     text-align center
+.keldim__about
+    padding 10px 5%
+    font-size 2em
+    margin-top 20px
+    color #ffffff
+    background rgba(40, 40, 40, 1)
+.pie-chart__wrapper
+    display flex
+    justify-content space-around
+.pie-chart__text
+    font-size 1.5em
+    text-align center
+    padding-bottom 10px
 .pie-chart__container
     height 250px
     width 250px
-    margin 0 auto
+.keldim__stock
+    margin-top 25px
 .keldim__item
-    height 200px
     width 70%
     border-radius 5px
-    margin 25px 0
+    margin-bottom 25px
     padding 15px
     &_left
         float left
@@ -45,9 +58,32 @@ body
 .keldim__img
     height 100%
     width 100%
-.image__title
+.item__title
     padding 0
     margin 0
     font-size 2em
     color rgba(255, 255, 255, 1)
+    text-align center
+.item__text
+    padding 0
+    font-size 1em
+    color rgba(255, 255, 255, 1)
+    &_left
+        margin-left 185px
+.item__value
+    font-size 1em
+    color rgba(255, 255, 255, 1)
+    &_left
+        margin 0 0 0 185px
+.item__count
+    padding 0
+    margin 0
+.item__number
+    width 30px
+    margin-left 5px
+    outline none 
+    border none 
+    border-radius 3px
+    background rgb(130, 130, 130)
+    color #ffffff
     text-align center
