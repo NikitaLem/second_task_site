@@ -2,6 +2,7 @@
 @import '/blocks/header/header.styl'
 @import '/blocks/sliders/sliders.styl'
 @import '/blocks/footer/footer.styl'
+@import '/blocks/user-profile/user-profile.styl'
 @import '/fonts/fonts.styl'    
 
 *
@@ -11,9 +12,6 @@ body
     color rgba(40, 40, 40, 1)
     padding 0
     margin 0
-.wrapper
-    width 90%
-    margin 0 auto
 .keldim__title
     padding 0
     margin 20px 0 0 0
@@ -37,6 +35,8 @@ body
     width 250px
 .keldim__stock
     margin-top 25px
+    padding 28px 5% 0 5%
+    border-top 2px solid rgba(40, 40, 40, 1)
 .keldim__item
     width 70%
     border-radius 5px
@@ -87,3 +87,32 @@ body
     background rgb(130, 130, 130)
     color #ffffff
     text-align center
+.keldim__admin-container
+    display flex
+    justify-content space-around
+    align-items center
+    padding 25px 5%
+    clear both
+    border-top 2px solid rgba(40, 40, 40, 1)
+.admin__text
+    font-size 1.2em
+.admin__info
+    display inline-block
+    margin-left 20px
+
+@media screen and (max-width 700px)
+    .keldim__about
+        font-size 1.2em
+    .pie-chart__container
+        height 200px
+        width 200px
+    .keldim__item
+        width 100%
+        &_left
+            float none
+        &_right
+            float none
+    .keldim__admin-container
+        flex-direction column
+    .admin__info
+        margin-top 20px
