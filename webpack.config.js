@@ -6,7 +6,8 @@ module.exports = {
     entry: { 
             index: './src/js/index.js',
             gallery: './src/gallery.js',
-            keldim: './src/keldim.js'
+            keldim: './src/keldim.js',
+            about: './src/about.js'
     },
     output: {
         filename: '[name].bundle.js',
@@ -62,7 +63,7 @@ module.exports = {
                 collapseWhitespace: true
             },
             hash: true,
-            excludeChunks: ['gallery', 'keldim'],
+            excludeChunks: ['gallery', 'keldim', 'about'],
             template: 'src/index.pug',
         }),
         new HtmlWebpackPlugin({
@@ -84,6 +85,16 @@ module.exports = {
             chunks: ['keldim'],
             filename: 'keldim.html',
             template: 'src/keldim.pug',
+        }),
+        new HtmlWebpackPlugin({
+            title: 'For Lera',
+            minify: {
+                collapseWhitespace: true
+            },
+            hash: true,
+            chunks: ['about'],
+            filename: 'about.html',
+            template: 'src/about.pug',
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',

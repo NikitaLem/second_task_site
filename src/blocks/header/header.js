@@ -1,3 +1,5 @@
+import '../sliders/sliders.js';
+
 var activeSong;
 
 document.getElementById('songPlay').addEventListener('click', playPause, false);

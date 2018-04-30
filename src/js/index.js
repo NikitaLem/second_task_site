@@ -1,6 +1,5 @@
 import greet from './greeter.js';
 import '../blocks/header/header.js';
-import '../blocks/sliders/sliders.js';
 
 var html = require('../index.pug');
 const css = require('../index.styl');
