@@ -1,5 +1,6 @@
 @import '/blocks/header/header.styl'
 @import '/blocks/footer/footer.styl'
+@import '/blocks/user-profile/user-profile.styl'
 @import '/blocks/video/video.styl'
 @import '/blocks/location/location.styl'
 @import '/fonts/fonts.styl'    
@@ -13,7 +14,7 @@ body
     margin 0
 .about__title
     padding 0
-    margin 20px 0 0 0
+    margin 20px 0 20px 0
     font-size 3em
     text-align center
 .about__video-cont
@@ -26,6 +27,11 @@ body
     padding 25px 5%
     margin 0
     font-size 1.2em
+    &_location
+        background none
+        color inherit
+    &_nopadding-left
+        padding 25px 0
 .about__parallax
     height 400px
     background-attachment fixed
@@ -36,9 +42,19 @@ body
         background-image url('/images/parallax1.png')
     &_second 
         background-image url('/images/parallax2.png')
-    &_third
-        background-image url('/images/parallax3.png')
+.about__location-wrapper
+    border-top 2px solid rgba(40, 40, 40, 1)
+    padding 25px
+.map-flex__container
+    display flex
+    justify-content space-between
+.about__map-container
+    width 100%
+.about__map-admin
+    padding-left 25px
 
 @media screen and (max-width 700px)
     .about__text
         font-size 1em
+    .map-flex__container
+        flex-direction column
