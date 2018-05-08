@@ -1,17 +1,73 @@
 @import '/blocks/header/header.styl'
 @import '/blocks/footer/footer.styl'
 @import '/blocks/user-profile/user-profile.styl'
+@import '/blocks/toggles/toggles.styl'
+@import '/blocks/arw-buttons/arw-buttons.styl'
 @import '/fonts/fonts.styl'    
 
 *
     box-sizing border-box
 body
     font-family 'Conv_SourceSansPro-Regular', sans-serif
-    color rgba(40, 40, 40, 1)
+    color #ffffff
     padding 0
     margin 0
+.member__container
+    padding 25px 2% 25px 2%
+    border-top 2px solid rgba(40, 40, 40, 1)
+    background-repeat no-repeat
+    background-size cover
+    &_trainer
+        display none
+    &_visible
+        display block
 .members__title
     padding 0
-    margin 20px 0 0 0
+    margin 20px 0 10px 0
     font-size 3em
     text-align center
+    color rgb(40, 40, 40)
+.member__person
+    display flex
+    justify-content space-around
+    align-items center
+    width 600px
+    margin 0 auto
+.member__job
+    margin 0
+    padding 0
+    font-size 1.7em
+    color rgb(40, 40, 40)
+.member__text
+    padding 15px 40px
+    margin 20px 0 0 0
+    font-size 1.2em
+    background #333333
+.member__about
+    padding 15px 40px
+    margin 40px 0 0 0
+    font-family 'Conv_Lato-Italic'
+    font-size 1.1em
+    background #999999
+    border-radius 10px
+.member__info
+    margin 0 auto
+    border 1px solid rgba(40, 40, 40, 1)
+    border-collapse collapse
+    margin-top 40px
+.member__info th
+    border 1px solid rgba(40, 40, 40, 1)
+    padding 12px 5px
+    background #333333
+    text-align left
+.member__info td
+    border 1px solid rgba(40, 40, 40, 1)
+    padding 5px
+    background #d8d8d8
+    color rgb(40, 40, 40)
+.member__btn
+    padding 25px 2%
+    &_left
+        float left
+    &_right
+        float right

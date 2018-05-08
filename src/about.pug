@@ -1,6 +1,3 @@
-include ./blocks/video/video.pug
-include blocks/user-profile/user-profile.pug
-
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -9,6 +6,8 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title My Site
     body
+        include blocks/user-profile/user-profile.pug
+        include ./blocks/video/video.pug
         include blocks/header/header.pug
         h1.about__title О нашем клубе
         p.about__text Спортивный клуб ENERGY был создан 10 октября 1973 года. Главные направления занятий клуба это альпинизм, скалолазание и ледолазание. Так же мы занимаемся спелеологией, туризмом, велоспортом, горными лыжами, сноубордом, слэклайном и многими другими видами спорта.
