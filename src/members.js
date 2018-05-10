@@ -8,25 +8,40 @@ const css = require('./members.styl');
 var trainerArr = document.querySelectorAll('.member__container_trainer');
 const btnLeft = document.querySelector('.member__btn_left');
 const btnRight = document.querySelector('.member__btn_right');
-var count = 0;
 
 btnLeft.addEventListener('click', goPrev, false);
 btnRight.addEventListener('click', goNext, false);
 
 function goNext() {
-    trainerArr[count].classList.remove('member__container_visible');
-    count++;
-    if(count == trainerArr.length) {
-        count = 0;
+    for(var count = 0; count < trainerArr.length; count++) {
+        if(trainerArr[count].classList.contains('member__container_left')) {
+            trainerArr[count].classList.remove('member__container_left');
+            trainerArr[count].classList.add('member__container_center');
+        }
+        else if(trainerArr[count].classList.contains('member__container_center')) {
+            trainerArr[count].classList.remove('member__container_center');
+            trainerArr[count].classList.add('member__container_right');
+        }
+        else {
+            trainerArr[count].classList.remove('member__container_right');
+            trainerArr[count].classList.add('member__container_left');
+        }
     }
-    trainerArr[count].classList.add('member__container_visible');
 }
 
 function goPrev() {
-    trainerArr[count].classList.remove('member__container_visible');
-    count--;
-    if(count == -1) {
-        count = trainerArr.length - 1;
+    for(var count=trainerArr.length - 1; count >= 0; count--) {
+        if(trainerArr[count].classList.contains('member__container_right')) {
+            trainerArr[count].classList.remove('member__container_right');
+            trainerArr[count].classList.add('member__container_center');
+        }
+        else if(trainerArr[count].classList.contains('member__container_center')) {
+            trainerArr[count].classList.remove('member__container_center');
+            trainerArr[count].classList.add('member__container_left');
+        }
+        else {
+            trainerArr[count].classList.remove('member__container_left');
+            trainerArr[count].classList.add('member__container_right');
+        }
     }
-    trainerArr[count].classList.add('member__container_visible');
 }

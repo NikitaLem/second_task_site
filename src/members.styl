@@ -12,15 +12,35 @@ body
     color #ffffff
     padding 0
     margin 0
-.member__container
-    padding 25px 2% 25px 2%
+.member__section
+    position relative
+    height 37.69vw
+    width 98.65vw
     border-top 2px solid rgba(40, 40, 40, 1)
+    overflow-x hidden
+.member__container
+    height 37.51vw
+    width 98.65vw
+    position absolute
+    padding 25px 2% 25px 2%
     background-repeat no-repeat
     background-size cover
-    &_trainer
-        display none
-    &_visible
-        display block
+    transition .5s
+    &_left
+        left -100%
+        top 0
+        padding-left 0
+        padding-right 0
+    &_center
+        top 0
+        left 0
+        padding-left 2%
+        padding-right 2%
+    &_right
+        top 0
+        left 100%
+        padding-left 0
+        padding-right 0
 .members__title
     padding 0
     margin 20px 0 10px 0
@@ -67,6 +87,8 @@ body
     color rgb(40, 40, 40)
 .member__btn
     padding 25px 2%
+    position relative
+    z-index 999
     &_left
         float left
     &_right
