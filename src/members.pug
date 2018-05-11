@@ -15,7 +15,7 @@ html(lang="en")
             .member__container
                 .member__person
                     h2.member__job Президент клуба
-                    +user-profile('grey-orange', 'images/timophey.png', 'Тимофей Петрович', 'Президент')
+                    +user-profile('green-white', 'images/timophey.png', 'Тимофей Петрович', 'Президент')
                 p.member__text Президентом нашего клуба в данным момент является выдающийся альпинист с огромным опытом и багажом знаний, всеми любимый и уважаемый Тимофей Петрович. Под его руководством ENERGY проводит каждый год множество мероприятий, выигрывает в соревнованиях и достигает новых вершин как в прямом, так и в переносном смыслах!
                 p.member__about От себя: Альпинизм – не спорт, а образ жизни, требующий самых разных навыков и умений. Окунитесь в мир приключений, романтики, риска и опасностей, придя в наш клуб! 
                 table.member__info
@@ -35,7 +35,7 @@ html(lang="en")
                             +toggles('checked')
                         td
                             +toggles('checked')
-        .member__section
+        .member__section.member__section_relative
             .member__btn.member__btn_left
                 +arw-buttons('green', 'left')
             .member__btn.member__btn_right
@@ -90,7 +90,7 @@ html(lang="en")
                 .member__person
                     h2.member__job Тренер новичков
                     +user-profile('green-white', 'images/catTrainer3.png', 'Мустафа Мурмаметов', 'Тренер')
-                p.member__text Анатолий Букреев был одним из лучших альпинистов ХХ века. Только он смог взойти на четыре восьмитысячника подряд за 80 дней. Он единственный человек в мире, кто двадцать один раз отправлялся наверх в "зону смерти" без кислородной маски. Практически на каждое свое восхождение он брал с собой флаг Казахстана.
+                p.member__text Мустафа Мурмаметов был одним из лучших альпинистов ХХ века. Только он смог взойти на четыре восьмитысячника подряд за 80 дней. Он единственный человек в мире, кто двадцать один раз отправлялся наверх в "зону смерти" без кислородной маски. Практически на каждое свое восхождение он брал с собой флаг Казахстана.
                 p.member__about От себя: Альпинизм – очень рискованное занятие, которое, ни в коем случае, нельзя недооценивать, в не зависимости от того, насколько легким или неопасным выглядит выбранный пик.
                 table.member__info
                     tr
@@ -109,4 +109,14 @@ html(lang="en")
                             +toggles()
                         td
                             +toggles('checked')
+        .member__section.member__section_grid
+            .member__employee
+                h2.member__job.member__job_padding Кладовой
+                +user-profile('green-white', 'images/senya.png', 'Арсений Курьин', 'Кладовой')
+            .member__employee
+                h2.member__job.member__job_padding Казначей
+                +user-profile('grey-orange', 'images/polya.png', 'Полина Майорова', 'Казначей')
+            .member__employee.member__employee_no-border
+                h2.member__job.member__job_padding Вахтовик
+                +user-profile('green-white', 'images/ivan.png', 'Котейкин Иван', 'Вахтовик')
         include blocks/footer/footer.pug

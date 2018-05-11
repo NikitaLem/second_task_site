@@ -15,6 +15,7 @@ btnRight.addEventListener('click', goNext, false);
 function goNext() {
     for(var count = 0; count < trainerArr.length; count++) {
         if(trainerArr[count].classList.contains('member__container_left')) {
+            trainerArr[count].classList.remove('member__container_no-transition');
             trainerArr[count].classList.remove('member__container_left');
             trainerArr[count].classList.add('member__container_center');
         }
@@ -23,6 +24,7 @@ function goNext() {
             trainerArr[count].classList.add('member__container_right');
         }
         else {
+            trainerArr[count].classList.add('member__container_no-transition');
             trainerArr[count].classList.remove('member__container_right');
             trainerArr[count].classList.add('member__container_left');
         }
@@ -32,6 +34,7 @@ function goNext() {
 function goPrev() {
     for(var count=trainerArr.length - 1; count >= 0; count--) {
         if(trainerArr[count].classList.contains('member__container_right')) {
+            trainerArr[count].classList.remove('member__container_no-transition');
             trainerArr[count].classList.remove('member__container_right');
             trainerArr[count].classList.add('member__container_center');
         }
@@ -40,6 +43,7 @@ function goPrev() {
             trainerArr[count].classList.add('member__container_left');
         }
         else {
+            trainerArr[count].classList.add('member__container_no-transition');
             trainerArr[count].classList.remove('member__container_left');
             trainerArr[count].classList.add('member__container_right');
         }

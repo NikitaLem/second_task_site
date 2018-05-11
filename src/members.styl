@@ -13,19 +13,24 @@ body
     padding 0
     margin 0
 .member__section
-    position relative
-    height 37.69vw
-    width 98.65vw
     border-top 2px solid rgba(40, 40, 40, 1)
-    overflow-x hidden
+    &_relative
+        position relative
+        height 512px
+        width 100%
+        overflow-x hidden
+    &_grid
+        display flex
+        justify-content space-between
+        padding 25px 2%
 .member__container
-    height 37.51vw
-    width 98.65vw
-    position absolute
-    padding 25px 2% 25px 2%
+    width 100%
+    padding 25px 2%
     background-repeat no-repeat
     background-size cover
     transition .5s
+    &_trainer
+        position absolute
     &_left
         left -100%
         top 0
@@ -41,6 +46,8 @@ body
         left 100%
         padding-left 0
         padding-right 0
+    &_no-transition
+        transition 0s
 .members__title
     padding 0
     margin 20px 0 10px 0
@@ -51,13 +58,15 @@ body
     display flex
     justify-content space-around
     align-items center
-    width 600px
+    width 50%
     margin 0 auto
 .member__job
     margin 0
     padding 0
     font-size 1.7em
     color rgb(40, 40, 40)
+    &_padding
+        padding-bottom 20px
 .member__text
     padding 15px 40px
     margin 20px 0 0 0
@@ -93,3 +102,28 @@ body
         float left
     &_right
         float right
+.member__employee
+    display flex
+    flex-direction column
+    align-items center
+    flex-basis 33.3%
+    border-right 2px solid rgb(40, 40, 40)
+    &_no-border
+        border-right none
+
+@media screen and (max-width 1200px)
+    .member__section_relative
+        height 600px
+
+@media screen and (max-width 800px)
+    .member__section_relative
+        height 750px
+    .member__person
+        flex-direction column
+        width 100%
+    .member__job
+        margin 20px 0
+
+@media screen and (max-width 500px)
+    .member__section_relative
+        height 900px
