@@ -22,7 +22,10 @@ body
     &_grid
         display flex
         justify-content space-between
+        flex-wrap wrap
         padding 25px 2%
+    &_padding
+        padding-bottom 40px
 .member__container
     width 100%
     padding 25px 2%
@@ -79,11 +82,15 @@ body
     font-size 1.1em
     background #999999
     border-radius 10px
+    &_no-padding
+        margin 20px
 .member__info
     margin 0 auto
     border 1px solid rgba(40, 40, 40, 1)
     border-collapse collapse
     margin-top 40px
+    &_all
+        width 90%
 .member__info th
     border 1px solid rgba(40, 40, 40, 1)
     padding 12px 5px
@@ -108,12 +115,30 @@ body
     align-items center
     flex-basis 33.3%
     border-right 2px solid rgb(40, 40, 40)
+    padding 0 25px
     &_no-border
         border-right none
+.table
+    &__id
+        width 1%
+    &__name
+        width 15%
+    &__age
+        width 10%
+    &__edu
+        width 10%
+    &__edu-level
+        width 15%
+    &__edu-form
+        width 15%
 
 @media screen and (max-width 1200px)
     .member__section_relative
         height 600px
+    .member__employee
+        border-right 2px solid rgb(40, 40, 40)
+        border-left 2px solid rgb(40, 40, 40)
+        flex-basis 100%
 
 @media screen and (max-width 800px)
     .member__section_relative
@@ -124,6 +149,6 @@ body
     .member__job
         margin 20px 0
 
-@media screen and (max-width 500px)
+@media screen and (max-width 600px)
     .member__section_relative
-        height 900px
+        height 850px
