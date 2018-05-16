@@ -1,11 +1,104 @@
-@import '/blocks/search/search.styl'
 @import '/blocks/header/header.styl'
-@import '/blocks/sliders/sliders.styl'
+@import '/blocks/news/events.styl'
+@import '/blocks/news/news.styl'
 @import '/blocks/footer/footer.styl'
 @import '/fonts/fonts.styl'    
 
 *
     box-sizing border-box
 body
+    font-family 'Conv_SourceSansPro-Regular', sans-serif
+    color rgba(40, 40, 40, 1)
     padding 0
     margin 0
+.title
+    padding 0
+    margin 20px 0 0 0
+    font-size 3em
+    text-align center
+    &_sub
+        font-size 1em
+        margin 0
+.epigraph
+    float right
+    padding 0
+    margin 0 60px 0 0
+    font-size 1em
+    font-style italic
+.message
+    width 100%
+    overflow auto
+    background #fff
+    padding 13px 2%
+    margin-top 90px
+    border-top 2px rgb(40, 40, 40) dashed
+    border-bottom 2px rgb(40, 40, 40) dashed
+    &__container
+        display flex
+        justify-content space-between
+        width 100%
+        border-radius 42px
+        background #eaeaea
+    &__title
+        text-indent 20px
+        margin-left 20px
+    &__text
+        margin-left 20px
+        font-style italic
+.user-profile__img-container
+    flex-shrink 0
+    height 84px
+    width 84px
+    border 4px solid #e5e5e5
+    border-radius 50%
+.user-profile__img
+    height 100%
+    width 100%
+    border-radius 50%
+.grid-container
+    display grid
+    grid-template-columns 300px 1fr 200px
+    grid-template-rows auto
+    column-gap 25px
+    padding 20px 20px 40px 0
+.sidebar
+    background #eaeaea
+    overflow-y auto
+    height 445px
+    &__title
+        padding 0
+        margin 0
+        text-align center
+        font-size 1.7em
+        background #bababa
+    &__item
+        padding 10px 20px
+        &:hover
+            background #bababa
+            cursor pointer
+    &::-webkit-scrollbar
+        width 10px
+    &::-webkit-scrollbar-track
+        background #eaeaea
+    &::-webkit-scrollbar-thumb
+        background #666
+        &:hover
+            background #555
+.main
+    background linear-gradient(to bottom, rgba(220, 220, 220, 1), rgba(220, 220, 220, 0) 80%)
+    border-radius 15px
+.event1
+    &__image
+        width 90%
+        height 400px
+        margin 20px 0 0 5%
+    &__title
+        @extend .title
+        font-size 2em
+    &__text
+        width 90%
+        margin 25px 0 0 5%
+.news-info
+    background #bababa
+    height 222px
+    border-radius 15px

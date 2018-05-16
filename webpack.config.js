@@ -4,7 +4,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: { 
-            index: './src/js/index.js',
+            index: './src/index.js',
             gallery: './src/gallery.js',
             keldim: './src/keldim.js',
             about: './src/about.js',
