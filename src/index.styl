@@ -1,6 +1,7 @@
 @import '/blocks/header/header.styl'
 @import '/blocks/news/events.styl'
 @import '/blocks/news/news.styl'
+@import '/blocks/calendar/calendar.styl'
 @import '/blocks/footer/footer.styl'
 @import '/fonts/fonts.styl'    
 
@@ -72,10 +73,13 @@ body
         font-size 1.7em
         background #bababa
     &__item
+        display inline-block
         padding 10px 20px
         &:hover
             background #bababa
             cursor pointer
+    &__calendar
+        padding 20px 0 0 20px
     &::-webkit-scrollbar
         width 10px
     &::-webkit-scrollbar-track
@@ -98,7 +102,56 @@ body
     &__text
         width 90%
         margin 25px 0 0 5%
+    &__pic-container
+        display inline-block
+        background #bababa
+        &_first
+            float right
+            margin 50px 5% 0 15px
+        &_second
+            float right
+            margin 30px 5% 0 15px
+            clear both
 .news-info
     background #bababa
     height 222px
     border-radius 15px
+    padding 15px
+.info
+    font-size .8em
+    line-height 3em
+    &_article
+        text-decoration underline
+    &__icons
+        font-size 2em
+        display flex
+        justify-content space-around
+        margin-top 35px
+        color #888888
+.icon:hover
+    cursor pointer
+    color #e5e5e5
+
+@media screen and (max-width 1024px)
+    .epigraph
+        margin 15px 0 0 0
+    .grid-container
+        display grid
+        grid-template-columns 100%
+        grid-template-rows auto
+        column-gap 0
+        row-gap 25px
+        padding 20px 0 40px 0
+    .sidebar
+        overflow hidden
+        overflow-x scroll
+        height initial
+        white-space nowrap
+        &__item
+            white-space normal
+        &__calendar
+            display none
+    .infobar
+        justify-self end
+    .news-info
+        width 200px
