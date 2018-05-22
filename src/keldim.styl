@@ -24,6 +24,7 @@ body
 .pie-chart__wrapper
     display flex
     justify-content space-around
+    padding-bottom 20px
 .pie-chart__text
     font-size 1.5em
     text-align center
@@ -32,27 +33,22 @@ body
     height 250px
     width 250px
 .keldim__stock
-    margin-top 25px
-    padding 28px 5% 0 5%
+    padding 40px 2% 40px 2%
     border-top 2px solid rgba(40, 40, 40, 1)
+    display grid
+    grid-template-columns repeat(auto-fit, minmax(320px, 1fr))
+    grid-gap 15px
 .keldim__item
-    width 70%
     border-radius 5px
-    margin-bottom 25px
     padding 15px
     &_left
-        float left
         background rgba(40, 40, 40, 1)
     &_right
-        float right
         background rgba(75, 75, 75, 1)
 .image__container
     height 170px
     width 170px
-    &_left
-        float left
-    &_right
-        float right
+    float right
 .keldim__img
     height 100%
     width 100%
@@ -66,13 +62,9 @@ body
     padding 0
     font-size 1em
     color rgba(255, 255, 255, 1)
-    &_left
-        margin-left 185px
 .item__value
     font-size 1em
     color rgba(255, 255, 255, 1)
-    &_left
-        margin 0 0 0 185px
 .item__count
     padding 0
     margin 0

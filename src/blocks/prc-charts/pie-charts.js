@@ -14,22 +14,24 @@ var ctx = document.getElementById("myChart").getContext("2d");
 var myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ["Веревки", "Карабины", "Жумары", "Корзинки", "Беседки"],
+        labels: ["Веревки", "Карабины", "Жумары", "Корзинки", "Беседки", "Оттяжки"],
         datasets: [{
             data: keldimItemsValue,
             backgroundColor: [
-                '#2D30E3',
-                '#E36A2D',
-                '#1AC21A',
-                '#8E0D6E',
-                '#A51C1C'
+                '#E49842',
+                '#F9F944',
+                '#23A296',
+                '#8560D5',
+                '#4AA737',
+                "#A04F4F"
             ],
             borderColor: [
-                '#2D30E3',
-                '#E36A2D',
-                '#1AC21A',
-                '#8E0D6E',
-                '#A51C1C'
+                '#E49842',
+                '#F9F944',
+                '#23A296',
+                '#8560D5',
+                '#4AA737',
+                "#A04F4F"
             ],
             borderWidth: 1
         }]
@@ -51,22 +53,24 @@ for(var i = 0; i < keldimItemsCurrent.length; i++) {
 var myChartOne = new Chart(cty, {
     type: 'pie',
     data: {
-        labels: ["Веревки", "Карабины", "Жумары", "Корзинки", "Беседки"],
+        labels: ["Веревки", "Карабины", "Жумары", "Корзинки", "Беседки", "Оттяжки"],
         datasets: [{
             data: keldimItemsValueCurrent,
             backgroundColor: [
-                '#2D30E3',
-                '#E36A2D',
-                '#1AC21A',
-                '#8E0D6E',
-                '#A51C1C'
+                '#E49842',
+                '#F9F944',
+                '#23A296',
+                '#8560D5',
+                '#4AA737',
+                "#A04F4F"
             ],
             borderColor: [
-                '#2D30E3',
-                '#E36A2D',
-                '#1AC21A',
-                '#8E0D6E',
-                '#A51C1C'
+                '#E49842',
+                '#F9F944',
+                '#23A296',
+                '#8560D5',
+                '#4AA737',
+                "#A04F4F"
             ],
             borderWidth: 1
         }]

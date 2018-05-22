@@ -59,13 +59,14 @@ body
 .grid-container
     display grid
     grid-template-columns 300px 1fr 200px
-    grid-template-rows auto
-    column-gap 25px
+    grid-template-rows 445px auto
+    grid-gap 25px
+    grid-template-areas "sidebar main infobar" "calendar main ."
     padding 20px 20px 40px 0
 .sidebar
+    grid-area sidebar
     background #eaeaea
     overflow-y auto
-    height 445px
     &__title
         padding 0
         margin 0
@@ -73,13 +74,19 @@ body
         font-size 1.7em
         background #bababa
     &__item
+        position relative
         display inline-block
         padding 10px 20px
         &:hover
             background #bababa
             cursor pointer
-    &__calendar
-        padding 20px 0 0 20px
+    &__toggle
+        position absolute
+        top 0
+        right 0
+        bottom 0
+        left 0
+        background rgba(255, 255, 255, 0)
     &::-webkit-scrollbar
         width 10px
     &::-webkit-scrollbar-track
@@ -88,10 +95,18 @@ body
         background #666
         &:hover
             background #555
+.calendar
+    grid-area calendar
+    justify-self end
 .main
+    grid-area main
     background linear-gradient(to bottom, rgba(220, 220, 220, 1), rgba(220, 220, 220, 0) 80%)
     border-radius 15px
-.event1
+    &__event
+        display none
+        &_visible
+            display block
+.event
     &__image
         width 90%
         height 400px
@@ -113,6 +128,7 @@ body
             margin 30px 5% 0 15px
             clear both
 .news-info
+    grid-area infobar
     background #bababa
     height 222px
     border-radius 15px
@@ -136,11 +152,11 @@ body
     .epigraph
         margin 15px 0 0 0
     .grid-container
-        display grid
-        grid-template-columns 100%
+        grid-template-columns 1fr 1fr
         grid-template-rows auto
+        grid-template-areas "sidebar sidebar" "main main" "calendar infobar"
         column-gap 0
-        row-gap 25px
+        grid-row-gap 25px
         padding 20px 0 40px 0
     .sidebar
         overflow hidden
@@ -149,9 +165,12 @@ body
         white-space nowrap
         &__item
             white-space normal
-        &__calendar
-            display none
-    .infobar
-        justify-self end
+    .calendar
+        justify-self center
     .news-info
         width 200px
+        justify-self center
+
+@media screen and (max-width 500px)
+    .calendar
+        display none
