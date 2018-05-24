@@ -32,6 +32,31 @@ body
 .pie-chart__container
     height 250px
     width 250px
+.legend
+    &__container
+        display flex
+        justify-content space-around
+        flex-direction column
+    &__item:nth-child(1):before
+        content ''
+        padding 0 20px
+        margin-right 5px
+        background #E49842
+    &__item:nth-child(2):before
+        @extend .legend__item:nth-child(1):before
+        background #F9F944
+    &__item:nth-child(3):before
+        @extend .legend__item:nth-child(1):before
+        background #23A296
+    &__item:nth-child(4):before
+        @extend .legend__item:nth-child(1):before
+        background #8560D5
+    &__item:nth-child(5):before
+        @extend .legend__item:nth-child(1):before
+        background #4AA737
+    &__item:nth-child(6):before
+        @extend .legend__item:nth-child(1):before
+        background #A04F4F
 .keldim__stock
     padding 40px 2% 40px 2%
     border-top 2px solid rgba(40, 40, 40, 1)
@@ -106,3 +131,5 @@ body
         flex-direction column
     .admin__info
         margin-top 20px
+    .legend__container
+        display none
