@@ -1,0 +1,43 @@
+@import '/lightbox.min.styl'
+@import '../../blocks/search/search.styl'
+@import '../../blocks/header/header.styl'
+@import '../../blocks/sliders/sliders.styl'
+@import '../../blocks/footer/footer.styl'
+@import '../../fonts/fonts.styl' 
+
+*
+    box-sizing border-box
+html
+    font-family "SourceSansPro", Arial, sans-serif
+    font-size 62.5%
+    color rgb(40, 40, 40)
+body
+    padding 0
+    margin 0    
+.wrapper
+    width 90%
+    margin 0 auto
+.gallery__title
+    padding 0
+    margin-top 20px
+    font-family 'Conv_SourceSansPro-Regular', sans-serif
+    font-size 3em
+    color rgba(40, 40, 40, 1)
+    text-align center
+.gallery__images
+    position relative
+    padding-bottom 50px
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    width 100%
+.imgages__container
+    flex-basis 18%
+    padding 10px 0
+.image
+    width 100%
+    height 100%
+    transition .3s
+    &:hover
+        cursor pointer
+        transform scale(1.1)

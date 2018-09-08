@@ -1,0 +1,39 @@
+.audio-player
+  display flex
+  align-items center
+  grid-area audio
+  justify-self center
+.audio__btn
+  font-size 1.4rem
+  background rgb(75, 75, 75)
+  padding 5px 10px
+  margin-right 5px
+  cursor pointer
+  border-radius 5px
+  color #fff
+  &:hover
+    background rgb(40, 40, 40)
+#songVolume
+  margin-left 5px
+  width 35px
+.audio__slider
+  flex-grow 1
+.audio__timer
+  height 28px
+  width 48px
+  font-family 'Lato', Arial, sans-serif
+  font-weight 700
+  font-style normal
+  font-size 1.4rem
+  color #fff
+  text-align center
+  background rgb(75, 75, 75)
+  border-radius 5px
+  margin-left 10px
+  &:before
+    content ''
+    height 28px
+    display inline-block
+    vertical-align middle
+.audio__volume-meter
+  margin-top -5px

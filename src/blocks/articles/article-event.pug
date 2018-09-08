@@ -1,0 +1,13 @@
+mixin article-event(isVisible, imgSrcTitle, title, par1, par2, imgSrc1, imgSrc1Text, imgSrc2, imgSrc2Text)
+    section(class="main__event "+isVisible)
+        img.event__image(src=imgSrcTitle alt='pic')
+        .event__title= title
+        p.event__text= par1
+        p.event__text= par2
+        .event-pic-flex
+            .event__pic-container
+                img.event__pic(src=imgSrc1 alt='pic')
+                .event__pic-desc= imgSrc1Text
+            .event__pic-container
+                img.event__pic(src=imgSrc2 alt='pic')
+                .event__pic-desc= imgSrc2Text

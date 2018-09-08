@@ -1,24 +1,24 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var path = require('path');
-var webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     entry: { 
-            index: './src/index.js',
-            gallery: './src/gallery.js',
-            keldim: './src/keldim.js',
-            about: './src/about.js',
-            members: './src/members.js'
+        'pages/index/index': './src/pages/index/index.js',
+        'pages/gallery/gallery': './src/pages/gallery/gallery.js',
+        'pages/keldim/keldim': './src/pages/keldim/keldim.js',
+        'pages/about/about': './src/pages/about/about.js',
+        'pages/members/members': './src/pages/members/members.js'
     },
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'docs')
+        path: path.resolve(__dirname, 'docs'),
     },
     module: {
         rules: [
             {
                 test: /\.styl$/, 
-                use: ['style-loader', 'css-loader', 'stylus-loader']
+                use: ['style-loader', 'css-loader?url=false', 'stylus-loader']
             },
             {
                 test: /\.pug$/,
@@ -65,7 +65,9 @@ module.exports = {
             },
             hash: true,
             excludeChunks: ['gallery', 'keldim', 'about', 'members'],
-            template: 'src/index.pug',
+            filename: 'pages/index/index.html',
+            template: 'src/pages/index/index.pug',
+            inject: false
         }),
         new HtmlWebpackPlugin({
             title: 'For Lera',
@@ -74,8 +76,9 @@ module.exports = {
             },
             hash: true,
             chunks: ['gallery'],
-            filename: 'gallery.html',
-            template: 'src/gallery.pug',
+            filename: 'pages/gallery/gallery.html',
+            template: 'src/pages/gallery/gallery.pug',
+            inject: false
         }),
         new HtmlWebpackPlugin({
             title: 'For Lera',
@@ -84,8 +87,9 @@ module.exports = {
             },
             hash: true,
             chunks: ['keldim'],
-            filename: 'keldim.html',
-            template: 'src/keldim.pug',
+            filename: 'pages/keldim/keldim.html',
+            template: 'src/pages/keldim/keldim.pug',
+            inject: false
         }),
         new HtmlWebpackPlugin({
             title: 'For Lera',
@@ -94,8 +98,9 @@ module.exports = {
             },
             hash: true,
             chunks: ['about'],
-            filename: 'about.html',
-            template: 'src/about.pug',
+            filename: 'pages/about/about.html',
+            template: 'src/pages/about/about.pug',
+            inject: false
         }),
         new HtmlWebpackPlugin({
             title: 'For Lera',
@@ -104,8 +109,9 @@ module.exports = {
             },
             hash: true,
             chunks: ['members'],
-            filename: 'members.html',
-            template: 'src/members.pug',
+            filename: 'pages/members/members.html',
+            template: 'src/pages/members/members.pug',
+            inject: false
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',

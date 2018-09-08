@@ -1,0 +1,37 @@
+.main__event
+  display none
+  padding 20px 5%
+.visible
+  display block
+.event
+  &__image
+    width 100%
+    max-width 702px
+    height 400px
+  &__title
+    padding 0
+    margin 20px 0 0 0
+    text-align center
+    font-size 4.5rem
+    @media screen and (max-width 800px)
+      font-size 3.5rem
+  &__text
+    font-size 1.8rem
+    margin-top 25px
+    @media screen and (max-width 800px)
+      font-size 1.6rem
+  &-pic-flex
+    display flex
+    justify-content space-around
+    align-items flex-end
+    @media screen and (max-width 800px)
+      flex-direction column
+      align-items center
+  &__pic-container
+    display inline-block
+    background #bababa
+    margin-top 20px
+  &__pic-desc
+    font-size 1.6rem
+    @media screen and (max-width 800px)
+      font-size 1.4rem

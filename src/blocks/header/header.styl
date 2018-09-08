@@ -1,154 +1,73 @@
-@import '/blocks/search/search.styl'
-@import '/blocks/sliders/sliders.styl'
+@import '../../blocks/search/search.styl'
+@import '../../blocks/sliders/sliders.styl'
+@import '../../blocks/audio-player/audio-player.styl'
     
 .header
-    width 100%
-    background-image url('images/header.jpg')
-    background-repeat no-repeat
-    background-size cover
-    padding-bottom 10%
-    padding-top 2%
-li
-    list-style-type none
+  width 100%
+  background-image url('../../images/header.jpg')
+  background-repeat no-repeat
+  background-size cover
+  padding 2% 1% 10%
 .menu
-    width 50%
-    padding 0
-    margin 0 auto
-    display flex
-    justify-content space-between
-    &__item
-        font-family 'Conv_Lato-Regular'
-        display inline-block
-        padding 0 15px
-        background rgba(75, 75, 75, 0.5)
-        height 35px
-        line-height 30px
-        text-align center
-        border-radius 5px 5px 0 0
-        border rgba(40, 40, 40, 1) solid 2px
-        border-bottom 0
-        cursor pointer
-        text-decoration none
-        color #F3ECE8
-        &:hover
-            background -webkit-linear-gradient(rgba(125, 125, 125, 0.5), rgba(45, 45, 45, 0.5))
-.header__board
-    position relative
-    width 98%
-    margin 0 auto
-    padding 20px 0 0 20px
+  display flex
+  justify-content center
+  padding 0
+  margin 0
+  &__item
+    font-family 'Lato', Arial, sans-serif
+    font-weight 400
+    font-style normal
+    font-size 1.6rem
+    margin 0 1vw
+    padding 8px 15px
     background rgba(75, 75, 75, 0.5)
-    border rgba(40, 40, 40, 1) solid 2px
+    text-align center
     border-radius 5px 5px 0 0
-.flex-container
-    display flex
-    align-items center
-    justify-content space-between
-    width 70%
-    height 100px
-.header__search
-    position absolute
-    top 10px
-    right 10px
-.header__emblem
-    display inline-block
-    background url('images/emblem.png') no-repeat 50% 50%
-    background-size cover
-    height 80px
-    width @height
-.header__text
-    display inline-block
-    font-family 'Conv_Lato-ThinItalic'
-    color #F3ECE8
-    font-size 3.5em
-.header__audio
-    display flex
-    justify-content space-between
-    width 40%
-    margin 0 auto 1%
-.audio__btn
-    background rgba(75, 75, 75, 1)
-    padding 5px 10px
-    margin-right 5px
+    border rgb(40, 40, 40) solid 2px
+    border-bottom 0
     cursor pointer
-    border-radius 5px
-    color #fff
+    text-decoration none
+    color #F3ECE8
     &:hover
-        background rgba(40, 40, 40, 1)
-#songVolume
-    margin-left 5px
-    width 35px
-.audio__slider
-    flex-grow 1
-.audio__timer
-    font-family 'Conv_Lato-Black'
-    background rgba(75, 75, 75, 1)
-    padding 5px 10px
-    border-radius 5px
-    color #fff
-    margin-left 10px
-.audio__volume-meter
-    margin-top -5px
-
-@media screen and (max-width 700px)
-    .menu
-        width 90%
-        padding 0
-        margin 0 auto
-        display flex
-        justify-content space-between
-    .menu__item
-        display inline-block
-        margin 0
-        font-family 'Conv_Lato-Regular'
-        padding 0 15px
-        background rgba(75, 75, 75, 0.5)
-        height 35px
-        line-height 30px
-        text-align center
-        border-radius 5px 5px 0 0
-        border rgba(40, 40, 40, 1) solid 2px
-        border-bottom 0
-        cursor pointer
-        &:hover
-            background -webkit-linear-gradient(rgba(125, 125, 125, 0.5), rgba(45, 45, 45, 0.5))
-    .header__board
-        position relative
-        width 98%
-        display flex
-        flex-direction column
-        justify-content center
-        margin 0 auto
-        background rgba(75, 75, 75, 0.5)
-        border rgba(40, 40, 40, 1) solid 2px
-        border-radius 5px 5px 0 0
-    .flex-container
-        display flex
-        flex-direction column
-        justify-content center
-        width 100%
-    .header__search
-        position absolute
-        top 5px
-        right 5px
-    .header__emblem
-        display inline-block
-        position absolute 
-        top 5px
-        left 5px
-        width 50px
-        height 50px
-    .header__text
-        display inline-block
-        font-family 'Conv_Lato-ThinItalic'
-        color #F3ECE8
-        font-size 2em
-    .header__audio
-        display flex
-        justify-content space-between
-        width 96%
-        margin 0 auto 1%
-
-@media screen and (max-width 400px)
-    .menu__item
-        padding 0 5px
+      background -webkit-linear-gradient(rgba(125, 125, 125, 0.5), rgba(45, 45, 45, 0.5))
+    @media screen and (max-width 480px)
+      padding 5px
+      margin 0
+      font-size 1.3rem
+.header__board
+  display grid
+  grid-template-columns 1fr 2fr 1fr
+  grid-template-rows 50px 80px auto
+  grid-template-areas "emblem search search" "text text text" "audio audio audio"
+  position relative
+  width 100%
+  padding 10px
+  background rgba(75, 75, 75, 0.5)
+  border rgb(40, 40, 40) solid 2px
+  border-radius 5px 5px 0 0
+  @media screen and (max-width 800px)
+    grid-template-rows auto
+.header__emblem
+  display inline-block
+  grid-area emblem
+  background url('../../images/emblem.png') no-repeat 50% 50%
+  background-size cover
+  height 80px
+  width 80px
+  @media screen and (max-width 480px)
+    height 50px
+    width 50px
+.header__text
+  display inline-block
+  grid-area text
+  align-self start
+  font-family 'Lato', Arial, sans-serif
+  font-weight 200
+  font-style italic
+  font-size 4.5rem
+  color #F3ECE8
+  text-align center
+.header__search
+  grid-area search
+  justify-self end
+  align-self start

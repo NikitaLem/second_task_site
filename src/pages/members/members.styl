@@ -1,0 +1,156 @@
+@import '../../blocks/header/header.styl'
+@import '../../blocks/footer/footer.styl'
+@import '../../blocks/user-profile/user-profile.styl'
+@import '../../blocks/toggles/toggles.styl'
+@import '../../blocks/arw-buttons/arw-buttons.styl'
+@import '../../fonts/fonts.styl'    
+
+*
+    box-sizing border-box
+html
+    font-family "SourceSansPro", Arial, sans-serif
+    font-size 62.5%
+    color rgb(40, 40, 40)
+body
+    padding 0
+    margin 0
+.member__section
+    border-top 2px solid rgba(40, 40, 40, 1)
+    &_relative
+        position relative
+        height 512px
+        width 100%
+        overflow-x hidden
+    &_grid
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+        padding 25px 2%
+    &_padding
+        padding-bottom 40px
+.member__container
+    width 100%
+    padding 25px 2%
+    background-repeat no-repeat
+    background-size cover
+    transition .5s
+    &_trainer
+        position absolute
+    &_left
+        left -100%
+        top 0
+        padding-left 0
+        padding-right 0
+    &_center
+        top 0
+        left 0
+        padding-left 2%
+        padding-right 2%
+    &_right
+        top 0
+        left 100%
+        padding-left 0
+        padding-right 0
+    &_no-transition
+        transition 0s
+.members__title
+    padding 0
+    margin 20px 0 10px 0
+    font-size 3em
+    text-align center
+    color rgb(40, 40, 40)
+.member__person
+    display flex
+    justify-content space-around
+    align-items center
+    width 50%
+    margin 0 auto
+.member__job
+    margin 0
+    padding 0
+    font-size 1.7em
+    color rgb(40, 40, 40)
+    &_padding
+        padding-bottom 20px
+.member__text
+    padding 15px 40px
+    margin 20px 0 0 0
+    font-size 1.2em
+    background #333333
+.member__about
+    padding 15px 40px
+    margin 40px 0 0 0
+    font-family 'Conv_Lato-Italic'
+    font-size 1.1em
+    background #999999
+    border-radius 10px
+    &_no-padding
+        margin 20px
+.member__info
+    margin 0 auto
+    border 1px solid rgba(40, 40, 40, 1)
+    border-collapse collapse
+    margin-top 40px
+    &_all
+        width 90%
+.member__info th
+    border 1px solid rgba(40, 40, 40, 1)
+    padding 12px 5px
+    background #333333
+    text-align left
+.member__info td
+    border 1px solid rgba(40, 40, 40, 1)
+    padding 5px
+    background #d8d8d8
+    color rgb(40, 40, 40)
+.member__btn
+    padding 25px 2%
+    position relative
+    z-index 999
+    &_left
+        float left
+    &_right
+        float right
+.member__employee
+    display flex
+    flex-direction column
+    align-items center
+    flex-basis 33.3%
+    border-right 2px solid rgb(40, 40, 40)
+    padding 0 25px
+    &_no-border
+        border-right none
+.table
+    &__id
+        width 1%
+    &__name
+        width 15%
+    &__age
+        width 10%
+    &__edu
+        width 10%
+    &__edu-level
+        width 15%
+    &__edu-form
+        width 15%
+
+@media screen and (max-width 1200px)
+    .member__section_relative
+        height 600px
+    .member__employee
+        border-right 2px solid rgb(40, 40, 40)
+        border-left 2px solid rgb(40, 40, 40)
+        flex-basis 100%
+
+@media screen and (max-width 800px)
+    .member__section_relative
+        height 750px
+    .member__person
+        flex-direction column
+        width 100%
+    .member__job
+        margin 20px 0
+
+@media screen and (max-width 600px)
+    .member__section_relative
+        height 850px

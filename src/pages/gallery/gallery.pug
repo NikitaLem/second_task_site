@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title My Site
+    body
+        include ../../blocks/header/header.pug
+        include ../../blocks/footer/footer.pug
+        header
+            +header("Альп-клуб ENERGY")
+        .wrapper
+            h2.gallery__title Моменты наших мероприятий
+            .gallery__images
+                .imgages__container
+                    a(href="../../images/1.jpg" data-lightbox="gallery")
+                        img(src="../../images/1.jpg" class="image" alt="pic")
+                .imgages__container    
+                    a(href="../../images/2.jpg" data-lightbox="gallery")
+                        img(src="../../images/2.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/3.jpg" data-lightbox="gallery")
+                        img(src="../../images/3.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/4.jpg" data-lightbox="gallery")
+                        img(src="../../images/4.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/5.jpg" data-lightbox="gallery")
+                        img(src="../../images/5.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/6.jpg" data-lightbox="gallery")
+                        img(src="../../images/6.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/7.jpg" data-lightbox="gallery")
+                        img(src="../../images/7.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/8.jpg" data-lightbox="gallery")
+                        img(src="../../images/8.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/9.jpg" data-lightbox="gallery")
+                        img(src="../../images/9.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/10.jpg" data-lightbox="gallery")
+                        img(src="../../images/10.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/11.jpg" data-lightbox="gallery")
+                        img(src="../../images/11.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/12.jpg" data-lightbox="gallery")
+                        img(src="../../images/12.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/13.jpg" data-lightbox="gallery")
+                        img(src="../../images/13.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/14.jpg" data-lightbox="gallery")
+                        img(src="../../images/14.jpg" class="image" alt="pic")
+                .imgages__container
+                    a(href="../../images/15.jpg" data-lightbox="gallery")
+                        img(src="../../images/15.jpg" class="image" alt="pic")
+        footer
+            +footer("../../images/alp-logo.gif")
+        script(src="gallery.bundle.js")

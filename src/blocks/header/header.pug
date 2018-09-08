@@ -1,36 +1,16 @@
-script(defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous")
-include ../search/search.pug
-include ../sliders/sliders.pug
+include ../audio-player/audio-player.pug
 
-.header
-    ul.menu
-        li
-            a(href='index.html' class="menu__item") Главная
-        li
-            a(href='gallery.html' class="menu__item") Галлерея
-        li
-            a(href='members.html' class="menu__item") Клубяне
-        li
-            a(href='keldim.html' class="menu__item") Склад
-        li
-            a(href='about.html' class="menu__item") О нас
-    .header__board
-        .flex-container
+mixin header(title, audioSrc)
+    header.header
+        nav.menu
+            a(href='../index/index.html' class="menu__item") Главная
+            a(href='../gallery/gallery.html' class="menu__item") Галлерея
+            a(href='../members/members.html' class="menu__item") Клубяне
+            a(href='../keldim/keldim.html' class="menu__item") Склад
+            a(href='../about/about.html' class="menu__item") О нас
+        article.header__board
             .header__emblem
-            .header__text Альп-клуб ENERGY
-        .header__search
-            +search('grey', 'Search...')
-        .header__audio
-            audio(class="audio" id='song' preload="metadata")
-                source(src="audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3" type="audio/mpeg")
-            div(class="audio__btn" id="songPlay") 
-                i(class="fas fa-play")
-            div(class="audio__btn" id="songStop")
-                i(class="fas fa-stop")
-            .audio__slider
-                +sliders('red', 'none', 'popup', 'none', 'song-meter')
-            div(class="audio__timer") 0:00
-            div(class="audio__btn" id="songVolume")
-                i(class="fas fa-volume-up")
-            .audio__volume-meter
-                +sliders('green', 'grade', 'none', 'track', 'song-volume')
+            .header__text= title
+            .header__search
+                +search('grey', 'Search...')
+            +audioPlayer("../../audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3")

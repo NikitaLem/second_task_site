@@ -1,0 +1,11 @@
+mixin article-news(isVisible, imgSrcTitle, title, par1, par2, imgSrc1, imgSrc1Text)
+    section(class="main__news-article "+isVisible)
+        img.news-article__image(src=imgSrcTitle alt='pic')
+        .news-article__title= title
+        .flex-1
+            .flex-2
+                p.news-article__text= par1
+                p.news-article__text= par2
+            .news-article__pic-container
+                img.news-article__pic(src=imgSrc1 alt='pic')
+                .news-article__pic-desc= imgSrc1Text

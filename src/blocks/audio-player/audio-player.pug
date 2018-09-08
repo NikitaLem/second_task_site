@@ -1,0 +1,19 @@
+script(defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous")
+include ../search/search.pug
+include ../sliders/sliders.pug
+
+mixin audioPlayer(audioSrc)
+    section.audio-player
+        audio(class="audio" id="song" preload="metadata")
+            source(src=audioSrc type="audio/mpeg")
+        div(class="audio__btn" id="songPlay") 
+            i(class="fas fa-play")
+        div(class="audio__btn" id="songStop")
+            i(class="fas fa-stop")
+        .audio__slider
+            +slider('red', 'none', 'popup', 'none', 'song-meter')
+        div(class="audio__timer") 0:00
+        div(class="audio__btn" id="songVolume")
+            i(class="fas fa-volume-up")
+        .audio__volume-meter
+            +slider('green', 'grade', 'none', 'track', 'song-volume')
