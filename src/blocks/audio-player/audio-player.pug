@@ -11,7 +11,7 @@ mixin audioPlayer(audioSrc)
         div(class="audio__btn" id="songStop")
             i(class="fas fa-stop")
         .audio__slider
-            +slider('red', 'none', 'popup', 'none', 'song-meter')
+            +slider('red', 'none', 'nopopup', 'none', 'song-meter')
         div(class="audio__timer") 0:00
         div(class="audio__btn" id="songVolume")
             i(class="fas fa-volume-up")

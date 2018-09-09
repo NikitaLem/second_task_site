@@ -1,7 +1,6 @@
-import { sliderWithPopup, sliderWithTrack } from '../sliders/sliders';
+import { sliderWithTrack } from '../sliders/sliders';
 
 const myAudioPlayer = function() {
-  sliderWithPopup();
   sliderWithTrack();
 
   const activeSong = document.getElementById('song');
@@ -28,14 +27,12 @@ const myAudioPlayer = function() {
   };
 
   const updateTime = function() {
-    const sliderPopup = document.querySelector('.slider__popup');
     const songTimer = document.querySelector('.audio__timer');
     let currentSeconds = (Math.floor(activeSong.currentTime % 60) < 10 ? '0' : '') + Math.floor(activeSong.currentTime % 60);
     let currentMinutes = Math.floor(activeSong.currentTime / 60);
     let percentageOfSong = (activeSong.currentTime / activeSong.duration) * 100;
 
     songTrack.value = percentageOfSong;
-    sliderPopup.innerHTML = currentMinutes + ':' + currentSeconds;
     songTimer.innerHTML = currentMinutes + ':' + currentSeconds;
   };
 
@@ -56,13 +53,25 @@ const myAudioPlayer = function() {
   const setVolume = function() {
     activeSong.volume = songVolume.value / 100;
     volumeBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
-  }
+  };
+
+  const stopWhenTracking = function stopWhenTrackingStarts() {
+    activeSong.pause();
+    playBtn.innerHTML = '<i class="fas fa-pause">';
+  };
+
+  const playWhenTracking = function playWhenTrackingEnds() {
+    activeSong.play();
+    playBtn.innerHTML = '<i class="fas fa-play">';
+  };
 
   playBtn.addEventListener('click', playOfPauseSong, false);
   stopBtn.addEventListener('click', stopSong, false);
   volumeBtn.addEventListener('click', toggleVolume, false);
   activeSong.addEventListener('timeupdate', updateTime, false);
   songTrack.addEventListener('click', setLocation, false);
+  songTrack.addEventListener('mousedown', stopWhenTracking, false);
+  songTrack.addEventListener('mouseup', playWhenTracking, false);
   songVolume.addEventListener('change', setVolume, false);
 };
 
