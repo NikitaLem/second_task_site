@@ -1,5 +1,5 @@
 mixin article-event(isVisible, imgSrcTitle, title, par1, par2, imgSrc1, imgSrc1Text, imgSrc2, imgSrc2Text)
-    section(class="main__event "+isVisible)
+    section(class="main__event article_"+isVisible)
         img.event__image(src=imgSrcTitle alt='pic')
         .event__title= title
         p.event__text= par1

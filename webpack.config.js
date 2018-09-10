@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: { 
-        'pages/index/index': './src/pages/index/index.js',
+        'pages/main/main': './src/pages/main/main.js',
         'pages/gallery/gallery': './src/pages/gallery/gallery.js',
         'pages/keldim/keldim': './src/pages/keldim/keldim.js',
         'pages/about/about': './src/pages/about/about.js',
@@ -65,8 +65,8 @@ module.exports = {
             },
             hash: true,
             excludeChunks: ['gallery', 'keldim', 'about', 'members'],
-            filename: 'pages/index/index.html',
-            template: 'src/pages/index/index.pug',
+            filename: 'pages/main/main.html',
+            template: 'src/pages/main/main.pug',
             inject: false
         }),
         new HtmlWebpackPlugin({

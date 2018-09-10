@@ -8,6 +8,7 @@ const myCalendar = function() {
   const dayList = [...document.querySelectorAll('.calendar__list-item')];
 
   const date = new Date();
+  let defaultMonth = date.getMonth();
 
   const showInfo = function() {
     const currentDate = new Date();
@@ -39,33 +40,33 @@ const myCalendar = function() {
     }
   };
 
+  const fillDayList = function fillCalendarDatesAndSetInactiveClasses() {
+    let dayOfWeek, diff;
+
+    date.setDate(1);
+    dayOfWeek = date.getDay();
+    if (dayOfWeek === 0) dayOfWeek = 7;
+    diff = 1 - dayOfWeek;
+    date.setDate(1 + diff);
+
+    dayList.forEach((item) => {
+      item.classList.remove('calendar__list-item_empty');
+      item.classList.remove('calendar__list-item_active');
+
+      if (date.getMonth() !== defaultMonth) {
+        item.classList.add('calendar__list-item_empty');
+      }
+
+      item.innerHTML = date.getDate();
+      date.setDate(date.getDate() + 1);
+    });
+  };
+
   const setCalendar = function setMonthDateAndFillCalendar() {
-    const defaultMonth = date.getMonth();
     const currentMonth = date.toLocaleString('ru', { month: 'long' }).toUpperCase();
     
     monthView.innerHTML = currentMonth;
     dateView.innerHTML = date.getDate();
-
-    const fillDayList = function fillCalendarDatesAndSetInactiveClasses() {
-      let dayOfWeek, diff;
-
-      dayOfWeek = date.getDay();
-      if (dayOfWeek === 0) dayOfWeek = 7;
-      diff = 1 - dayOfWeek;
-      date.setDate(1 + diff);
-
-      dayList.forEach((item) => {
-        item.classList.remove('calendar__list-item_empty');
-        item.classList.remove('calendar__list-item_active');
-
-        if (date.getMonth() !== defaultMonth) {
-          item.classList.add('calendar__list-item_empty');
-        }
-
-        item.innerHTML = date.getDate();
-        date.setDate(date.getDate() + 1);
-      });
-    };
 
     fillDayList();
 
@@ -76,12 +77,14 @@ const myCalendar = function() {
   const setNextMonth = function addMonthByOneAndSetCalendar() {
     date.setDate(1);
     date.setMonth(date.getMonth() + 1);
+    defaultMonth = date.getMonth();
     setCalendar();
   };
 
   const setPrevMonth = function reduceMonthByOneAndSetCalendar() {
     date.setDate(1);
     date.setMonth(date.getMonth() - 1);
+    defaultMonth = date.getMonth();
     setCalendar();
   };
 

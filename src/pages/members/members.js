@@ -1,4 +1,5 @@
 import '../../blocks/header/header.js';
+import '../../favicons/favicons';
 
 var html = require('./members.pug');
 const css = require('./members.styl');
