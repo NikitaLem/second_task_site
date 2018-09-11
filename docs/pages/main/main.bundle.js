@@ -4593,6 +4593,7 @@
   document.onload = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__audio_player_audio_player__["a" /* myAudioPlayer */])();
 }());
 
+
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -17753,10 +17754,15 @@ const html = __webpack_require__(157);
 const css = __webpack_require__(162);
 
 (function() {
-  document.onload = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__blocks_calendar_calendar_js__["a" /* myCalendar */])();
+  __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__blocks_calendar_calendar_js__["a" /* myCalendar */])();
 
-  const news = [...document.querySelectorAll(".sidebar__toggle")];
-  const newsData = [...document.querySelectorAll(".main__event, .main__news-article")];
+  const authorOfArticleView = document.querySelector('.info_author');
+  const titleOfArticleView =  document.querySelector('.info_article');
+  const dateOfArticleView =  document.querySelector('.info_date');
+
+  const sidebar = document.querySelector('.sidebar');
+  const news = [...document.querySelectorAll('.sidebar__toggle')];
+  const newsData = [...document.querySelectorAll('.main__event, .main__news-article')];
   const pubArr = [
     {
       author: 'Тимофей Петрович',
@@ -17779,22 +17785,25 @@ const css = __webpack_require__(162);
       date: __WEBPACK_IMPORTED_MODULE_2_moment___default()().format('MMM Do YY')
     }
   ];
-  
-  function setNews(event) {
-    for(let i = 0; i < news.length; i++) {
-      if(event.target == news[i]) {
-        newsData[i].classList.add("article_visible");
-        document.querySelector('.info_author').innerHTML = 'Автор: ' + pubArr[i].author;
-        document.querySelector('.info_article').innerHTML = 'Тема: ' + pubArr[i].article;
-        document.querySelector('.info_date').innerHTML = 'Дата публикации: ' + pubArr[i].date;
-      }
-      else newsData[i].classList.remove("article_visible");
-    }
-  }
 
-  news.forEach((item) => {
-    item.addEventListener('click', setNews, false);
-  });
+  const showArticle = function(event) {
+    const target = event.target;
+
+    if (!target.closest('.sidebar__toggle')) return;
+
+    news.forEach((item, i) => {
+      if (item === target) {
+        newsData[i].classList.add('article_visible');
+        authorOfArticleView.innerHTML = `Автор: ${pubArr[i].author}`;
+        titleOfArticleView.innerHTML = `Тема: ${pubArr[i].article}`;
+        dateOfArticleView.innerHTML = `Дата публикации: ${pubArr[i].date}`;
+      } else {
+        newsData[i].classList.remove('article_visible');
+      }
+    });
+  };
+
+  sidebar.addEventListener('click', showArticle, false);
 }());
 
 /***/ })
