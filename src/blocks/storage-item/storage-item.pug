@@ -1,0 +1,11 @@
+mixin storage-item(itemOrder, imgSrc, itemTitle, itemTextDesc, numberOfAllItems, numberOfCurrentItems)
+    div(class="storage-item storage-item_" + itemOrder)
+        .storage-item-img__container
+            img(class="storage-item__img" src=imgSrc)
+        h1.storage-item__title= itemTitle
+        p.storage-item__text= itemTextDesc
+        .storage-item__value
+            p.storage-item__count Всего имеется:
+                input(type="text" class="storage-item__number storage-item__number_all" value=numberOfAllItems readonly)
+            p.storage-item__count В наличии:
+                input(type="text" class="storage-item__number storage-item__number_current" value=numberOfCurrentItems readonly)

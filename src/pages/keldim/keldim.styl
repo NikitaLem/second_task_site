@@ -1,137 +1,136 @@
 @import '../../blocks/header/header.styl'
 @import '../../blocks/footer/footer.styl'
 @import '../../blocks/user-profile/user-profile.styl'
+@import '../../blocks/storage-item/storage-item.styl'
 @import '../../fonts/fonts.styl'
 
 *
-    box-sizing border-box
+  box-sizing border-box
 html
-    font-family "SourceSansPro", Arial, sans-serif
-    font-size 62.5%
-    color rgb(40, 40, 40)
+  font-family "SourceSansPro", Arial, sans-serif
+  font-size 62.5%
+  color rgb(40, 40, 40)
+  background #fff
 body
-    padding 0
-    margin 0
+  padding 0
+  margin 0
 .keldim__title
-    padding 0
-    margin 20px 0 0 0
-    font-size 3em
-    text-align center
+  padding 0
+  margin 20px 0 0 0
+  font-size 5rem
+  text-align center
 .keldim__about
-    padding 10px 5%
-    font-size 2em
-    margin-top 20px
-    color #ffffff
-    background rgba(40, 40, 40, 1)
-.pie-chart__wrapper
-    display flex
-    justify-content space-around
-    padding-bottom 20px
-.pie-chart__text
-    font-size 1.5em
-    text-align center
-    padding-bottom 10px
-.pie-chart__container
-    height 250px
-    width 250px
+  font-size 2rem
+  color #ffffff
+  text-align center
+  background rgba(40, 40, 40, 1)
+  margin-top 20px
+  padding 15px 10px
+  @media screen and (max-width 700px)
+    font-size 1.6rem
+.keldim-pie-chart__wrapper
+  display flex
+  justify-content space-around
+  padding-bottom 20px
+.keldim-pie-chart__text
+  font-size 2rem
+  text-align center
+  padding-bottom 10px
+  padding 10px
+  margin 0
+  @media screen and (max-width 700px)
+    font-size 1.8rem
+.keldim-pie-chart__container
+  height 250px
+  width 250px
+  @media screen and (max-width 700px)
+    height 200px
+    width 200px
 .legend
-    &__container
-        display flex
-        justify-content space-around
-        flex-direction column
-    &__item:nth-child(1):before
-        content ''
-        padding 0 20px
-        margin-right 5px
-        background #E49842
-    &__item:nth-child(2):before
-        @extend .legend__item:nth-child(1):before
-        background #F9F944
-    &__item:nth-child(3):before
-        @extend .legend__item:nth-child(1):before
-        background #23A296
-    &__item:nth-child(4):before
-        @extend .legend__item:nth-child(1):before
-        background #8560D5
-    &__item:nth-child(5):before
-        @extend .legend__item:nth-child(1):before
-        background #4AA737
-    &__item:nth-child(6):before
-        @extend .legend__item:nth-child(1):before
-        background #A04F4F
-.keldim__stock
-    padding 40px 2% 40px 2%
-    border-top 2px solid rgba(40, 40, 40, 1)
-    display grid
-    grid-template-columns repeat(auto-fit, minmax(320px, 1fr))
-    grid-gap 15px
-.keldim__item
-    border-radius 5px
-    padding 15px
-    &_left
-        background rgba(40, 40, 40, 1)
-    &_right
-        background rgba(75, 75, 75, 1)
-.image__container
-    height 170px
-    width 170px
-    float right
-.keldim__img
-    height 100%
-    width 100%
-.item__title
-    padding 0
-    margin 0
-    font-size 2em
-    color rgba(255, 255, 255, 1)
-    text-align center
-.item__text
-    padding 0
-    font-size 1em
-    color rgba(255, 255, 255, 1)
-.item__value
-    font-size 1em
-    color rgba(255, 255, 255, 1)
-.item__count
-    padding 0
-    margin 0
-.item__number
-    width 30px
-    margin-left 5px
-    outline none 
-    border none 
-    border-radius 3px
-    background rgb(130, 130, 130)
-    color #ffffff
-    text-align center
-.keldim__admin-container
+  &__container
     display flex
     justify-content space-around
-    align-items center
-    padding 25px 5%
-    clear both
-    border-top 2px solid rgba(40, 40, 40, 1)
+    flex-direction column
+    @media screen and (max-width 700px)
+      display none
+  &__item:nth-child(1):before
+    content ''
+    padding 0 20px
+    margin-right 5px
+    background #E49842
+  &__item:nth-child(2):before
+    @extend .legend__item:nth-child(1):before
+    background #F9F944
+  &__item:nth-child(3):before
+    @extend .legend__item:nth-child(1):before
+    background #23A296
+  &__item:nth-child(4):before
+    @extend .legend__item:nth-child(1):before
+    background #8560D5
+  &__item:nth-child(5):before
+    @extend .legend__item:nth-child(1):before
+    background #4AA737
+  &__item:nth-child(6):before
+    @extend .legend__item:nth-child(1):before
+    background #A04F4F
+.keldim__stock
+  display grid
+  grid-template-columns repeat(auto-fit, minmax(320px, 1fr))
+  grid-gap 15px
+  border-top 2px solid rgba(40, 40, 40, 1)
+  padding 40px 2%
+.keldim__item
+  border-radius 5px
+  padding 15px
+  &_left
+    background rgba(40, 40, 40, 1)
+  &_right
+    background rgba(75, 75, 75, 1)
+.image__container
+  height 170px
+  width 170px
+  float right
+  padding-left 5px
+.keldim__img
+  height 100%
+  width 100%
+.item__title
+  font-size 2rem
+  color #fff
+  text-align center
+  padding 0
+  margin 0
+.item__text
+  font-size 1.4rem
+  color #fff
+  padding 0
+.item__value
+  font-size 1.2rem
+  color rgba(255, 255, 255, 1)
+.item__count
+  padding 3px 0
+  margin 0
+.item__number
+  width 30px
+  margin-left 5px
+  outline none 
+  border none 
+  border-radius 3px
+  background rgb(130, 130, 130)
+  color #ffffff
+  text-align center
+.keldim__admin-container
+  display flex
+  justify-content space-around
+  align-items center
+  border-top 2px solid rgba(40, 40, 40, 1)
+  padding 25px 5%
+  @media screen and (max-width 700px)
+    flex-direction column
 .admin__text
-    font-size 1.2em
+  font-size 1.6rem
 .admin__info
-    display inline-block
-    margin-left 20px
-
-@media screen and (max-width 700px)
-    .keldim__about
-        font-size 1.2em
-    .pie-chart__container
-        height 200px
-        width 200px
-    .keldim__item
-        width 100%
-        &_left
-            float none
-        &_right
-            float none
-    .keldim__admin-container
-        flex-direction column
-    .admin__info
-        margin-top 20px
-    .legend__container
-        display none
+  display inline-block
+  margin-left 20px
+  @media screen and (max-width 700px)
+    margin-top 20px

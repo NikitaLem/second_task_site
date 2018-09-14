@@ -15,16 +15,17 @@ html(lang="en")
     body
         include ../../blocks/user-profile/user-profile.pug
         include ../../blocks/header/header.pug
+        include ../../blocks/storage-item/storage-item.pug
         include ../../blocks/footer/footer.pug
         header
             +header("Альп-клуб ENERGY")
         h1.keldim__title Склад
         p.keldim__about Здесь вы можете посмотреть каким снаряжением располагает наш клуб, а так же узнать сколько его имеется в наличии на данный момент.
-        .pie-chart__wrapper
-            .pie-chart__item    
-                .pie-chart__text Имеется всего:
-                .pie-chart__container
-                    <canvas id="myChart" width="100" height="100"></canvas>
+        .keldim-pie-chart__wrapper
+            .keldim-pie-chart__item    
+                h2.keldim-pie-chart__text Имеется всего:
+                .keldim-pie-chart__container
+                    <canvas id="myChartAll" width="100" height="100"></canvas>
             .legend__container
                 .legend__item Веревки
                 .legend__item Карабины
@@ -32,75 +33,21 @@ html(lang="en")
                 .legend__item Корзинки
                 .legend__item Беседки
                 .legend__item Оттяжки
-            .pie-chart__item
-                .pie-chart__text Имеется в наличии:
-                .pie-chart__container
-                    <canvas id="myChartOne" width="100" height="100"></canvas>
+            .keldim-pie-chart__item
+                h2.keldim-pie-chart__text Имеется в наличии:
+                .keldim-pie-chart__container
+                    <canvas id="myChartCurrent" width="100" height="100"></canvas>
         .keldim__stock
-            .keldim__item.keldim__item_left
-                .image__container
-                    img(class="keldim__img" src="./images/rope.jpg")
-                h1.item__title Веревки
-                p.item__text Альпинистская верёвка — специальная верёвка с особыми динамическими и прочностными качествами, применяемая в альпинизме, скалолазании и спелеологии.
-                .item__value
-                    p.item__count Всего имеется:
-                        input(type="text" class="item__number item__number_all" value="15" readonly)
-                    p.item__count В наличии:
-                        input(type="text" class="item__number item__number_current" value="7" readonly)
-            .keldim__item.keldim__item_right
-                .image__container
-                    img(class="keldim__img" src="./images/karabin.jpg")
-                h1.item__title Карабины
-                p.item__text Караби́н — быстродействующее соединительное звено между двумя предметами, имеющими петли. Карабин имеет форму скобы с пружинной защёлкой.
-                .item__value
-                    p.item__count Всего имеется:
-                        input(type="text" class="item__number item__number_all" value="60" readonly)
-                    p.item__count В наличии:
-                        input(type="text" class="item__number item__number_current" value="56" readonly)
-            .keldim__item.keldim__item_left
-                .image__container
-                    img(class="keldim__img" src="./images/zhumar.jpg")
-                h1.item__title Жумары
-                p.item__text Жума́р — элемент снаряжения альпинистов, спелеологов, спасателей и скалолазов, применяемый в верёвочной технике для подъёма по вертикальным перилам.
-                .item__value
-                    p.item__count Всего имеется:
-                        input(type="text" class="item__number item__number_all" value="8" readonly)
-                    p.item__count В наличии:
-                        input(type="text" class="item__number item__number_current" value="4" readonly)
-            .keldim__item.keldim__item_right
-                .image__container
-                    img(class="keldim__img" src="./images/korzinka.jpg")
-                h1.item__title Корзинки
-                p.item__text Корзинка — это спусковое и страховочное устройство. С корзинкой удобно работать на двойной верёвке, она не крутит верёвку при спуске и сама блокируется при страховке нижнего участника.
-                .item__value
-                    p.item__count Всего имеется:
-                        input(type="text" class="item__number item__number_all" value="10" readonly)
-                    p.item__count В наличии:
-                        input(type="text" class="item__number item__number_current" value="2" readonly)
-            .keldim__item.keldim__item_left
-                .image__container
-                    img(class="keldim__img" src="./images/besedka.jpg")
-                h1.item__title Беседки
-                p.item__text Страховочная система — элемент скалолазного и альпинистского снаряжения, который спортсмен надевает на себя, и к которому с помощью узла «восьмёрка» или карабина крепится верёвка.
-                .item__value
-                    p.item__count Всего имеется:
-                        input(type="text" class="item__number item__number_all" value="10" readonly)
-                    p.item__count В наличии:
-                        input(type="text" class="item__number item__number_current" value="8" readonly)
-            .keldim__item.keldim__item_right
-                .image__container
-                    img(class="keldim__img" src="./images/ottyajka.jpg")
-                h1.item__title Оттяжки
-                p.item__text Оттяжка является элементом снаряжения альпиниста и скалолаза, служащим для включения страховочного элемента в страховочную цепь. Представляет собой комбинацию двух карабинов и стропы.
-                .item__value
-                    p.item__count Всего имеется:
-                        input(type="text" class="item__number item__number_all" value="30" readonly)
-                    p.item__count В наличии:
-                        input(type="text" class="item__number item__number_current" value="12" readonly)
+            +storage-item('odd', '../../images/rope.jpg', 'Веревки', 'Альпинистская верёвка — специальная верёвка с особыми динамическими и прочностными качествами, применяемая в альпинизме, скалолазании и спелеологии.', 15, 7)
+            +storage-item('even', '../../images/karabin.jpg', 'Карабины', 'Караби́н — быстродействующее соединительное звено между двумя предметами, имеющими петли. Карабин имеет форму скобы с пружинной защёлкой.', 60, 56)
+            +storage-item('odd', '../../images/zhumar.jpg', 'Жумары', 'Жума́р — элемент снаряжения альпинистов, спелеологов, спасателей и скалолазов, применяемый в верёвочной технике для подъёма по вертикальным перилам.', 8, 4)
+            +storage-item('even', '../../images/korzinka.jpg', 'Корзинки', 'Корзинка — это спусковое и страховочное устройство. С корзинкой удобно работать на двойной верёвке, она не крутит верёвку при спуске и сама блокируется при страховке нижнего участника.', 10, 2)
+            +storage-item('odd', '../../images/besedka.jpg', 'Беседки', 'Страховочная система — элемент скалолазного и альпинистского снаряжения, который спортсмен надевает на себя, и к которому с помощью узла «восьмёрка» или карабина крепится верёвка.', 10, 8)
+            +storage-item('even', '../../images/ottyajka.jpg', 'Оттяжки', 'Оттяжка является элементом снаряжения альпиниста и скалолаза, служащим для включения страховочного элемента в страховочную цепь. Представляет собой комбинацию двух карабинов и стропы.', 30, 12)
         .keldim__admin-container
             span.admin__text Ответственный за склад - Арсений Курьин. По вопросам выдачи снаряжения обращаться к нему.
             .admin__info
-                +user-profile('grey-orange', 'images/senya.png', 'Арсений Курьин', 'Кладовой')
+                +user-profile('grey-orange', '../../images/senya.png', 'Арсений Курьин', 'Кладовой')
     footer
         +footer("../../images/alp-logo.gif")
     script(src="keldim.bundle.js")
