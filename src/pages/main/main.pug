@@ -22,47 +22,48 @@ html(lang="en")
         include ../../blocks/footer/footer.pug
         header
             +header("Альп-клуб ENERGY")
-        h1.title Добро пожаловать!
-        p.title.title_sub Устраивайся поудобнее. Выпей чаю. И к новым вершинам!
-        span.epigraph Лучше гор могут быть только горы,<br>На которых еще не бывал.<br>В. Высоцкиий
-        section.message
-            .message__container
-                .user-profile__img-container
-                    img(class="user-profile__img" src='../../images/timophey.png' alt="prezident-avatar")
-                .message__text-container
-                    .message__title Сообщение дня от Президнета клуба:
-                    .message__text Привет! У ENERGY снова юбилей 45 лет!<br>Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все!
-        section.main-content
-            aside.sidebar
-                p.sidebar__title Новости
-                .sidebar__item
-                    .sidebar__toggle
-                    +events('25', 'Мая', 'День рождения клуба!', '../../images/event1.png')
-                .sidebar__item
-                    .sidebar__toggle
-                    +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', '../../images/news1.png')
-                .sidebar__item
-                    .sidebar__toggle
-                    +events('25', 'Мая', 'День рождения клуба!', '../../images/event1.png')
-                .sidebar__item
-                    .sidebar__toggle
-                    +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', '../../images/news1.png')
-            section.calendar
-                +calendar()
-            article.main
-                +article-event("visible", "../../images/happyBD.jpg", "День рождения клуба", "Привет! У ENERGY снова юбилей: 45 лет! Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все! Понятно, что лететь в Томск по этому поводу удовольствие не для всех... и у нас родилась мысль! Cделать видеоролик с поздравлениями от клубян, которые не живут теперь в Томске. Ролик будет состоять из нарезок присланных нам ваших роликов.", "Что надо сделать: 1. Cнять небольшой ролик со словами приветствия/поздравления для ENERGY или (если нечего/некогда сказать) сделать фото на фоне узнаваемого места твоего города 2. Выложить на какой-нибудь 'диск' и прислать ссылку Олегу Морозову. По сроку, как всегда всё должно быть сделано вчера, нам еще нужно будет все скомпоновать, поэтому чем раньше, тем лучше! Мы пока не знаем как это должно выглядеть, но наверняка получиться круто! Не стесняемся импровизировать и выражать свои эмоции.", "../../images/BDimg1.jpg", "Вот такие у нас игры!", "../../images/BDimg2.jpg", "Всех пришедших угостим вкусным пловом.")
-                +article-news("notVisible", "../../images/event1.jpg", "Мы снова первые!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex magna, efficitur et nisl a, euismod molestie nunc. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque aliquet nec urna id imperdiet. Pellentesque et eros eu neque facilisis interdum nec id nunc. Donec faucibus ac sem vitae finibus. Phasellus lacinia, leo in scelerisque laoreet, magna arcu vehicula leo, at feugiat lectus ex mollis tellus. In imperdiet sagittis augue vitae dapibus. Maecenas sem est, porttitor eget leo eu, tempus convallis dolor. Praesent porttitor sit amet diam sit amet laoreet. Curabitur tempus rutrum eleifend. Nullam sodales condimentum egestas. Duis rhoncus enim lorem, nec finibus odio eleifend in. Mauris mollis vehicula tempus. Phasellus at finibus libero.", "Integer rhoncus dapibus ultrices. Aliquam a tristique tortor. Fusce vel suscipit libero. Nunc et sapien nulla. Vestibulum arcu odio, luctus nec luctus vitae, convallis quis nunc. Praesent varius justo non orci porta pellentesque. In quis ex metus. Phasellus pretium placerat scelerisque. Proin imperdiet, quam vitae euismod ultrices, velit nibh fringilla sapien, et dictum erat mi ut magna. Donec ac porta felis. Ut a porttitor velit. Sed volutpat dictum nulla ut interdum. Aliquam id nisi vitae nibh dictum vestibulum ac et augue. Pellentesque nec purus dictum, fringilla sapien et, fringilla libero. Duis ullamcorper lorem eu sapien imperdiet euismod. Sed rhoncus neque non neque finibus, nec pretium est malesuada.", "../../images/winner.jpg", "Поздравления победителю!")
-                +article-event("notVisible", "../../images/happyBD.jpg", "День рождения клуба", "Привет! У ENERGY снова юбилей: 45 лет! Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все! Понятно, что лететь в Томск по этому поводу удовольствие не для всех... и у нас родилась мысль! Cделать видеоролик с поздравлениями от клубян, которые не живут теперь в Томске. Ролик будет состоять из нарезок присланных нам ваших роликов.", "Что надо сделать: 1. Cнять небольшой ролик со словами приветствия/поздравления для ENERGY или (если нечего/некогда сказать) сделать фото на фоне узнаваемого места твоего города 2. Выложить на какой-нибудь 'диск' и прислать ссылку Олегу Морозову. По сроку, как всегда всё должно быть сделано вчера, нам еще нужно будет все скомпоновать, поэтому чем раньше, тем лучше! Мы пока не знаем как это должно выглядеть, но наверняка получиться круто! Не стесняемся импровизировать и выражать свои эмоции.", "../../images/BDimg1.jpg", "Вот такие у нас игры!", "../../images/BDimg2.jpg", "Всех пришедших угостим вкусным пловом.")
-                +article-news("notVisible", "../../images/event1.jpg", "Мы снова первые!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex magna, efficitur et nisl a, euismod molestie nunc. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque aliquet nec urna id imperdiet. Pellentesque et eros eu neque facilisis interdum nec id nunc. Donec faucibus ac sem vitae finibus. Phasellus lacinia, leo in scelerisque laoreet, magna arcu vehicula leo, at feugiat lectus ex mollis tellus. In imperdiet sagittis augue vitae dapibus. Maecenas sem est, porttitor eget leo eu, tempus convallis dolor. Praesent porttitor sit amet diam sit amet laoreet. Curabitur tempus rutrum eleifend. Nullam sodales condimentum egestas. Duis rhoncus enim lorem, nec finibus odio eleifend in. Mauris mollis vehicula tempus. Phasellus at finibus libero.", "Integer rhoncus dapibus ultrices. Aliquam a tristique tortor. Fusce vel suscipit libero. Nunc et sapien nulla. Vestibulum arcu odio, luctus nec luctus vitae, convallis quis nunc. Praesent varius justo non orci porta pellentesque. In quis ex metus. Phasellus pretium placerat scelerisque. Proin imperdiet, quam vitae euismod ultrices, velit nibh fringilla sapien, et dictum erat mi ut magna. Donec ac porta felis. Ut a porttitor velit. Sed volutpat dictum nulla ut interdum. Aliquam id nisi vitae nibh dictum vestibulum ac et augue. Pellentesque nec purus dictum, fringilla sapien et, fringilla libero. Duis ullamcorper lorem eu sapien imperdiet euismod. Sed rhoncus neque non neque finibus, nec pretium est malesuada.", "../../images/winner.jpg", "Поздравления победителю!")
-            aside.news-info
-                .info-text-container
-                    .info.info_author Автор: Тимофей Петрович
-                    .info.info_article Тема: мероприятия
-                    .info.info_date Дата публикации: May 19th 18
-                .info__icons
-                    i(class="icon fas fa-heart")
-                    i(class="icon fas fa-eye")
-                    i(class="icon fab fa-algolia")
+        main
+            h1.title Добро пожаловать!
+            p.title.title_sub Устраивайся поудобнее. Выпей чаю. И к новым вершинам!
+            span.epigraph Лучше гор могут быть только горы,<br>На которых еще не бывал.<br>В. Высоцкиий
+            section.message
+                .message__container
+                    .user-profile__img-container
+                        img(class="user-profile__img" src='../../images/timophey.png' alt="prezident-avatar")
+                    .message__text-container
+                        .message__title Сообщение дня от Президнета клуба:
+                        .message__text Привет! У ENERGY снова юбилей 45 лет!<br>Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все!
+            section.main-content
+                aside.sidebar
+                    p.sidebar__title Новости
+                    .sidebar__item
+                        .sidebar__toggle
+                        +events('25', 'Мая', 'День рождения клуба!', '../../images/event1.png')
+                    .sidebar__item
+                        .sidebar__toggle
+                        +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', '../../images/news1.png')
+                    .sidebar__item
+                        .sidebar__toggle
+                        +events('25', 'Мая', 'День рождения клуба!', '../../images/event1.png')
+                    .sidebar__item
+                        .sidebar__toggle
+                        +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', '../../images/news1.png')
+                section.calendar
+                    +calendar()
+                article.main
+                    +article-event("visible", "../../images/happyBD.jpg", "День рождения клуба", "Привет! У ENERGY снова юбилей: 45 лет! Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все! Понятно, что лететь в Томск по этому поводу удовольствие не для всех... и у нас родилась мысль! Cделать видеоролик с поздравлениями от клубян, которые не живут теперь в Томске. Ролик будет состоять из нарезок присланных нам ваших роликов.", "Что надо сделать: 1. Cнять небольшой ролик со словами приветствия/поздравления для ENERGY или (если нечего/некогда сказать) сделать фото на фоне узнаваемого места твоего города 2. Выложить на какой-нибудь 'диск' и прислать ссылку Олегу Морозову. По сроку, как всегда всё должно быть сделано вчера, нам еще нужно будет все скомпоновать, поэтому чем раньше, тем лучше! Мы пока не знаем как это должно выглядеть, но наверняка получиться круто! Не стесняемся импровизировать и выражать свои эмоции.", "../../images/BDimg1.jpg", "Вот такие у нас игры!", "../../images/BDimg2.jpg", "Всех пришедших угостим вкусным пловом.")
+                    +article-news("notVisible", "../../images/event1.jpg", "Мы снова первые!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex magna, efficitur et nisl a, euismod molestie nunc. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque aliquet nec urna id imperdiet. Pellentesque et eros eu neque facilisis interdum nec id nunc. Donec faucibus ac sem vitae finibus. Phasellus lacinia, leo in scelerisque laoreet, magna arcu vehicula leo, at feugiat lectus ex mollis tellus. In imperdiet sagittis augue vitae dapibus. Maecenas sem est, porttitor eget leo eu, tempus convallis dolor. Praesent porttitor sit amet diam sit amet laoreet. Curabitur tempus rutrum eleifend. Nullam sodales condimentum egestas. Duis rhoncus enim lorem, nec finibus odio eleifend in. Mauris mollis vehicula tempus. Phasellus at finibus libero.", "Integer rhoncus dapibus ultrices. Aliquam a tristique tortor. Fusce vel suscipit libero. Nunc et sapien nulla. Vestibulum arcu odio, luctus nec luctus vitae, convallis quis nunc. Praesent varius justo non orci porta pellentesque. In quis ex metus. Phasellus pretium placerat scelerisque. Proin imperdiet, quam vitae euismod ultrices, velit nibh fringilla sapien, et dictum erat mi ut magna. Donec ac porta felis. Ut a porttitor velit. Sed volutpat dictum nulla ut interdum. Aliquam id nisi vitae nibh dictum vestibulum ac et augue. Pellentesque nec purus dictum, fringilla sapien et, fringilla libero. Duis ullamcorper lorem eu sapien imperdiet euismod. Sed rhoncus neque non neque finibus, nec pretium est malesuada.", "../../images/winner.jpg", "Поздравления победителю!")
+                    +article-event("notVisible", "../../images/happyBD.jpg", "День рождения клуба", "Привет! У ENERGY снова юбилей: 45 лет! Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все! Понятно, что лететь в Томск по этому поводу удовольствие не для всех... и у нас родилась мысль! Cделать видеоролик с поздравлениями от клубян, которые не живут теперь в Томске. Ролик будет состоять из нарезок присланных нам ваших роликов.", "Что надо сделать: 1. Cнять небольшой ролик со словами приветствия/поздравления для ENERGY или (если нечего/некогда сказать) сделать фото на фоне узнаваемого места твоего города 2. Выложить на какой-нибудь 'диск' и прислать ссылку Олегу Морозову. По сроку, как всегда всё должно быть сделано вчера, нам еще нужно будет все скомпоновать, поэтому чем раньше, тем лучше! Мы пока не знаем как это должно выглядеть, но наверняка получиться круто! Не стесняемся импровизировать и выражать свои эмоции.", "../../images/BDimg1.jpg", "Вот такие у нас игры!", "../../images/BDimg2.jpg", "Всех пришедших угостим вкусным пловом.")
+                    +article-news("notVisible", "../../images/event1.jpg", "Мы снова первые!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex magna, efficitur et nisl a, euismod molestie nunc. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque aliquet nec urna id imperdiet. Pellentesque et eros eu neque facilisis interdum nec id nunc. Donec faucibus ac sem vitae finibus. Phasellus lacinia, leo in scelerisque laoreet, magna arcu vehicula leo, at feugiat lectus ex mollis tellus. In imperdiet sagittis augue vitae dapibus. Maecenas sem est, porttitor eget leo eu, tempus convallis dolor. Praesent porttitor sit amet diam sit amet laoreet. Curabitur tempus rutrum eleifend. Nullam sodales condimentum egestas. Duis rhoncus enim lorem, nec finibus odio eleifend in. Mauris mollis vehicula tempus. Phasellus at finibus libero.", "Integer rhoncus dapibus ultrices. Aliquam a tristique tortor. Fusce vel suscipit libero. Nunc et sapien nulla. Vestibulum arcu odio, luctus nec luctus vitae, convallis quis nunc. Praesent varius justo non orci porta pellentesque. In quis ex metus. Phasellus pretium placerat scelerisque. Proin imperdiet, quam vitae euismod ultrices, velit nibh fringilla sapien, et dictum erat mi ut magna. Donec ac porta felis. Ut a porttitor velit. Sed volutpat dictum nulla ut interdum. Aliquam id nisi vitae nibh dictum vestibulum ac et augue. Pellentesque nec purus dictum, fringilla sapien et, fringilla libero. Duis ullamcorper lorem eu sapien imperdiet euismod. Sed rhoncus neque non neque finibus, nec pretium est malesuada.", "../../images/winner.jpg", "Поздравления победителю!")
+                aside.news-info
+                    .info-text-container
+                        .info.info_author Автор: Тимофей Петрович
+                        .info.info_article Тема: мероприятия
+                        .info.info_date Дата публикации: May 19th 18
+                    .info__icons
+                        i(class="icon fas fa-heart")
+                        i(class="icon fas fa-eye")
+                        i(class="icon fab fa-algolia")
         footer
             +footer("../../images/alp-logo.gif")
         script(src="main.bundle.js")

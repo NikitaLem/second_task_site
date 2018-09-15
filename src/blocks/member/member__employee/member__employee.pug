@@ -1,0 +1,7 @@
+include ../../../blocks/user-profile/user-profile.pug
+
+mixin member__employee(job, profileStyle, imgSrc, name, aboutText)
+  .member__employee
+        h2.employee__job= job
+        +user-profile(profileStyle, imgSrc, name, job)
+        p.employee__about= aboutText

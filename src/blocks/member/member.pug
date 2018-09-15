@@ -1,0 +1,29 @@
+include ../../blocks/user-profile/user-profile.pug
+include ../../blocks/toggles/toggles.pug
+
+mixin member(job, profileStyle, imgSrc, name, text, about, alpLevel, climbLevel, age, yearsInSport, isCooker, isGuitarPlayer, isTrainer, position)
+    div(class="member__container member__container_" + isTrainer + " member__container_" + position)
+        .member__person
+            h2.member__job= job
+            +user-profile(profileStyle, imgSrc, name, job)
+        p.member__text= text
+        blockquote.member__about= about
+        table.member__info-table
+            thead.info-table__head
+                tr.info-table__row
+                    th.info-table__head-cell Разряд по альпинизму
+                    th.info-table__head-cell Разряд по скалолазанию
+                    th.info-table__head-cell Возраст
+                    th.info-table__head-cell Стаж в клубе
+                    th.info-table__head-cell Умеет вкусно готовить
+                    th.info-table__head-cell Умеет играть на гитаре
+            tbody.info-table__body
+                tr.info-table__row
+                    td.info-table__body-cell= alpLevel
+                    td.info-table__body-cell= climbLevel
+                    td.info-table__body-cell= age
+                    td.info-table__body-cell= yearsInSport
+                    td.info-table__body-cell
+                        +toggles(isCooker)
+                    td.info-table__body-cell
+                        +toggles(isGuitarPlayer)     
