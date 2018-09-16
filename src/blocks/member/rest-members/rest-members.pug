@@ -1,0 +1,22 @@
+mixin rest-member-data(number, fullName, age, university, education, formOfEducation)
+    tr.rest-members__row
+        td.rest-members__cell= number
+        td.rest-members__cell= fullName
+        td.rest-members__cell= age
+        td.rest-members__cell= university
+        td.rest-members__cell= education
+        td.rest-members__cell= formOfEducation
+
+mixin rest-members()
+    table.rest-members
+        thead.rest-members__head
+            tr.rest-members__row
+                th.rest-members__head-cell №
+                th.rest-members__head-cell Ф.И.О.
+                th.rest-members__head-cell Возраст
+                th.rest-members__head-cell ВУЗ
+                th.rest-members__head-cell Получаемая степень
+                th.rest-members__head-cell Форма обучения
+        tbody
+            if block
+                block

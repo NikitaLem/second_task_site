@@ -4,27 +4,6 @@
 .member__container
   width 100%
   padding 25px 2%
-  &_trainer
-    position absolute
-    height 100%
-    transition .5s
-  &_left
-    left -100%
-    top 0
-    padding-left 0
-    padding-right 0
-  &_center
-    top 0
-    left 0
-    padding-left 2%
-    padding-right 2%
-  &_right
-    top 0
-    left 100%
-    padding-left 0
-    padding-right 0
-  &_no-transition
-    transition 0s
 .members__title
   font-size 5rem
   text-align center
@@ -68,6 +47,8 @@
   border 1px solid rgba(40, 40, 40, 1)
   border-collapse collapse
   margin 30px auto 0
+  @media screen and (max-width 480px)
+    display none
   &_all
     width 90%
 .info-table__head
@@ -84,3 +65,14 @@
   background #d8d8d8
   color rgb(40, 40, 40)
   padding 5px
+.member__info-list
+  margin-top 30px
+.member__info-list-item
+  display none
+  font-size 1.6rem
+  margin-top 10px
+  @media screen and (max-width 480px)
+    display flex
+    align-items center
+  & .switch
+    margin-left 10px

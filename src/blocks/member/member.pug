@@ -1,8 +1,8 @@
 include ../../blocks/user-profile/user-profile.pug
 include ../../blocks/toggles/toggles.pug
 
-mixin member(job, profileStyle, imgSrc, name, text, about, alpLevel, climbLevel, age, yearsInSport, isCooker, isGuitarPlayer, isTrainer, position)
-    div(class="member__container member__container_" + isTrainer + " member__container_" + position)
+mixin member(job, profileStyle, imgSrc, name, text, about, alpLevel, climbLevel, age, yearsInSport, isCooker, isGuitarPlayer)
+    div(class="member__container")
         .member__person
             h2.member__job= job
             +user-profile(profileStyle, imgSrc, name, job)
@@ -26,4 +26,13 @@ mixin member(job, profileStyle, imgSrc, name, text, about, alpLevel, climbLevel,
                     td.info-table__body-cell
                         +toggles(isCooker)
                     td.info-table__body-cell
-                        +toggles(isGuitarPlayer)     
+                        +toggles(isGuitarPlayer)
+        ul.member__info-list
+            li.member__info-list-item= `Разряд по альпинизму: ${alpLevel}`
+            li.member__info-list-item= `Разряд по скалолазанию: ${climbLevel}`
+            li.member__info-list-item= `Возраст: ${age}`
+            li.member__info-list-item= `Стаж в клубе: ${yearsInSport}`
+            li.member__info-list-item= `Умеет вкусно готовить: `
+                +toggles(isCooker)
+            li.member__info-list-item= `Умеет играть на гитаре: `
+                +toggles(isGuitarPlayer)

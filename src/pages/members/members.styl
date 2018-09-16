@@ -2,6 +2,7 @@
 @import '../../blocks/footer/footer.styl'
 @import '../../blocks/member/member.styl'
 @import '../../blocks/member/member__employee/member__employee.styl'
+@import '../../blocks/member/rest-members/rest-members.styl'
 @import '../../blocks/arw-buttons/arw-buttons.styl'
 @import '../../fonts/fonts.styl'    
 
@@ -21,8 +22,6 @@ body
   border-top 2px solid rgb(40, 40, 40)
   &_relative
     position relative
-    min-height 512px
-    height 1px
     width 100%
     overflow hidden
   &_grid
@@ -31,12 +30,20 @@ body
     padding 25px 2%
 .member__btn
   padding 25px 2%
-  position relative
+  position absolute
+  top 25px
   z-index 999
   &_left
-    float left
+    left 2%
   &_right
-    float right
+    right 2%
+.member-trainers__flex-container
+  display flex
+  flex-wrap nowrap
+  transition .5s
+.member-trainer
+  flex-basis 100%
+  flex-shrink 0
 .member__employee-container
   flex-basis 33.3%
   padding-bottom 20px
@@ -44,4 +51,28 @@ body
     @media screen and (min-width 1000px)
       border-left 2px solid rgb(40, 40, 40)
       border-right 2px solid rgb(40, 40, 40)
+
+.rest-members
+  border-collapse collapse
+  margin 20px auto 0
+  &__head
+    background #333333
+    font-size 1.4rem
+    text-align left
+    color #fff
+    &-cell
+      border 1px solid rgb(40, 40, 40)
+      padding 5px
+      @media screen and (max-width 480px)
+        font-size 1.2rem
+        padding 5px 1px
+  &__cell
+    font-size 1.4rem
+    border 1px solid rgb(40, 40, 40)
+    background #d8d8d8
+    color rgb(40, 40, 40)
+    padding 5px
+    @media screen and (max-width 480px)
+      font-size 1.2rem
+      padding 5px 1px
     

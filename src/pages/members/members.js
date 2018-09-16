@@ -1,52 +1,45 @@
 import '../../blocks/header/header.js';
 import '../../favicons/favicons';
 
-var html = require('./members.pug');
+const html = require('./members.pug');
 const css = require('./members.styl');
 
-//делаем переключатель тренеров
+(function() {
+  const trainersSlider = document.querySelector('.member-trainers__flex-container');
+  const allTrainers = [...document.querySelectorAll('.member-trainer')]; 
+  const btnPrev = document.querySelector('.member__btn_left');
+  const btnNext = document.querySelector('.member__btn_right');
 
-var trainerArr = document.querySelectorAll('.member__container_trainer');
-const btnLeft = document.querySelector('.member__btn_left');
-const btnRight = document.querySelector('.member__btn_right');
+  let slidedValue = 0;
+  const leftEdge = 0;
+  const rightEdge = -100 * (allTrainers.length - 1);
 
-btnLeft.addEventListener('click', goPrev, false);
-btnRight.addEventListener('click', goNext, false);
+  const goPrev = function() {
+    if (slidedValue >= leftEdge) return;
 
-function goNext() {
-    for(var count = 0; count < trainerArr.length; count++) {
-        if(trainerArr[count].classList.contains('member__container_left')) {
-            trainerArr[count].classList.remove('member__container_no-transition');
-            trainerArr[count].classList.remove('member__container_left');
-            trainerArr[count].classList.add('member__container_center');
-        }
-        else if(trainerArr[count].classList.contains('member__container_center')) {
-            trainerArr[count].classList.remove('member__container_center');
-            trainerArr[count].classList.add('member__container_right');
-        }
-        else {
-            trainerArr[count].classList.add('member__container_no-transition');
-            trainerArr[count].classList.remove('member__container_right');
-            trainerArr[count].classList.add('member__container_left');
-        }
-    }
-}
+    slidedValue += 100;
 
-function goPrev() {
-    for(var count=trainerArr.length - 1; count >= 0; count--) {
-        if(trainerArr[count].classList.contains('member__container_right')) {
-            trainerArr[count].classList.remove('member__container_no-transition');
-            trainerArr[count].classList.remove('member__container_right');
-            trainerArr[count].classList.add('member__container_center');
-        }
-        else if(trainerArr[count].classList.contains('member__container_center')) {
-            trainerArr[count].classList.remove('member__container_center');
-            trainerArr[count].classList.add('member__container_left');
-        }
-        else {
-            trainerArr[count].classList.add('member__container_no-transition');
-            trainerArr[count].classList.remove('member__container_left');
-            trainerArr[count].classList.add('member__container_right');
-        }
-    }
-}
+    trainersSlider.style.transform = `translate(${slidedValue}%)`;
+  };
+
+  const goNext = function() {
+    if (slidedValue <= rightEdge) return;
+    
+    slidedValue -= 100;
+
+    trainersSlider.style.transform = `translate(${slidedValue}%)`;
+  };
+
+  const preventCheck = function() {
+    const allToggles = [...document.querySelectorAll('.switch__toggle')];
+
+    allToggles.forEach((item) => {
+      item.disabled = true;
+    });
+  };
+
+  preventCheck();
+
+  btnPrev.addEventListener('click', goPrev, false);
+  btnNext.addEventListener('click', goNext, false);
+}());
