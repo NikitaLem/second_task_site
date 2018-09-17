@@ -1,10 +1,10 @@
-import '../../blocks/header/header.js';
-import '../../favicons/favicons.js';
+import './blocks/header/header.js';
+import './favicons/favicons.js';
 import moment from 'moment';
-import { myCalendar } from '../../blocks/calendar/calendar.js';
+import { myCalendar } from './blocks/calendar/calendar.js';
 
-const html = require('./main.pug');
-const css = require('./main.styl');
+const html = require('./index.pug');
+const css = require('./index.styl');
 
 (function() {
   myCalendar();

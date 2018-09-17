@@ -1,17 +1,17 @@
 include ../audio-player/audio-player.pug
 
-mixin header(title, audioSrc)
+mixin header(title, audioSrc, urlToMain, urlToGallery, urlToMembers, urlToKeldin, urlToAbout)
     section.header
         nav.menu
-            a(href='../main/main.html' class="menu__item") Главная
-            a(href='../gallery/gallery.html' class="menu__item") Галлерея
-            a(href='../members/members.html' class="menu__item") Клубяне
-            a(href='../keldim/keldim.html' class="menu__item") Склад
-            a(href='../about/about.html' class="menu__item") О нас
+            a(href=urlToMain class="menu__item") Главная
+            a(href=urlToGallery class="menu__item") Галлерея
+            a(href=urlToMembers class="menu__item") Клубяне
+            a(href=urlToKeldin class="menu__item") Склад
+            a(href=urlToAbout class="menu__item") О нас
         article.header__board
             .header__emblem
             .header__text= title
             .header__search
                 +search('grey', 'Search...')
             .header__audio
-                +audioPlayer("../../audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3")
+                +audioPlayer(audioSrc)
