@@ -29,7 +29,7 @@ html(lang="en")
             section.message
                 .message__container
                     .user-profile__img-container
-                        img(class="user-profile__img" src='images/timophey.png' alt="prezident-avatar")
+                        img(class="user-profile__img" src='images/timophey.jpg' alt="prezident-avatar")
                     .message__text-container
                         .message__title Сообщение дня от Президнета клуба:
                         .message__text Привет! У ENERGY снова юбилей 45 лет!<br>Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все!
@@ -38,16 +38,16 @@ html(lang="en")
                     p.sidebar__title Новости
                     .sidebar__item
                         .sidebar__toggle
-                        +events('25', 'Мая', 'День рождения клуба!', 'images/event1.png')
+                        +events('25', 'Мая', 'День рождения клуба!', 'images/event2.jpg')
                     .sidebar__item
                         .sidebar__toggle
-                        +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'images/news1.png')
+                        +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'images/news1.jpg')
                     .sidebar__item
                         .sidebar__toggle
-                        +events('25', 'Мая', 'День рождения клуба!', 'images/event1.png')
+                        +events('25', 'Мая', 'День рождения клуба!', 'images/event2.jpg')
                     .sidebar__item
                         .sidebar__toggle
-                        +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'images/news1.png')
+                        +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'images/news1.jpg')
                 section.calendar
                     +calendar()
                 article.main
@@ -65,5 +65,5 @@ html(lang="en")
                         i(class="icon fas fa-eye")
                         i(class="icon fab fa-algolia")
         footer
-            +footer("images/alp-logo.gif")
+            +footer("images/alp-logo.png")
         script(src="index.bundle.js")

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 300);
+/******/ 	return __webpack_require__(__webpack_require__.s = 219);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1905,7 +1905,7 @@
             try {
                 oldLocale = globalLocale._abbr;
                 var aliasedRequire = require;
-                __webpack_require__(223)("./" + name);
+                __webpack_require__(148)("./" + name);
                 getSetGlobalLocale(oldLocale);
             } catch (e) {}
         }
@@ -4577,7 +4577,7 @@
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(224)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(149)(module)))
 
 /***/ }),
 /* 1 */,
@@ -4586,7 +4586,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__audio_player_audio_player__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__audio_player_audio_player__ = __webpack_require__(18);
 
 
 (function() {
@@ -4598,7 +4598,7 @@
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const faviconsContext = __webpack_require__(24);
+const faviconsContext = __webpack_require__(20);
 faviconsContext.keys().forEach(faviconsContext);
 
 /***/ }),
@@ -4686,82 +4686,60 @@ function toComment(sourceMap) {
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
-}
-
-
-/***/ }),
-/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/android-chrome-192x192.png";
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/android-chrome-512x512.png";
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/apple-touch-icon.png";
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/browserconfig.xml";
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/favicon-16x16.png";
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/favicon-32x32.png";
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/favicon.ico";
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/mstile-150x150.png";
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/safari-pinned-tab.svg";
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -4817,7 +4795,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(18);
+var	fixUrls = __webpack_require__(17);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -5133,7 +5111,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports) {
 
 
@@ -5228,30 +5206,12 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/SourceSansPro-Regular.eot";
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/SourceSansPro-Regular.ttf";
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/SourceSansPro-Regular.woff";
-
-/***/ }),
-/* 22 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return myAudioPlayer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sliders_sliders__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sliders_sliders__ = __webpack_require__(19);
 
 
 const myAudioPlayer = function() {
@@ -5333,7 +5293,7 @@ const myAudioPlayer = function() {
 
 
 /***/ }),
-/* 23 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5356,19 +5316,19 @@ const sliderWithTrack = function() {
 
 
 /***/ }),
-/* 24 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./android-chrome-192x192.png": 8,
-	"./android-chrome-512x512.png": 9,
-	"./apple-touch-icon.png": 10,
-	"./browserconfig.xml": 11,
-	"./favicon-16x16.png": 12,
-	"./favicon-32x32.png": 13,
-	"./favicon.ico": 14,
-	"./mstile-150x150.png": 15,
-	"./safari-pinned-tab.svg": 16
+	"./android-chrome-192x192.png": 7,
+	"./android-chrome-512x512.png": 8,
+	"./apple-touch-icon.png": 9,
+	"./browserconfig.xml": 10,
+	"./favicon-16x16.png": 11,
+	"./favicon-32x32.png": 12,
+	"./favicon.ico": 13,
+	"./mstile-150x150.png": 14,
+	"./safari-pinned-tab.svg": 15
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -5384,84 +5344,13 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 24;
+webpackContext.id = 20;
 
 /***/ }),
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */,
-/* 90 */,
-/* 91 */,
-/* 92 */,
-/* 93 */,
-/* 94 */,
-/* 95 */,
-/* 96 */,
-/* 97 */,
-/* 98 */,
-/* 99 */
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5538,7 +5427,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 100 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5601,7 +5490,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 101 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5664,7 +5553,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 102 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5790,7 +5679,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 103 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5853,7 +5742,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 104 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -5961,7 +5850,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 105 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6024,7 +5913,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 106 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6163,7 +6052,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 107 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6272,7 +6161,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 108 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6408,7 +6297,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 109 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6502,7 +6391,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 110 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6564,7 +6453,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 111 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6687,7 +6576,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 112 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6810,7 +6699,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 113 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6922,7 +6811,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 114 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7077,7 +6966,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 115 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7169,7 +7058,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 116 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7352,7 +7241,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 117 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7419,7 +7308,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 118 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7503,7 +7392,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 119 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7567,7 +7456,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 120 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7647,7 +7536,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 121 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7727,7 +7616,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 122 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7807,7 +7696,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 123 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7910,7 +7799,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 124 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8014,7 +7903,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 125 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8085,7 +7974,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 126 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8152,7 +8041,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 127 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8223,7 +8112,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 128 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8294,7 +8183,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 129 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8360,7 +8249,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 130 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8431,7 +8320,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 131 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8506,7 +8395,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 132 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8602,7 +8491,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 133 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8689,7 +8578,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 134 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8785,7 +8674,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 135 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8869,7 +8758,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 136 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8939,7 +8828,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 137 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9049,7 +8938,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 138 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9162,7 +9051,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 139 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9226,7 +9115,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 140 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9304,7 +9193,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 141 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9386,7 +9275,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 142 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9473,7 +9362,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 143 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9552,7 +9441,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 144 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9632,7 +9521,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 145 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9713,7 +9602,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 146 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9840,7 +9729,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 147 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9968,7 +9857,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 148 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10069,7 +9958,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 149 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10197,7 +10086,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 150 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10355,7 +10244,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 151 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10469,7 +10358,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 152 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10568,7 +10457,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 153 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10654,7 +10543,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 154 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10790,7 +10679,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 155 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10863,7 +10752,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 156 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10959,7 +10848,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 157 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11045,7 +10934,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 158 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11138,7 +11027,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 159 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11229,7 +11118,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 160 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11343,7 +11232,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 161 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11473,7 +11362,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 162 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11558,7 +11447,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 163 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11649,7 +11538,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 164 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11789,7 +11678,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 165 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11863,7 +11752,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 166 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11985,7 +11874,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 167 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12086,7 +11975,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 168 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12202,7 +12091,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 169 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12270,7 +12159,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 170 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12364,7 +12253,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 171 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12449,7 +12338,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 172 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12557,7 +12446,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 173 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12721,7 +12610,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 174 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12807,7 +12696,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 175 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12893,7 +12782,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 176 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12957,7 +12846,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 177 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13054,7 +12943,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 178 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13120,7 +13009,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 179 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13247,7 +13136,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 180 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13338,7 +13227,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 181 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13429,7 +13318,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 182 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13493,7 +13382,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 183 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13621,7 +13510,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 184 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13751,7 +13640,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 185 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13816,7 +13705,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 186 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13885,7 +13774,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 187 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13964,7 +13853,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 188 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14150,7 +14039,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 189 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14252,7 +14141,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 190 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14316,7 +14205,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 191 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14391,7 +14280,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 192 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14551,7 +14440,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 193 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14728,7 +14617,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 194 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14800,7 +14689,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 195 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14915,7 +14804,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 196 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15030,7 +14919,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 197 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15122,7 +15011,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 198 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15195,7 +15084,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 199 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15258,7 +15147,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 200 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15391,7 +15280,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 201 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15484,7 +15373,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 202 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15555,7 +15444,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 203 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15675,7 +15564,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 204 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15746,7 +15635,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 205 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15812,7 +15701,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 206 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15938,7 +15827,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 207 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -16036,7 +15925,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 208 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16131,7 +16020,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 209 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16193,7 +16082,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 210 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16255,7 +16144,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 211 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js language configuration
@@ -16378,7 +16267,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 212 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16533,7 +16422,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 213 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16635,7 +16524,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 214 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16697,7 +16586,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 215 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16759,7 +16648,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 216 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16842,7 +16731,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 217 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16914,7 +16803,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 218 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16978,7 +16867,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 219 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17092,7 +16981,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 220 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17199,7 +17088,7 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 221 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17306,257 +17195,257 @@ webpackContext.id = 24;
 
 
 /***/ }),
-/* 222 */,
-/* 223 */
+/* 147 */,
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 99,
-	"./af.js": 99,
-	"./ar": 106,
-	"./ar-dz": 100,
-	"./ar-dz.js": 100,
-	"./ar-kw": 101,
-	"./ar-kw.js": 101,
-	"./ar-ly": 102,
-	"./ar-ly.js": 102,
-	"./ar-ma": 103,
-	"./ar-ma.js": 103,
-	"./ar-sa": 104,
-	"./ar-sa.js": 104,
-	"./ar-tn": 105,
-	"./ar-tn.js": 105,
-	"./ar.js": 106,
-	"./az": 107,
-	"./az.js": 107,
-	"./be": 108,
-	"./be.js": 108,
-	"./bg": 109,
-	"./bg.js": 109,
-	"./bm": 110,
-	"./bm.js": 110,
-	"./bn": 111,
-	"./bn.js": 111,
-	"./bo": 112,
-	"./bo.js": 112,
-	"./br": 113,
-	"./br.js": 113,
-	"./bs": 114,
-	"./bs.js": 114,
-	"./ca": 115,
-	"./ca.js": 115,
-	"./cs": 116,
-	"./cs.js": 116,
-	"./cv": 117,
-	"./cv.js": 117,
-	"./cy": 118,
-	"./cy.js": 118,
-	"./da": 119,
-	"./da.js": 119,
-	"./de": 122,
-	"./de-at": 120,
-	"./de-at.js": 120,
-	"./de-ch": 121,
-	"./de-ch.js": 121,
-	"./de.js": 122,
-	"./dv": 123,
-	"./dv.js": 123,
-	"./el": 124,
-	"./el.js": 124,
-	"./en-au": 125,
-	"./en-au.js": 125,
-	"./en-ca": 126,
-	"./en-ca.js": 126,
-	"./en-gb": 127,
-	"./en-gb.js": 127,
-	"./en-ie": 128,
-	"./en-ie.js": 128,
-	"./en-il": 129,
-	"./en-il.js": 129,
-	"./en-nz": 130,
-	"./en-nz.js": 130,
-	"./eo": 131,
-	"./eo.js": 131,
-	"./es": 134,
-	"./es-do": 132,
-	"./es-do.js": 132,
-	"./es-us": 133,
-	"./es-us.js": 133,
-	"./es.js": 134,
-	"./et": 135,
-	"./et.js": 135,
-	"./eu": 136,
-	"./eu.js": 136,
-	"./fa": 137,
-	"./fa.js": 137,
-	"./fi": 138,
-	"./fi.js": 138,
-	"./fo": 139,
-	"./fo.js": 139,
-	"./fr": 142,
-	"./fr-ca": 140,
-	"./fr-ca.js": 140,
-	"./fr-ch": 141,
-	"./fr-ch.js": 141,
-	"./fr.js": 142,
-	"./fy": 143,
-	"./fy.js": 143,
-	"./gd": 144,
-	"./gd.js": 144,
-	"./gl": 145,
-	"./gl.js": 145,
-	"./gom-latn": 146,
-	"./gom-latn.js": 146,
-	"./gu": 147,
-	"./gu.js": 147,
-	"./he": 148,
-	"./he.js": 148,
-	"./hi": 149,
-	"./hi.js": 149,
-	"./hr": 150,
-	"./hr.js": 150,
-	"./hu": 151,
-	"./hu.js": 151,
-	"./hy-am": 152,
-	"./hy-am.js": 152,
-	"./id": 153,
-	"./id.js": 153,
-	"./is": 154,
-	"./is.js": 154,
-	"./it": 155,
-	"./it.js": 155,
-	"./ja": 156,
-	"./ja.js": 156,
-	"./jv": 157,
-	"./jv.js": 157,
-	"./ka": 158,
-	"./ka.js": 158,
-	"./kk": 159,
-	"./kk.js": 159,
-	"./km": 160,
-	"./km.js": 160,
-	"./kn": 161,
-	"./kn.js": 161,
-	"./ko": 162,
-	"./ko.js": 162,
-	"./ky": 163,
-	"./ky.js": 163,
-	"./lb": 164,
-	"./lb.js": 164,
-	"./lo": 165,
-	"./lo.js": 165,
-	"./lt": 166,
-	"./lt.js": 166,
-	"./lv": 167,
-	"./lv.js": 167,
-	"./me": 168,
-	"./me.js": 168,
-	"./mi": 169,
-	"./mi.js": 169,
-	"./mk": 170,
-	"./mk.js": 170,
-	"./ml": 171,
-	"./ml.js": 171,
-	"./mn": 172,
-	"./mn.js": 172,
-	"./mr": 173,
-	"./mr.js": 173,
-	"./ms": 175,
-	"./ms-my": 174,
-	"./ms-my.js": 174,
-	"./ms.js": 175,
-	"./mt": 176,
-	"./mt.js": 176,
-	"./my": 177,
-	"./my.js": 177,
-	"./nb": 178,
-	"./nb.js": 178,
-	"./ne": 179,
-	"./ne.js": 179,
-	"./nl": 181,
-	"./nl-be": 180,
-	"./nl-be.js": 180,
-	"./nl.js": 181,
-	"./nn": 182,
-	"./nn.js": 182,
-	"./pa-in": 183,
-	"./pa-in.js": 183,
-	"./pl": 184,
-	"./pl.js": 184,
-	"./pt": 186,
-	"./pt-br": 185,
-	"./pt-br.js": 185,
-	"./pt.js": 186,
-	"./ro": 187,
-	"./ro.js": 187,
-	"./ru": 188,
-	"./ru.js": 188,
-	"./sd": 189,
-	"./sd.js": 189,
-	"./se": 190,
-	"./se.js": 190,
-	"./si": 191,
-	"./si.js": 191,
-	"./sk": 192,
-	"./sk.js": 192,
-	"./sl": 193,
-	"./sl.js": 193,
-	"./sq": 194,
-	"./sq.js": 194,
-	"./sr": 196,
-	"./sr-cyrl": 195,
-	"./sr-cyrl.js": 195,
-	"./sr.js": 196,
-	"./ss": 197,
-	"./ss.js": 197,
-	"./sv": 198,
-	"./sv.js": 198,
-	"./sw": 199,
-	"./sw.js": 199,
-	"./ta": 200,
-	"./ta.js": 200,
-	"./te": 201,
-	"./te.js": 201,
-	"./tet": 202,
-	"./tet.js": 202,
-	"./tg": 203,
-	"./tg.js": 203,
-	"./th": 204,
-	"./th.js": 204,
-	"./tl-ph": 205,
-	"./tl-ph.js": 205,
-	"./tlh": 206,
-	"./tlh.js": 206,
-	"./tr": 207,
-	"./tr.js": 207,
-	"./tzl": 208,
-	"./tzl.js": 208,
-	"./tzm": 210,
-	"./tzm-latn": 209,
-	"./tzm-latn.js": 209,
-	"./tzm.js": 210,
-	"./ug-cn": 211,
-	"./ug-cn.js": 211,
-	"./uk": 212,
-	"./uk.js": 212,
-	"./ur": 213,
-	"./ur.js": 213,
-	"./uz": 215,
-	"./uz-latn": 214,
-	"./uz-latn.js": 214,
-	"./uz.js": 215,
-	"./vi": 216,
-	"./vi.js": 216,
-	"./x-pseudo": 217,
-	"./x-pseudo.js": 217,
-	"./yo": 218,
-	"./yo.js": 218,
-	"./zh-cn": 219,
-	"./zh-cn.js": 219,
-	"./zh-hk": 220,
-	"./zh-hk.js": 220,
-	"./zh-tw": 221,
-	"./zh-tw.js": 221
+	"./af": 24,
+	"./af.js": 24,
+	"./ar": 31,
+	"./ar-dz": 25,
+	"./ar-dz.js": 25,
+	"./ar-kw": 26,
+	"./ar-kw.js": 26,
+	"./ar-ly": 27,
+	"./ar-ly.js": 27,
+	"./ar-ma": 28,
+	"./ar-ma.js": 28,
+	"./ar-sa": 29,
+	"./ar-sa.js": 29,
+	"./ar-tn": 30,
+	"./ar-tn.js": 30,
+	"./ar.js": 31,
+	"./az": 32,
+	"./az.js": 32,
+	"./be": 33,
+	"./be.js": 33,
+	"./bg": 34,
+	"./bg.js": 34,
+	"./bm": 35,
+	"./bm.js": 35,
+	"./bn": 36,
+	"./bn.js": 36,
+	"./bo": 37,
+	"./bo.js": 37,
+	"./br": 38,
+	"./br.js": 38,
+	"./bs": 39,
+	"./bs.js": 39,
+	"./ca": 40,
+	"./ca.js": 40,
+	"./cs": 41,
+	"./cs.js": 41,
+	"./cv": 42,
+	"./cv.js": 42,
+	"./cy": 43,
+	"./cy.js": 43,
+	"./da": 44,
+	"./da.js": 44,
+	"./de": 47,
+	"./de-at": 45,
+	"./de-at.js": 45,
+	"./de-ch": 46,
+	"./de-ch.js": 46,
+	"./de.js": 47,
+	"./dv": 48,
+	"./dv.js": 48,
+	"./el": 49,
+	"./el.js": 49,
+	"./en-au": 50,
+	"./en-au.js": 50,
+	"./en-ca": 51,
+	"./en-ca.js": 51,
+	"./en-gb": 52,
+	"./en-gb.js": 52,
+	"./en-ie": 53,
+	"./en-ie.js": 53,
+	"./en-il": 54,
+	"./en-il.js": 54,
+	"./en-nz": 55,
+	"./en-nz.js": 55,
+	"./eo": 56,
+	"./eo.js": 56,
+	"./es": 59,
+	"./es-do": 57,
+	"./es-do.js": 57,
+	"./es-us": 58,
+	"./es-us.js": 58,
+	"./es.js": 59,
+	"./et": 60,
+	"./et.js": 60,
+	"./eu": 61,
+	"./eu.js": 61,
+	"./fa": 62,
+	"./fa.js": 62,
+	"./fi": 63,
+	"./fi.js": 63,
+	"./fo": 64,
+	"./fo.js": 64,
+	"./fr": 67,
+	"./fr-ca": 65,
+	"./fr-ca.js": 65,
+	"./fr-ch": 66,
+	"./fr-ch.js": 66,
+	"./fr.js": 67,
+	"./fy": 68,
+	"./fy.js": 68,
+	"./gd": 69,
+	"./gd.js": 69,
+	"./gl": 70,
+	"./gl.js": 70,
+	"./gom-latn": 71,
+	"./gom-latn.js": 71,
+	"./gu": 72,
+	"./gu.js": 72,
+	"./he": 73,
+	"./he.js": 73,
+	"./hi": 74,
+	"./hi.js": 74,
+	"./hr": 75,
+	"./hr.js": 75,
+	"./hu": 76,
+	"./hu.js": 76,
+	"./hy-am": 77,
+	"./hy-am.js": 77,
+	"./id": 78,
+	"./id.js": 78,
+	"./is": 79,
+	"./is.js": 79,
+	"./it": 80,
+	"./it.js": 80,
+	"./ja": 81,
+	"./ja.js": 81,
+	"./jv": 82,
+	"./jv.js": 82,
+	"./ka": 83,
+	"./ka.js": 83,
+	"./kk": 84,
+	"./kk.js": 84,
+	"./km": 85,
+	"./km.js": 85,
+	"./kn": 86,
+	"./kn.js": 86,
+	"./ko": 87,
+	"./ko.js": 87,
+	"./ky": 88,
+	"./ky.js": 88,
+	"./lb": 89,
+	"./lb.js": 89,
+	"./lo": 90,
+	"./lo.js": 90,
+	"./lt": 91,
+	"./lt.js": 91,
+	"./lv": 92,
+	"./lv.js": 92,
+	"./me": 93,
+	"./me.js": 93,
+	"./mi": 94,
+	"./mi.js": 94,
+	"./mk": 95,
+	"./mk.js": 95,
+	"./ml": 96,
+	"./ml.js": 96,
+	"./mn": 97,
+	"./mn.js": 97,
+	"./mr": 98,
+	"./mr.js": 98,
+	"./ms": 100,
+	"./ms-my": 99,
+	"./ms-my.js": 99,
+	"./ms.js": 100,
+	"./mt": 101,
+	"./mt.js": 101,
+	"./my": 102,
+	"./my.js": 102,
+	"./nb": 103,
+	"./nb.js": 103,
+	"./ne": 104,
+	"./ne.js": 104,
+	"./nl": 106,
+	"./nl-be": 105,
+	"./nl-be.js": 105,
+	"./nl.js": 106,
+	"./nn": 107,
+	"./nn.js": 107,
+	"./pa-in": 108,
+	"./pa-in.js": 108,
+	"./pl": 109,
+	"./pl.js": 109,
+	"./pt": 111,
+	"./pt-br": 110,
+	"./pt-br.js": 110,
+	"./pt.js": 111,
+	"./ro": 112,
+	"./ro.js": 112,
+	"./ru": 113,
+	"./ru.js": 113,
+	"./sd": 114,
+	"./sd.js": 114,
+	"./se": 115,
+	"./se.js": 115,
+	"./si": 116,
+	"./si.js": 116,
+	"./sk": 117,
+	"./sk.js": 117,
+	"./sl": 118,
+	"./sl.js": 118,
+	"./sq": 119,
+	"./sq.js": 119,
+	"./sr": 121,
+	"./sr-cyrl": 120,
+	"./sr-cyrl.js": 120,
+	"./sr.js": 121,
+	"./ss": 122,
+	"./ss.js": 122,
+	"./sv": 123,
+	"./sv.js": 123,
+	"./sw": 124,
+	"./sw.js": 124,
+	"./ta": 125,
+	"./ta.js": 125,
+	"./te": 126,
+	"./te.js": 126,
+	"./tet": 127,
+	"./tet.js": 127,
+	"./tg": 128,
+	"./tg.js": 128,
+	"./th": 129,
+	"./th.js": 129,
+	"./tl-ph": 130,
+	"./tl-ph.js": 130,
+	"./tlh": 131,
+	"./tlh.js": 131,
+	"./tr": 132,
+	"./tr.js": 132,
+	"./tzl": 133,
+	"./tzl.js": 133,
+	"./tzm": 135,
+	"./tzm-latn": 134,
+	"./tzm-latn.js": 134,
+	"./tzm.js": 135,
+	"./ug-cn": 136,
+	"./ug-cn.js": 136,
+	"./uk": 137,
+	"./uk.js": 137,
+	"./ur": 138,
+	"./ur.js": 138,
+	"./uz": 140,
+	"./uz-latn": 139,
+	"./uz-latn.js": 139,
+	"./uz.js": 140,
+	"./vi": 141,
+	"./vi.js": 141,
+	"./x-pseudo": 142,
+	"./x-pseudo.js": 142,
+	"./yo": 143,
+	"./yo.js": 143,
+	"./zh-cn": 144,
+	"./zh-cn.js": 144,
+	"./zh-hk": 145,
+	"./zh-hk.js": 145,
+	"./zh-tw": 146,
+	"./zh-tw.js": 146
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -17572,10 +17461,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 223;
+webpackContext.id = 148;
 
 /***/ }),
-/* 224 */
+/* 149 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -17603,27 +17492,27 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html><!DOCTYPE js><html lang=\"en\"><head><meta charset=\"UTF-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"favicons/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicons/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicons/favicon-16x16.png\"/><link rel=\"manifest\" href=\"favicons/site.webmanifest\"/><link rel=\"mask-icon\" href=\"favicons/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><title>My Site</title></head><body><script defer=\"defer\" src=\"https://use.fontawesome.com/releases/v5.0.9/js/all.js\" integrity=\"sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl\" crossorigin=\"anonymous\"></script><link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"/><header><section class=\"header\"><nav class=\"menu\"><a class=\"menu__item\" href=\"index.html\">Главная</a><a class=\"menu__item\" href=\"pages/gallery/gallery.html\">Галлерея</a><a class=\"menu__item\" href=\"pages/members/members.html\">Клубяне</a><a class=\"menu__item\" href=\"pages/keldim/keldim.html\">Склад</a><a class=\"menu__item\" href=\"pages/about/about.html\">О нас</a></nav><article class=\"header__board\"><div class=\"header__emblem\"></div><div class=\"header__text\">Альп-клуб ENERGY</div><div class=\"header__search\"><form class=\"search-form\"><div class=\"search\"><input class=\"search__input search__input_grey\" type=\"search\" placeholder=\"Search...\" name=\"search\" maxlength=\"37\" autocomplete=\"on\"/><button class=\"search__button\" type=\"submit\"><i class=\"fa fa-search\"></i></button></div></form></div><div class=\"header__audio\"><section class=\"audio-player\"><audio class=\"audio\" id=\"song\" preload=\"metadata\"><source src=\"audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3\" type=\"audio/mpeg\"/></audio><div class=\"audio__btn\" id=\"songPlay\"> <i class=\"fas fa-play\"></i></div><div class=\"audio__btn\" id=\"songStop\"><i class=\"fas fa-stop\"></i></div><div class=\"audio__slider\"><form class=\"slider-form\"><input class=\"slider slider_red slider_nopopup slider_none\" id=\"song-meter\" type=\"range\" value=\"0\" min=\"0\" max=\"100\" step=\"1\"/><div class=\"slider__grade slider__grade_none\"><span class=\"slider__value\">0</span><span class=\"slider__value\">25</span><span class=\"slider__value\">50</span><span class=\"slider__value\">75</span><span class=\"slider__value\">100</span></div></form></div><div class=\"audio__timer\">0:00</div><div class=\"audio__btn\" id=\"songVolume\"><i class=\"fas fa-volume-up\"></i></div><div class=\"audio__volume-meter\"><form class=\"slider-form\"><input class=\"slider slider_green slider_none slider_track\" id=\"song-volume\" type=\"range\" value=\"0\" min=\"0\" max=\"100\" step=\"1\"/><div class=\"slider__grade slider__grade_grade\"><span class=\"slider__value\">0</span><span class=\"slider__value\">25</span><span class=\"slider__value\">50</span><span class=\"slider__value\">75</span><span class=\"slider__value\">100</span></div></form></div></section></div></article></section></header><main><h1 class=\"title\">Добро пожаловать!</h1><p class=\"title title_sub\">Устраивайся поудобнее. Выпей чаю. И к новым вершинам!</p><span class=\"epigraph\">Лучше гор могут быть только горы,<br>На которых еще не бывал.<br>В. Высоцкиий</span><section class=\"message\"><div class=\"message__container\"><div class=\"user-profile__img-container\"><img class=\"user-profile__img\" src=\"images/timophey.png\" alt=\"prezident-avatar\"/></div><div class=\"message__text-container\"><div class=\"message__title\">Сообщение дня от Президнета клуба:</div><div class=\"message__text\">Привет! У ENERGY снова юбилей 45 лет!<br>Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все!</div></div></div></section><section class=\"main-content\"><aside class=\"sidebar\"><p class=\"sidebar__title\">Новости</p><div class=\"sidebar__item\"><div class=\"sidebar__toggle\"></div><div class=\"events\"><div class=\"events__image-container\"><img class=\"events__image\" src=\"images/event1.png\" alt=\"pic\"/></div><div class=\"events__content\"><div class=\"events__date\"><div class=\"events__date_num\">25</div><div class=\"events__date_month\">Мая</div></div><div class=\"events__header\">День рождения клуба!</div><div class=\"events__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><button class=\"events__button\">ADD TO CALENDAR</button></div></div></div><div class=\"sidebar__item\"><div class=\"sidebar__toggle\"></div><div class=\"news\"><div class=\"news__image-container\"><img class=\"news__image\" src=\"images/news1.png\" alt=\"pic\"/></div><div class=\"news__content\"><div class=\"news__header\">Первые среди клубов!</div><div class=\"news__date\">17 мая</div><div class=\"news__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div></div></div></div><div class=\"sidebar__item\"><div class=\"sidebar__toggle\"></div><div class=\"events\"><div class=\"events__image-container\"><img class=\"events__image\" src=\"images/event1.png\" alt=\"pic\"/></div><div class=\"events__content\"><div class=\"events__date\"><div class=\"events__date_num\">25</div><div class=\"events__date_month\">Мая</div></div><div class=\"events__header\">День рождения клуба!</div><div class=\"events__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><button class=\"events__button\">ADD TO CALENDAR</button></div></div></div><div class=\"sidebar__item\"><div class=\"sidebar__toggle\"></div><div class=\"news\"><div class=\"news__image-container\"><img class=\"news__image\" src=\"images/news1.png\" alt=\"pic\"/></div><div class=\"news__content\"><div class=\"news__header\">Первые среди клубов!</div><div class=\"news__date\">17 мая</div><div class=\"news__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div></div></div></div></aside><section class=\"calendar\"><article class=\"calendar\"><header class=\"calendar__header\"><div class=\"calendar__date\"></div><section class=\"calendar__slider\"><div class=\"calendar__button calendar__button_left\"></div><div class=\"calendar__month\"></div><div class=\"calendar__button calendar__button_right\"></div></section><ul class=\"calendar__week-list\"><li class=\"calendar__day\">mon</li><li class=\"calendar__day\">tue</li><li class=\"calendar__day\">wen</li><li class=\"calendar__day\">thu</li><li class=\"calendar__day\">fri</li><li class=\"calendar__day\">sat</li><li class=\"calendar__day\">sun</li></ul></header><section class=\"calendar__body\"><ul class=\"calendar__list\"><li class=\"calendar__list-item\"></li><li class=\"calendar__list-item\"></li><li class=\"calendar__list-item\"></li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"></li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"></li><li class=\"calendar__list-item\"></li></ul></section><footer class=\"calendar__footer\"><div class=\"calendar__info\"></div></footer></article></section><article class=\"main\"><section class=\"main__event article_visible\"><img class=\"event__image\" src=\"images/happyBD.jpg\" alt=\"pic\"/><div class=\"event__title\">День рождения клуба</div><p class=\"event__text\">Привет! У ENERGY снова юбилей: 45 лет! Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все! Понятно, что лететь в Томск по этому поводу удовольствие не для всех... и у нас родилась мысль! Cделать видеоролик с поздравлениями от клубян, которые не живут теперь в Томске. Ролик будет состоять из нарезок присланных нам ваших роликов.</p><p class=\"event__text\">Что надо сделать: 1. Cнять небольшой ролик со словами приветствия/поздравления для ENERGY или (если нечего/некогда сказать) сделать фото на фоне узнаваемого места твоего города 2. Выложить на какой-нибудь 'диск' и прислать ссылку Олегу Морозову. По сроку, как всегда всё должно быть сделано вчера, нам еще нужно будет все скомпоновать, поэтому чем раньше, тем лучше! Мы пока не знаем как это должно выглядеть, но наверняка получиться круто! Не стесняемся импровизировать и выражать свои эмоции.</p><div class=\"event-pic-flex\"><div class=\"event__pic-container\"><img class=\"event__pic\" src=\"images/BDimg1.jpg\" alt=\"pic\"/><div class=\"event__pic-desc\">Вот такие у нас игры!</div></div><div class=\"event__pic-container\"><img class=\"event__pic\" src=\"images/BDimg2.jpg\" alt=\"pic\"/><div class=\"event__pic-desc\">Всех пришедших угостим вкусным пловом.</div></div></div></section><section class=\"main__news-article article_notVisible\"><img class=\"news-article__image\" src=\"images/event1.jpg\" alt=\"pic\"/><div class=\"news-article__title\">Мы снова первые!</div><div class=\"news-flex-wrapper\"><div class=\"text-flex-wrapper\"><p class=\"news-article__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex magna, efficitur et nisl a, euismod molestie nunc. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque aliquet nec urna id imperdiet. Pellentesque et eros eu neque facilisis interdum nec id nunc. Donec faucibus ac sem vitae finibus. Phasellus lacinia, leo in scelerisque laoreet, magna arcu vehicula leo, at feugiat lectus ex mollis tellus. In imperdiet sagittis augue vitae dapibus. Maecenas sem est, porttitor eget leo eu, tempus convallis dolor. Praesent porttitor sit amet diam sit amet laoreet. Curabitur tempus rutrum eleifend. Nullam sodales condimentum egestas. Duis rhoncus enim lorem, nec finibus odio eleifend in. Mauris mollis vehicula tempus. Phasellus at finibus libero.</p><p class=\"news-article__text\">Integer rhoncus dapibus ultrices. Aliquam a tristique tortor. Fusce vel suscipit libero. Nunc et sapien nulla. Vestibulum arcu odio, luctus nec luctus vitae, convallis quis nunc. Praesent varius justo non orci porta pellentesque. In quis ex metus. Phasellus pretium placerat scelerisque. Proin imperdiet, quam vitae euismod ultrices, velit nibh fringilla sapien, et dictum erat mi ut magna. Donec ac porta felis. Ut a porttitor velit. Sed volutpat dictum nulla ut interdum. Aliquam id nisi vitae nibh dictum vestibulum ac et augue. Pellentesque nec purus dictum, fringilla sapien et, fringilla libero. Duis ullamcorper lorem eu sapien imperdiet euismod. Sed rhoncus neque non neque finibus, nec pretium est malesuada.</p></div><div class=\"news-article__pic-container\"><img class=\"news-article__pic\" src=\"images/winner.jpg\" alt=\"pic\"/><div class=\"news-article__pic-desc\">Поздравления победителю!</div></div></div></section><section class=\"main__event article_notVisible\"><img class=\"event__image\" src=\"images/happyBD.jpg\" alt=\"pic\"/><div class=\"event__title\">День рождения клуба</div><p class=\"event__text\">Привет! У ENERGY снова юбилей: 45 лет! Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все! Понятно, что лететь в Томск по этому поводу удовольствие не для всех... и у нас родилась мысль! Cделать видеоролик с поздравлениями от клубян, которые не живут теперь в Томске. Ролик будет состоять из нарезок присланных нам ваших роликов.</p><p class=\"event__text\">Что надо сделать: 1. Cнять небольшой ролик со словами приветствия/поздравления для ENERGY или (если нечего/некогда сказать) сделать фото на фоне узнаваемого места твоего города 2. Выложить на какой-нибудь 'диск' и прислать ссылку Олегу Морозову. По сроку, как всегда всё должно быть сделано вчера, нам еще нужно будет все скомпоновать, поэтому чем раньше, тем лучше! Мы пока не знаем как это должно выглядеть, но наверняка получиться круто! Не стесняемся импровизировать и выражать свои эмоции.</p><div class=\"event-pic-flex\"><div class=\"event__pic-container\"><img class=\"event__pic\" src=\"images/BDimg1.jpg\" alt=\"pic\"/><div class=\"event__pic-desc\">Вот такие у нас игры!</div></div><div class=\"event__pic-container\"><img class=\"event__pic\" src=\"images/BDimg2.jpg\" alt=\"pic\"/><div class=\"event__pic-desc\">Всех пришедших угостим вкусным пловом.</div></div></div></section><section class=\"main__news-article article_notVisible\"><img class=\"news-article__image\" src=\"images/event1.jpg\" alt=\"pic\"/><div class=\"news-article__title\">Мы снова первые!</div><div class=\"news-flex-wrapper\"><div class=\"text-flex-wrapper\"><p class=\"news-article__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex magna, efficitur et nisl a, euismod molestie nunc. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque aliquet nec urna id imperdiet. Pellentesque et eros eu neque facilisis interdum nec id nunc. Donec faucibus ac sem vitae finibus. Phasellus lacinia, leo in scelerisque laoreet, magna arcu vehicula leo, at feugiat lectus ex mollis tellus. In imperdiet sagittis augue vitae dapibus. Maecenas sem est, porttitor eget leo eu, tempus convallis dolor. Praesent porttitor sit amet diam sit amet laoreet. Curabitur tempus rutrum eleifend. Nullam sodales condimentum egestas. Duis rhoncus enim lorem, nec finibus odio eleifend in. Mauris mollis vehicula tempus. Phasellus at finibus libero.</p><p class=\"news-article__text\">Integer rhoncus dapibus ultrices. Aliquam a tristique tortor. Fusce vel suscipit libero. Nunc et sapien nulla. Vestibulum arcu odio, luctus nec luctus vitae, convallis quis nunc. Praesent varius justo non orci porta pellentesque. In quis ex metus. Phasellus pretium placerat scelerisque. Proin imperdiet, quam vitae euismod ultrices, velit nibh fringilla sapien, et dictum erat mi ut magna. Donec ac porta felis. Ut a porttitor velit. Sed volutpat dictum nulla ut interdum. Aliquam id nisi vitae nibh dictum vestibulum ac et augue. Pellentesque nec purus dictum, fringilla sapien et, fringilla libero. Duis ullamcorper lorem eu sapien imperdiet euismod. Sed rhoncus neque non neque finibus, nec pretium est malesuada.</p></div><div class=\"news-article__pic-container\"><img class=\"news-article__pic\" src=\"images/winner.jpg\" alt=\"pic\"/><div class=\"news-article__pic-desc\">Поздравления победителю!</div></div></div></section></article><aside class=\"news-info\"><div class=\"info-text-container\"><div class=\"info info_author\">Автор: Тимофей Петрович</div><div class=\"info info_article\">Тема: мероприятия</div><div class=\"info info_date\">Дата публикации: May 19th 18</div></div><div class=\"info__icons\"><i class=\"icon fas fa-heart\"></i><i class=\"icon fas fa-eye\"></i><i class=\"icon fab fa-algolia\"></i></div></aside></section></main><footer><div class=\"footer__container\"><section class=\"footer__container_contact\"><span class=\"footer__text footer__text_first\">Контактная информация:</span><span class=\"footer__text\">Лемешенко Никита</span><span class=\"footer__text\">Тел: +77056060155</span><span class=\"footer__text footer__text_last\">E-mail: allbehail@mail.ru</span></section><section class=\"footer__container_imgage\"><img class=\"footer__image\" src=\"images/alp-logo.gif\"/></section><section class=\"footer__container_adress\"><span class=\"footer__text\">Клуб расположен по адрессу:</span><span class=\"footer__text\">пр. Кирова 2 / пр. Ленина 45</span><span class=\"footer__text\">Общежитие ТПУ №2</span></section></div></footer><script src=\"index.bundle.js\"></script></body></html>"
+module.exports = "<!DOCTYPE html><!DOCTYPE js><html lang=\"en\"><head><meta charset=\"UTF-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"favicons/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"favicons/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"favicons/favicon-16x16.png\"/><link rel=\"manifest\" href=\"favicons/site.webmanifest\"/><link rel=\"mask-icon\" href=\"favicons/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><title>My Site</title></head><body><script defer=\"defer\" src=\"https://use.fontawesome.com/releases/v5.0.9/js/all.js\" integrity=\"sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl\" crossorigin=\"anonymous\"></script><link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"/><header><section class=\"header\"><nav class=\"menu\"><a class=\"menu__item\" href=\"index.html\">Главная</a><a class=\"menu__item\" href=\"pages/gallery/gallery.html\">Галлерея</a><a class=\"menu__item\" href=\"pages/members/members.html\">Клубяне</a><a class=\"menu__item\" href=\"pages/keldim/keldim.html\">Склад</a><a class=\"menu__item\" href=\"pages/about/about.html\">О нас</a></nav><article class=\"header__board\"><div class=\"header__emblem\"></div><div class=\"header__text\">Альп-клуб ENERGY</div><div class=\"header__search\"><form class=\"search-form\"><div class=\"search\"><input class=\"search__input search__input_grey\" type=\"search\" placeholder=\"Search...\" name=\"search\" maxlength=\"37\" autocomplete=\"on\"/><button class=\"search__button\" type=\"submit\"><i class=\"fa fa-search\"></i></button></div></form></div><div class=\"header__audio\"><section class=\"audio-player\"><audio class=\"audio\" id=\"song\" preload=\"metadata\"><source src=\"audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3\" type=\"audio/mpeg\"/></audio><div class=\"audio__btn\" id=\"songPlay\"> <i class=\"fas fa-play\"></i></div><div class=\"audio__btn\" id=\"songStop\"><i class=\"fas fa-stop\"></i></div><div class=\"audio__slider\"><form class=\"slider-form\"><input class=\"slider slider_red slider_nopopup slider_none\" id=\"song-meter\" type=\"range\" value=\"0\" min=\"0\" max=\"100\" step=\"1\"/><div class=\"slider__grade slider__grade_none\"><span class=\"slider__value\">0</span><span class=\"slider__value\">25</span><span class=\"slider__value\">50</span><span class=\"slider__value\">75</span><span class=\"slider__value\">100</span></div></form></div><div class=\"audio__timer\">0:00</div><div class=\"audio__btn\" id=\"songVolume\"><i class=\"fas fa-volume-up\"></i></div><div class=\"audio__volume-meter\"><form class=\"slider-form\"><input class=\"slider slider_green slider_none slider_track\" id=\"song-volume\" type=\"range\" value=\"0\" min=\"0\" max=\"100\" step=\"1\"/><div class=\"slider__grade slider__grade_grade\"><span class=\"slider__value\">0</span><span class=\"slider__value\">25</span><span class=\"slider__value\">50</span><span class=\"slider__value\">75</span><span class=\"slider__value\">100</span></div></form></div></section></div></article></section></header><main><h1 class=\"title\">Добро пожаловать!</h1><p class=\"title title_sub\">Устраивайся поудобнее. Выпей чаю. И к новым вершинам!</p><span class=\"epigraph\">Лучше гор могут быть только горы,<br>На которых еще не бывал.<br>В. Высоцкиий</span><section class=\"message\"><div class=\"message__container\"><div class=\"user-profile__img-container\"><img class=\"user-profile__img\" src=\"images/timophey.jpg\" alt=\"prezident-avatar\"/></div><div class=\"message__text-container\"><div class=\"message__title\">Сообщение дня от Президнета клуба:</div><div class=\"message__text\">Привет! У ENERGY снова юбилей 45 лет!<br>Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все!</div></div></div></section><section class=\"main-content\"><aside class=\"sidebar\"><p class=\"sidebar__title\">Новости</p><div class=\"sidebar__item\"><div class=\"sidebar__toggle\"></div><div class=\"events\"><div class=\"events__image-container\"><img class=\"events__image\" src=\"images/event2.jpg\" alt=\"pic\"/></div><div class=\"events__content\"><div class=\"events__date\"><div class=\"events__date_num\">25</div><div class=\"events__date_month\">Мая</div></div><div class=\"events__header\">День рождения клуба!</div><div class=\"events__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><button class=\"events__button\">ADD TO CALENDAR</button></div></div></div><div class=\"sidebar__item\"><div class=\"sidebar__toggle\"></div><div class=\"news\"><div class=\"news__image-container\"><img class=\"news__image\" src=\"images/news1.jpg\" alt=\"pic\"/></div><div class=\"news__content\"><div class=\"news__header\">Первые среди клубов!</div><div class=\"news__date\">17 мая</div><div class=\"news__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div></div></div></div><div class=\"sidebar__item\"><div class=\"sidebar__toggle\"></div><div class=\"events\"><div class=\"events__image-container\"><img class=\"events__image\" src=\"images/event2.jpg\" alt=\"pic\"/></div><div class=\"events__content\"><div class=\"events__date\"><div class=\"events__date_num\">25</div><div class=\"events__date_month\">Мая</div></div><div class=\"events__header\">День рождения клуба!</div><div class=\"events__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><button class=\"events__button\">ADD TO CALENDAR</button></div></div></div><div class=\"sidebar__item\"><div class=\"sidebar__toggle\"></div><div class=\"news\"><div class=\"news__image-container\"><img class=\"news__image\" src=\"images/news1.jpg\" alt=\"pic\"/></div><div class=\"news__content\"><div class=\"news__header\">Первые среди клубов!</div><div class=\"news__date\">17 мая</div><div class=\"news__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div></div></div></div></aside><section class=\"calendar\"><article class=\"calendar\"><header class=\"calendar__header\"><div class=\"calendar__date\"></div><section class=\"calendar__slider\"><div class=\"calendar__button calendar__button_left\"></div><div class=\"calendar__month\"></div><div class=\"calendar__button calendar__button_right\"></div></section><ul class=\"calendar__week-list\"><li class=\"calendar__day\">mon</li><li class=\"calendar__day\">tue</li><li class=\"calendar__day\">wen</li><li class=\"calendar__day\">thu</li><li class=\"calendar__day\">fri</li><li class=\"calendar__day\">sat</li><li class=\"calendar__day\">sun</li></ul></header><section class=\"calendar__body\"><ul class=\"calendar__list\"><li class=\"calendar__list-item\"></li><li class=\"calendar__list-item\"></li><li class=\"calendar__list-item\"></li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"></li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"> </li><li class=\"calendar__list-item\"></li><li class=\"calendar__list-item\"></li></ul></section><footer class=\"calendar__footer\"><div class=\"calendar__info\"></div></footer></article></section><article class=\"main\"><section class=\"main__event article_visible\"><img class=\"event__image\" src=\"images/happyBD.jpg\" alt=\"pic\"/><div class=\"event__title\">День рождения клуба</div><p class=\"event__text\">Привет! У ENERGY снова юбилей: 45 лет! Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все! Понятно, что лететь в Томск по этому поводу удовольствие не для всех... и у нас родилась мысль! Cделать видеоролик с поздравлениями от клубян, которые не живут теперь в Томске. Ролик будет состоять из нарезок присланных нам ваших роликов.</p><p class=\"event__text\">Что надо сделать: 1. Cнять небольшой ролик со словами приветствия/поздравления для ENERGY или (если нечего/некогда сказать) сделать фото на фоне узнаваемого места твоего города 2. Выложить на какой-нибудь 'диск' и прислать ссылку Олегу Морозову. По сроку, как всегда всё должно быть сделано вчера, нам еще нужно будет все скомпоновать, поэтому чем раньше, тем лучше! Мы пока не знаем как это должно выглядеть, но наверняка получиться круто! Не стесняемся импровизировать и выражать свои эмоции.</p><div class=\"event-pic-flex\"><div class=\"event__pic-container\"><img class=\"event__pic\" src=\"images/BDimg1.jpg\" alt=\"pic\"/><div class=\"event__pic-desc\">Вот такие у нас игры!</div></div><div class=\"event__pic-container\"><img class=\"event__pic\" src=\"images/BDimg2.jpg\" alt=\"pic\"/><div class=\"event__pic-desc\">Всех пришедших угостим вкусным пловом.</div></div></div></section><section class=\"main__news-article article_notVisible\"><img class=\"news-article__image\" src=\"images/event1.jpg\" alt=\"pic\"/><div class=\"news-article__title\">Мы снова первые!</div><div class=\"news-flex-wrapper\"><div class=\"text-flex-wrapper\"><p class=\"news-article__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex magna, efficitur et nisl a, euismod molestie nunc. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque aliquet nec urna id imperdiet. Pellentesque et eros eu neque facilisis interdum nec id nunc. Donec faucibus ac sem vitae finibus. Phasellus lacinia, leo in scelerisque laoreet, magna arcu vehicula leo, at feugiat lectus ex mollis tellus. In imperdiet sagittis augue vitae dapibus. Maecenas sem est, porttitor eget leo eu, tempus convallis dolor. Praesent porttitor sit amet diam sit amet laoreet. Curabitur tempus rutrum eleifend. Nullam sodales condimentum egestas. Duis rhoncus enim lorem, nec finibus odio eleifend in. Mauris mollis vehicula tempus. Phasellus at finibus libero.</p><p class=\"news-article__text\">Integer rhoncus dapibus ultrices. Aliquam a tristique tortor. Fusce vel suscipit libero. Nunc et sapien nulla. Vestibulum arcu odio, luctus nec luctus vitae, convallis quis nunc. Praesent varius justo non orci porta pellentesque. In quis ex metus. Phasellus pretium placerat scelerisque. Proin imperdiet, quam vitae euismod ultrices, velit nibh fringilla sapien, et dictum erat mi ut magna. Donec ac porta felis. Ut a porttitor velit. Sed volutpat dictum nulla ut interdum. Aliquam id nisi vitae nibh dictum vestibulum ac et augue. Pellentesque nec purus dictum, fringilla sapien et, fringilla libero. Duis ullamcorper lorem eu sapien imperdiet euismod. Sed rhoncus neque non neque finibus, nec pretium est malesuada.</p></div><div class=\"news-article__pic-container\"><img class=\"news-article__pic\" src=\"images/winner.jpg\" alt=\"pic\"/><div class=\"news-article__pic-desc\">Поздравления победителю!</div></div></div></section><section class=\"main__event article_notVisible\"><img class=\"event__image\" src=\"images/happyBD.jpg\" alt=\"pic\"/><div class=\"event__title\">День рождения клуба</div><p class=\"event__text\">Привет! У ENERGY снова юбилей: 45 лет! Празднование традиционно на поляне 26-27 мая (неформально). А формальная встреча с танцами, песнями и поздравлениями состоится 25 мая в МКЦ ТПУ, куда приглашаются все! Понятно, что лететь в Томск по этому поводу удовольствие не для всех... и у нас родилась мысль! Cделать видеоролик с поздравлениями от клубян, которые не живут теперь в Томске. Ролик будет состоять из нарезок присланных нам ваших роликов.</p><p class=\"event__text\">Что надо сделать: 1. Cнять небольшой ролик со словами приветствия/поздравления для ENERGY или (если нечего/некогда сказать) сделать фото на фоне узнаваемого места твоего города 2. Выложить на какой-нибудь 'диск' и прислать ссылку Олегу Морозову. По сроку, как всегда всё должно быть сделано вчера, нам еще нужно будет все скомпоновать, поэтому чем раньше, тем лучше! Мы пока не знаем как это должно выглядеть, но наверняка получиться круто! Не стесняемся импровизировать и выражать свои эмоции.</p><div class=\"event-pic-flex\"><div class=\"event__pic-container\"><img class=\"event__pic\" src=\"images/BDimg1.jpg\" alt=\"pic\"/><div class=\"event__pic-desc\">Вот такие у нас игры!</div></div><div class=\"event__pic-container\"><img class=\"event__pic\" src=\"images/BDimg2.jpg\" alt=\"pic\"/><div class=\"event__pic-desc\">Всех пришедших угостим вкусным пловом.</div></div></div></section><section class=\"main__news-article article_notVisible\"><img class=\"news-article__image\" src=\"images/event1.jpg\" alt=\"pic\"/><div class=\"news-article__title\">Мы снова первые!</div><div class=\"news-flex-wrapper\"><div class=\"text-flex-wrapper\"><p class=\"news-article__text\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex magna, efficitur et nisl a, euismod molestie nunc. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque aliquet nec urna id imperdiet. Pellentesque et eros eu neque facilisis interdum nec id nunc. Donec faucibus ac sem vitae finibus. Phasellus lacinia, leo in scelerisque laoreet, magna arcu vehicula leo, at feugiat lectus ex mollis tellus. In imperdiet sagittis augue vitae dapibus. Maecenas sem est, porttitor eget leo eu, tempus convallis dolor. Praesent porttitor sit amet diam sit amet laoreet. Curabitur tempus rutrum eleifend. Nullam sodales condimentum egestas. Duis rhoncus enim lorem, nec finibus odio eleifend in. Mauris mollis vehicula tempus. Phasellus at finibus libero.</p><p class=\"news-article__text\">Integer rhoncus dapibus ultrices. Aliquam a tristique tortor. Fusce vel suscipit libero. Nunc et sapien nulla. Vestibulum arcu odio, luctus nec luctus vitae, convallis quis nunc. Praesent varius justo non orci porta pellentesque. In quis ex metus. Phasellus pretium placerat scelerisque. Proin imperdiet, quam vitae euismod ultrices, velit nibh fringilla sapien, et dictum erat mi ut magna. Donec ac porta felis. Ut a porttitor velit. Sed volutpat dictum nulla ut interdum. Aliquam id nisi vitae nibh dictum vestibulum ac et augue. Pellentesque nec purus dictum, fringilla sapien et, fringilla libero. Duis ullamcorper lorem eu sapien imperdiet euismod. Sed rhoncus neque non neque finibus, nec pretium est malesuada.</p></div><div class=\"news-article__pic-container\"><img class=\"news-article__pic\" src=\"images/winner.jpg\" alt=\"pic\"/><div class=\"news-article__pic-desc\">Поздравления победителю!</div></div></div></section></article><aside class=\"news-info\"><div class=\"info-text-container\"><div class=\"info info_author\">Автор: Тимофей Петрович</div><div class=\"info info_article\">Тема: мероприятия</div><div class=\"info info_date\">Дата публикации: May 19th 18</div></div><div class=\"info__icons\"><i class=\"icon fas fa-heart\"></i><i class=\"icon fas fa-eye\"></i><i class=\"icon fab fa-algolia\"></i></div></aside></section></main><footer><div class=\"footer__container\"><section class=\"footer__container_contact\"><span class=\"footer__text footer__text_first\">Контактная информация:</span><span class=\"footer__text\">Лемешенко Никита</span><span class=\"footer__text\">Тел: +77056060155</span><span class=\"footer__text footer__text_last\">E-mail: allbehail@mail.ru</span></section><section class=\"footer__container_imgage\"><img class=\"footer__image\" src=\"images/alp-logo.png\" alt=\"alp-logo\"/></section><section class=\"footer__container_adress\"><span class=\"footer__text\">Клуб расположен по адрессу:</span><span class=\"footer__text\">пр. Кирова 2 / пр. Ленина 45</span><span class=\"footer__text\">Общежитие ТПУ №2</span></section></div></footer><script src=\"index.bundle.js\"></script></body></html>"
 
 /***/ }),
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(288);
+var content = __webpack_require__(213);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -17631,14 +17520,14 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(17)(content, options);
+var update = __webpack_require__(16)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/stylus-loader/index.js!./index.styl", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/stylus-loader/index.js!./index.styl");
+		module.hot.accept("!!../node_modules/css-loader/index.js?url=false!../node_modules/stylus-loader/index.js!./index.styl", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js?url=false!../node_modules/stylus-loader/index.js!./index.styl");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -17648,11 +17537,11 @@ if(false) {
 }
 
 /***/ }),
-/* 235 */,
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17775,81 +17664,74 @@ const myCalendar = function() {
 
 
 /***/ }),
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */,
-/* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(7);
 exports = module.exports = __webpack_require__(6)(false);
 // imports
 
 
 // module
-exports.push([module.i, ".search{display:flex;width:288px}@media screen and (max-width:480px){.search{width:170px}}.search__input{flex-basis:255px;border:none;border-radius:5px 0 0 5px;min-height:30px;padding:5px 0 7px 8px;font-family:SourceSansPro,Arial,sans-serif}.search__input font-size 1.4rem_grey{background:#f3ece8;color:#888}@media screen and (max-width:480px){.search__input{width:137px}}.search__button{flex-basis:33px;min-height:30px;background:#4b4b4b;border:none;outline:none;border-radius:0 5px 5px 0;color:#fff;cursor:pointer}.search__button:hover{background:#282828}.slider{-webkit-appearance:none;appearance:none;width:100%;max-width:37.14vw;height:5px;background:#e5e5e5;outline:none;border-radius:3px}.slider::-webkit-slider-thumb{position:relative;-webkit-appearance:none;appearance:none;width:19px;height:19px;border-radius:50%;cursor:pointer}.slider_red::-webkit-slider-thumb{background:#e75735}.slider_green::-webkit-slider-thumb{background:#4eb7a8}.slider_track{background:-webkit-linear-gradient(left,#4eb7a8,#4eb7a8 1%,#e5e5e5 0,#e5e5e5)}.slider__grade{display:none}.slider__grade_true{display:flex;justify-content:space-between;margin-top:12px;max-width:37.14vw;width:100%}.slider__value{color:#d1d1d1;font-size:1.1rem}.audio-player{display:flex;align-items:center}.audio__btn{font-size:1.4rem;background:#4b4b4b;padding:5px 10px;margin-right:5px;cursor:pointer;border-radius:5px;color:#fff}.audio__btn:hover{background:#282828}#songVolume{margin-left:5px;width:35px}.audio__slider{flex-grow:1}.audio__timer{height:28px;width:48px;font-family:Lato,Arial,sans-serif;font-weight:700;font-style:normal;font-size:1.4rem;color:#fff;text-align:center;background:#4b4b4b;border-radius:5px;margin-left:10px}.audio__timer:before{content:\"\";height:28px;display:inline-block;vertical-align:middle}.audio__volume-meter{margin-top:-5px}.header{width:100%;background-image:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../images/header.jpg\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");background-repeat:no-repeat;background-size:cover;padding:2% 1% 10%}.menu{display:flex;justify-content:center;padding:0;margin:0}.menu__item{font-family:Lato,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.6rem;margin:0 1vw;padding:8px 15px;background:rgba(75,75,75,.5);text-align:center;border-radius:5px 5px 0 0;border:2px solid #282828;border-bottom:0;cursor:pointer;text-decoration:none;color:#f3ece8}.menu__item:hover{background:-webkit-linear-gradient(hsla(0,0%,49%,.5),rgba(45,45,45,.5))}@media screen and (max-width:480px){.menu__item{padding:5px;margin:0;font-size:1.3rem}}.header__board{display:grid;grid-template-columns:1fr 2fr 1fr;grid-template-rows:50px 80px auto;grid-template-areas:\"emblem search search\" \"text text text\" \"audio audio audio\";position:relative;width:100%;padding:10px;background:rgba(75,75,75,.5);border:2px solid #282828;border-radius:5px 5px 0 0}@media screen and (max-width:800px){.header__board{grid-template-rows:auto}}.header__emblem{display:inline-block;grid-area:emblem;background:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../images/emblem.png\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") no-repeat 50% 50%;background-size:cover;height:80px;width:80px}@media screen and (max-width:480px){.header__emblem{height:50px;width:50px}}.header__text{display:inline-block;grid-area:text;align-self:start;font-family:Lato,Arial,sans-serif;font-weight:200;font-style:italic;font-size:4.5rem;color:#f3ece8;text-align:center}.header__search{grid-area:search;justify-self:end;align-self:start}.header__audio{grid-area:audio;justify-self:center}.events{display:flex;width:250px;height:184px}.events__image-container{float:left;width:32.99%;border-radius:5px 0 0 5px}.events__image{width:100%;height:100%;border-radius:5px 0 0 5px}.events__content{float:left;width:67.01%;border-radius:0 5px 5px 0;background:#4eb7a8;color:#fff;padding-left:11px}.events__header{font-weight:900;font-size:12.5px;margin-top:8.5px}.events__date,.events__header{font-family:Lato,Arial,sans-serif;font-style:normal}.events__date{font-weight:300;margin-top:11px}.events__date_num{font-size:55px;line-height:55px;display:inline-block}.events__date_month{font-size:24px;display:inline-block;margin-left:9px}.events__text{font-weight:400;font-size:11px;margin-top:7px}.events__button,.events__text{font-family:Lato,Arial,sans-serif;font-style:normal}.events__button{position:relative;box-sizing:border-box;border-radius:3px;cursor:pointer;outline:none;font-weight:900;color:#4eb7a8;font-size:10px;width:128px;height:25px;background-color:#fff;border:solid #28a290;border-width:0 0 3px;margin:21px 0 0 7px;z-index:1000}.events__button:active{background:#28a290;color:#fff;border:solid #fff;border-width:1px 1px 3px}.news{display:flex;width:250px;height:184px}.news__image-container{float:left;width:32.99%;border-radius:5px 0 0 5px}.news__image{width:100%;height:100%;border-radius:5px 0 0 5px}.news__content{float:left;width:67.01%;border-radius:0 5px 5px 0;background:#e75735;color:#fff;padding:15px 0 0 15px}.news__header{font-family:Lato,Arial,sans-serif;font-weight:300;font-style:normal;font-size:28px}.news__date{font-weight:900;margin-top:7px}.news__date,.news__text{font-family:Lato,Arial,sans-serif;font-style:normal;font-size:11px}.news__text{font-weight:400;margin-top:11px}.calendar__header{width:279px;border-radius:4px 4px 0 0;background:#e75735;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#fff}.calendar__date{font-family:Lato,Arial,sans-serif;font-weight:300;font-style:normal;font-size:8rem;margin-top:15px}.calendar__slider{background:#d54c2c;width:100%;text-align:center}.calendar__month{display:inline-block;font-family:Lato,Arial,sans-serif;font-weight:300;font-style:normal;font-size:2.4rem;line-height:43px;width:72%}.calendar__button{display:inline-block;height:43px;width:14%;cursor:pointer}.calendar__button:hover{background:#ffaf64}.calendar__button_left{float:left;display:flex;justify-content:center;align-items:center}.calendar__button_left:after{display:inline-block;content:\"\";border:solid #fff;border-width:0 0 2px 2px;padding:4px;transform:rotate(45deg)}.calendar__button_right{float:right;display:flex;justify-content:center;align-items:center}.calendar__button_right:after{display:inline-block;content:\"\";border:solid #fff;border-width:0 0 2px 2px;padding:4px;transform:rotate(-135deg)}.calendar__week-list{padding:0;margin:0}.calendar__day{display:inline-block;font-size:.9rem;text-transform:uppercase;padding:10px 10px 9px}.calendar__body{width:279px}.calendar__list{margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:space-between}.calendar__list-item{display:inline-block;width:39px;background:#f2f2f2;font-family:SourceSansPro,Arial,sans-serif;font-size:2rem;margin-top:1px;text-align:center;line-height:39px;cursor:pointer;color:#868686}.calendar__list-item_empty{color:#fff}.calendar__list-item_active{background:#e75735;color:#fff}.calendar__footer{width:279px;line-height:49px;background:#e5e5e5;border-radius:0 0 4px 4px;margin-top:1px}.calendar__info{font-family:SourceSansPro,Arial,sans-serif;color:#868686;font-size:1.3rem;margin-left:20px}.footer__container{display:flex;justify-content:space-around;align-items:center;width:100%;padding:15px;background:#282828;font-family:Lato,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.2rem;color:#fff}.footer__container_adress{margin-left:10px}.footer__text{display:block;padding-bottom:5px}.footer__text_first{padding-bottom:10px}.footer__text_last{padding:0}.footer__container_imgage{width:160px;height:160px}@media screen and (max-width:700px){.footer__container_imgage{width:100px;height:100px}}.footer__image{width:100%;height:100%}.main__event{display:none;padding:20px 5%}.event__image{width:100%;max-width:702px;height:400px}.event__title{padding:0;margin:20px 0 0;text-align:center;font-size:4.5rem}@media screen and (max-width:800px){.event__title{font-size:3.5rem}}.event__text{font-size:1.8rem;margin-top:25px}@media screen and (max-width:800px){.event__text{font-size:1.6rem}}.event-pic-flex{display:flex;justify-content:space-around;align-items:flex-end}@media screen and (max-width:800px){.event-pic-flex{flex-direction:column;align-items:center}}.event__pic-container{display:inline-block;background:#bababa;margin-top:20px}.event__pic-desc{font-size:1.6rem}@media screen and (max-width:800px){.event__pic-desc{font-size:1.4rem}}.main__news-article{display:none;padding:20px 5%}.article_visible{display:block}.news-article__image{width:100%;max-width:702px;height:400px}.news-article__title{padding:0;margin:20px 0 0;text-align:center;font-size:4.5rem}@media screen and (max-width:800px){.news-article__title{font-size:3.5rem}}.news-article__text{font-size:1.8rem;margin:25px 20px 0 0}@media screen and (max-width:800px){.news-article__text{font-size:1.6rem;margin-right:0}}.news-article__pic-container{display:inline-block;background:#bababa;margin-top:20px}.news-article__pic-desc{font-size:1.6rem}@media screen and (max-width:800px){.news-article__pic-desc{font-size:1.4rem}}.news-flex-wrapper{display:flex;justify-content:space-between;align-items:flex-start}@media screen and (max-width:800px){.news-flex-wrapper{flex-direction:column;align-items:center}}.text-flex-wrapper{display:flex;flex-direction:column;justify-content:space-between}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Black.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Black.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Black.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:900;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-BlackItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-BlackItalic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-BlackItalic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:900;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Bold.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Bold.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Bold.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-BoldItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-BoldItalic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-BoldItalic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Hairline.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Hairline.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Hairline.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:100;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-HairlineItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-HairlineItalic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-HairlineItalic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:100;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Heavy.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Heavy.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Heavy.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:800;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-HeavyItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-HeavyItalic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-HeavyItalic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:800;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Italic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Italic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Italic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:400;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Light.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Light.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Light.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:300;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-LightItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-LightItalic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-LightItalic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:300;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Medium.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Medium.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Medium.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:500;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-MediumItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-MediumItalic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-MediumItalic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:500;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Regular.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Regular.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Regular.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Semibold.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Semibold.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Semibold.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:600;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-SemiboldItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-SemiboldItalic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-SemiboldItalic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:600;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Thin.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Thin.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-Thin.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:200;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-ThinItalic.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-ThinItalic.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Lato-ThinItalic.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:200;font-style:italic}@font-face{font-family:Myriad Pro SemiExtended;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Myriad Pro Bold SemiExtended.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Myriad Pro Bold SemiExtended.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Myriad Pro Bold SemiExtended.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Myriad Pro SemiExtended;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Myriad Pro Light SemiExtended.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Myriad Pro Light SemiExtended.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/Myriad Pro Light SemiExtended.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:300;font-style:normal}@font-face{font-family:MyriadPro SemiCn;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/MyriadPro BlackSemiCn.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/MyriadPro BlackSemiCn.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/MyriadPro BlackSemiCn.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:900;font-style:normal}@font-face{font-family:MyriadPro;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/MyriadPro Bold.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/MyriadPro Bold.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/MyriadPro Bold.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:MyriadPro;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/MyriadPro Regular.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/MyriadPro Regular.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/MyriadPro Regular.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:SourceSansPro;src:url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/SourceSansPro-Regular.eot\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/SourceSansPro-Regular.woff\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"woff\"),url(" + escape(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../../fonts/SourceSansPro-Regular.ttf\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))) + ") format(\"truetype\");font-weight:400;font-style:normal}*{box-sizing:border-box}html{font-family:SourceSansPro,Arial,sans-serif;font-size:62.5%;color:#282828;background:#fff}body{padding:0;margin:0}.title{padding:0;margin:20px 0 0;font-size:5rem;text-align:center}@media screen and (max-width:800px){.title{font-size:4rem}}.title_sub{font-size:2rem;margin:15px 0 0;padding:0 10px}@media screen and (max-width:800px){.title_sub{font-size:1.6rem}}.epigraph{float:right;padding:0;margin:10px 15px 0 0;font-size:1.6rem;font-style:italic}@media screen and (max-width:800px){.epigraph{font-size:1.2rem}}.message{width:100%;overflow:auto;padding:13px 2%;margin-top:90px;border-top:2px dashed #282828;border-bottom:2px dashed #282828}.message__container{display:flex;justify-content:space-between;width:100%;border-radius:42px;background:#eaeaea;padding-right:15px}.message__title{font-size:1.6rem;text-align:center}.message__text{font-size:1.6rem;margin-left:20px;font-style:italic}.user-profile__img-container{flex-shrink:0;height:84px;width:84px;border:4px solid #e5e5e5;border-radius:50%}.user-profile__img{height:100%;width:100%;border-radius:50%}.main-content{display:grid;grid-template-columns:300px 1fr 200px;grid-template-rows:445px auto;grid-gap:25px;grid-template-areas:\"sidebar main infobar\" \"calendar main .\";padding:20px 20px 40px 0}@media screen and (max-width:1024px){.main-content{grid-template-columns:1fr 1fr;grid-template-rows:auto;grid-template-areas:\"sidebar sidebar\" \"main main\" \"calendar infobar\";column-gap:0;grid-row-gap:25px;padding:20px 0 40px}}.sidebar{grid-area:sidebar;background:#eaeaea;overflow-y:auto}@media screen and (max-width:1024px){.sidebar{overflow:hidden;overflow-x:scroll;height:auto;white-space:nowrap}.sidebar__item{white-space:normal}}.sidebar__title{padding:0;margin:0;text-align:center;font-size:1.7em;background:#bababa}.sidebar__item{position:relative;display:inline-block;padding:10px 20px}.sidebar__item:hover{background:#bababa;cursor:pointer}.sidebar__toggle{position:absolute;top:0;right:0;bottom:0;left:0;background:hsla(0,0%,100%,0)}.sidebar::-webkit-scrollbar{width:10px}.sidebar::-webkit-scrollbar-track{background:#eaeaea}.sidebar::-webkit-scrollbar-thumb{background:#666}.sidebar::-webkit-scrollbar-thumb:hover{background:#555}.calendar{grid-area:calendar;justify-self:end}@media screen and (max-width:1024px){.calendar{justify-self:center}}@media screen and (max-width:500px){.calendar{display:none}}.main{grid-area:main;background:linear-gradient(180deg,#dcdcdc,hsla(0,0%,86%,0) 80%)}.main,.news-info{border-radius:15px}.news-info{grid-area:infobar;display:flex;flex-direction:column;justify-content:space-between;background:#bababa;height:222px;padding:15px}@media screen and (max-width:1024px){.news-info{width:200px;justify-self:center}}.info-text-container{display:flex;flex-direction:column;flex-basis:80%;justify-content:space-between}.info{font-size:1.6rem;line-height:2.9rem}.info_article{text-decoration:underline}.info__icons{flex-basis:20%;font-size:1.8rem;display:flex;justify-content:space-around;align-items:flex-end;color:#888}.icon:hover{cursor:pointer;color:#e5e5e5}@font-face{font-family:SourceSansPro;src:url(" + escape(__webpack_require__(19)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(21)) + ") format(\"woff\"),url(" + escape(__webpack_require__(20)) + ") format(\"truetype\");font-weight:400;font-style:normal}", ""]);
+exports.push([module.i, ".search{display:flex;width:288px}@media screen and (max-width:480px){.search{width:170px}}.search__input{flex-basis:255px;border:none;border-radius:5px 0 0 5px;min-height:30px;padding:5px 0 7px 8px;font-family:SourceSansPro,Arial,sans-serif}.search__input font-size 1.4rem_grey{background:#f3ece8;color:#888}@media screen and (max-width:480px){.search__input{width:137px}}.search__button{flex-basis:33px;min-height:30px;background:#4b4b4b;border:none;outline:none;border-radius:0 5px 5px 0;color:#fff;cursor:pointer}.search__button:hover{background:#282828}.slider{-webkit-appearance:none;appearance:none;width:100%;max-width:37.14vw;height:5px;background:#e5e5e5;outline:none;border-radius:3px}.slider::-webkit-slider-thumb{position:relative;-webkit-appearance:none;appearance:none;width:19px;height:19px;border-radius:50%;cursor:pointer}.slider_red::-webkit-slider-thumb{background:#e75735}.slider_green::-webkit-slider-thumb{background:#4eb7a8}.slider_track{background:-webkit-linear-gradient(left,#4eb7a8,#4eb7a8 1%,#e5e5e5 0,#e5e5e5)}.slider__grade{display:none}.slider__grade_true{display:flex;justify-content:space-between;margin-top:12px;max-width:37.14vw;width:100%}.slider__value{color:#d1d1d1;font-size:1.1rem}.audio-player{display:flex;align-items:center}.audio__btn{font-size:1.4rem;background:#4b4b4b;padding:5px 10px;margin-right:5px;cursor:pointer;border-radius:5px;color:#fff}.audio__btn:hover{background:#282828}#songVolume{margin-left:5px;width:35px}.audio__slider{flex-grow:1}.audio__timer{height:28px;width:48px;font-family:Lato,Arial,sans-serif;font-weight:700;font-style:normal;font-size:1.4rem;color:#fff;text-align:center;background:#4b4b4b;border-radius:5px;margin-left:10px}.audio__timer:before{content:\"\";height:28px;display:inline-block;vertical-align:middle}.audio__volume-meter{margin-top:-5px}.header{width:100%;background-image:url(\"../../images/header.jpg\");background-repeat:no-repeat;background-size:cover;padding:2% 1% 10%}.menu{display:flex;justify-content:center;padding:0;margin:0}.menu__item{font-family:Lato,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.6rem;margin:0 1vw;padding:8px 15px;background:rgba(75,75,75,.5);text-align:center;border-radius:5px 5px 0 0;border:2px solid #282828;border-bottom:0;cursor:pointer;text-decoration:none;color:#f3ece8}.menu__item:hover{background:-webkit-linear-gradient(hsla(0,0%,49%,.5),rgba(45,45,45,.5))}@media screen and (max-width:480px){.menu__item{padding:5px;margin:0;font-size:1.3rem}}.header__board{display:grid;grid-template-columns:1fr 2fr 1fr;grid-template-rows:50px 80px auto;grid-template-areas:\"emblem search search\" \"text text text\" \"audio audio audio\";position:relative;width:100%;padding:10px;background:rgba(75,75,75,.5);border:2px solid #282828;border-radius:5px 5px 0 0}@media screen and (max-width:800px){.header__board{grid-template-rows:auto}}.header__emblem{display:inline-block;grid-area:emblem;background:url(\"../../images/emblem.png\") no-repeat 50% 50%;background-size:cover;height:80px;width:80px}@media screen and (max-width:480px){.header__emblem{height:50px;width:50px}}.header__text{display:inline-block;grid-area:text;align-self:start;font-family:Lato,Arial,sans-serif;font-weight:200;font-style:italic;font-size:4.5rem;color:#f3ece8;text-align:center}.header__search{grid-area:search;justify-self:end;align-self:start}.header__audio{grid-area:audio;justify-self:center}.events{display:flex;width:250px;height:184px}.events__image-container{float:left;width:32.99%;border-radius:5px 0 0 5px}.events__image{width:100%;height:100%;border-radius:5px 0 0 5px}.events__content{float:left;width:67.01%;border-radius:0 5px 5px 0;background:#4eb7a8;color:#fff;padding-left:11px}.events__header{font-weight:900;font-size:12.5px;margin-top:8.5px}.events__date,.events__header{font-family:Lato,Arial,sans-serif;font-style:normal}.events__date{font-weight:300;margin-top:11px}.events__date_num{font-size:55px;line-height:55px;display:inline-block}.events__date_month{font-size:24px;display:inline-block;margin-left:9px}.events__text{font-weight:400;font-size:11px;margin-top:7px}.events__button,.events__text{font-family:Lato,Arial,sans-serif;font-style:normal}.events__button{position:relative;box-sizing:border-box;border-radius:3px;cursor:pointer;outline:none;font-weight:900;color:#4eb7a8;font-size:10px;width:128px;height:25px;background-color:#fff;border:solid #28a290;border-width:0 0 3px;margin:21px 0 0 7px;z-index:1000}.events__button:active{background:#28a290;color:#fff;border:solid #fff;border-width:1px 1px 3px}.news{display:flex;width:250px;height:184px}.news__image-container{float:left;width:32.99%;border-radius:5px 0 0 5px}.news__image{width:100%;height:100%;border-radius:5px 0 0 5px}.news__content{float:left;width:67.01%;border-radius:0 5px 5px 0;background:#e75735;color:#fff;padding:15px 0 0 15px}.news__header{font-family:Lato,Arial,sans-serif;font-weight:300;font-style:normal;font-size:28px}.news__date{font-weight:900;margin-top:7px}.news__date,.news__text{font-family:Lato,Arial,sans-serif;font-style:normal;font-size:11px}.news__text{font-weight:400;margin-top:11px}.calendar__header{width:279px;border-radius:4px 4px 0 0;background:#e75735;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:#fff}.calendar__date{font-family:Lato,Arial,sans-serif;font-weight:300;font-style:normal;font-size:8rem;margin-top:15px}.calendar__slider{background:#d54c2c;width:100%;text-align:center}.calendar__month{display:inline-block;font-family:Lato,Arial,sans-serif;font-weight:300;font-style:normal;font-size:2.4rem;line-height:43px;width:72%}.calendar__button{display:inline-block;height:43px;width:14%;cursor:pointer}.calendar__button:hover{background:#ffaf64}.calendar__button_left{float:left;display:flex;justify-content:center;align-items:center}.calendar__button_left:after{display:inline-block;content:\"\";border:solid #fff;border-width:0 0 2px 2px;padding:4px;transform:rotate(45deg)}.calendar__button_right{float:right;display:flex;justify-content:center;align-items:center}.calendar__button_right:after{display:inline-block;content:\"\";border:solid #fff;border-width:0 0 2px 2px;padding:4px;transform:rotate(-135deg)}.calendar__week-list{padding:0;margin:0}.calendar__day{display:inline-block;font-size:.9rem;text-transform:uppercase;padding:10px 10px 9px}.calendar__body{width:279px}.calendar__list{margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:space-between}.calendar__list-item{display:inline-block;width:39px;background:#f2f2f2;font-family:SourceSansPro,Arial,sans-serif;font-size:2rem;margin-top:1px;text-align:center;line-height:39px;cursor:pointer;color:#868686}.calendar__list-item_empty{color:#fff}.calendar__list-item_active{background:#e75735;color:#fff}.calendar__footer{width:279px;line-height:49px;background:#e5e5e5;border-radius:0 0 4px 4px;margin-top:1px}.calendar__info{font-family:SourceSansPro,Arial,sans-serif;color:#868686;font-size:1.3rem;margin-left:20px}.footer__container{display:flex;justify-content:space-around;align-items:center;width:100%;padding:15px;background:#282828;font-family:Lato,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.2rem;color:#fff}.footer__container_adress{margin-left:10px}.footer__text{display:block;padding-bottom:5px}.footer__text_first{padding-bottom:10px}.footer__text_last{padding:0}.footer__container_imgage{width:160px;height:160px;border-radius:50%}@media screen and (max-width:700px){.footer__container_imgage{width:100px;height:100px}}.footer__image{width:100%;height:100%;border-radius:50%}.main__event{display:none;padding:20px 5%}.event__image{width:100%;max-width:702px;height:400px}.event__title{padding:0;margin:20px 0 0;text-align:center;font-size:4.5rem}@media screen and (max-width:800px){.event__title{font-size:3.5rem}}.event__text{font-size:1.8rem;margin-top:25px}@media screen and (max-width:800px){.event__text{font-size:1.6rem}}.event-pic-flex{display:flex;justify-content:space-around;align-items:flex-end}@media screen and (max-width:800px){.event-pic-flex{flex-direction:column;align-items:center}}.event__pic-container{display:inline-block;background:#bababa;margin-top:20px}.event__pic-desc{font-size:1.6rem}@media screen and (max-width:800px){.event__pic-desc{font-size:1.4rem}}.main__news-article{display:none;padding:20px 5%}.article_visible{display:block}.news-article__image{width:100%;max-width:702px;height:400px}.news-article__title{padding:0;margin:20px 0 0;text-align:center;font-size:4.5rem}@media screen and (max-width:800px){.news-article__title{font-size:3.5rem}}.news-article__text{font-size:1.8rem;margin:25px 20px 0 0}@media screen and (max-width:800px){.news-article__text{font-size:1.6rem;margin-right:0}}.news-article__pic-container{display:inline-block;background:#bababa;margin-top:20px}.news-article__pic-desc{font-size:1.6rem}@media screen and (max-width:800px){.news-article__pic-desc{font-size:1.4rem}}.news-flex-wrapper{display:flex;justify-content:space-between;align-items:flex-start}@media screen and (max-width:800px){.news-flex-wrapper{flex-direction:column;align-items:center}}.text-flex-wrapper{display:flex;flex-direction:column;justify-content:space-between}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Black.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Black.woff\") format(\"woff\"),url(\"../../fonts/Lato-Black.ttf\") format(\"truetype\");font-weight:900;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-BlackItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-BlackItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-BlackItalic.ttf\") format(\"truetype\");font-weight:900;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Bold.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Bold.woff\") format(\"woff\"),url(\"../../fonts/Lato-Bold.ttf\") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-BoldItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-BoldItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-BoldItalic.ttf\") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Hairline.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Hairline.woff\") format(\"woff\"),url(\"../../fonts/Lato-Hairline.ttf\") format(\"truetype\");font-weight:100;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-HairlineItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-HairlineItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-HairlineItalic.ttf\") format(\"truetype\");font-weight:100;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Heavy.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Heavy.woff\") format(\"woff\"),url(\"../../fonts/Lato-Heavy.ttf\") format(\"truetype\");font-weight:800;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-HeavyItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-HeavyItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-HeavyItalic.ttf\") format(\"truetype\");font-weight:800;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Italic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Italic.woff\") format(\"woff\"),url(\"../../fonts/Lato-Italic.ttf\") format(\"truetype\");font-weight:400;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Light.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Light.woff\") format(\"woff\"),url(\"../../fonts/Lato-Light.ttf\") format(\"truetype\");font-weight:300;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-LightItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-LightItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-LightItalic.ttf\") format(\"truetype\");font-weight:300;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Medium.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Medium.woff\") format(\"woff\"),url(\"../../fonts/Lato-Medium.ttf\") format(\"truetype\");font-weight:500;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-MediumItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-MediumItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-MediumItalic.ttf\") format(\"truetype\");font-weight:500;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Regular.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Regular.woff\") format(\"woff\"),url(\"../../fonts/Lato-Regular.ttf\") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Semibold.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Semibold.woff\") format(\"woff\"),url(\"../../fonts/Lato-Semibold.ttf\") format(\"truetype\");font-weight:600;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-SemiboldItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-SemiboldItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-SemiboldItalic.ttf\") format(\"truetype\");font-weight:600;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Thin.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Thin.woff\") format(\"woff\"),url(\"../../fonts/Lato-Thin.ttf\") format(\"truetype\");font-weight:200;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-ThinItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-ThinItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-ThinItalic.ttf\") format(\"truetype\");font-weight:200;font-style:italic}@font-face{font-family:Myriad Pro SemiExtended;src:url(\"../../fonts/Myriad Pro Bold SemiExtended.eot\");src:local(\"\\263A\"),url(\"../../fonts/Myriad Pro Bold SemiExtended.woff\") format(\"woff\"),url(\"../../fonts/Myriad Pro Bold SemiExtended.ttf\") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Myriad Pro SemiExtended;src:url(\"../../fonts/Myriad Pro Light SemiExtended.eot\");src:local(\"\\263A\"),url(\"../../fonts/Myriad Pro Light SemiExtended.woff\") format(\"woff\"),url(\"../../fonts/Myriad Pro Light SemiExtended.ttf\") format(\"truetype\");font-weight:300;font-style:normal}@font-face{font-family:MyriadPro SemiCn;src:url(\"../../fonts/MyriadPro BlackSemiCn.eot\");src:local(\"\\263A\"),url(\"../../fonts/MyriadPro BlackSemiCn.woff\") format(\"woff\"),url(\"../../fonts/MyriadPro BlackSemiCn.ttf\") format(\"truetype\");font-weight:900;font-style:normal}@font-face{font-family:MyriadPro;src:url(\"../../fonts/MyriadPro Bold.eot\");src:local(\"\\263A\"),url(\"../../fonts/MyriadPro Bold.woff\") format(\"woff\"),url(\"../../fonts/MyriadPro Bold.ttf\") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:MyriadPro;src:url(\"../../fonts/MyriadPro Regular.eot\");src:local(\"\\263A\"),url(\"../../fonts/MyriadPro Regular.woff\") format(\"woff\"),url(\"../../fonts/MyriadPro Regular.ttf\") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:SourceSansPro;src:url(\"../../fonts/SourceSansPro-Regular.eot\");src:local(\"\\263A\"),url(\"../../fonts/SourceSansPro-Regular.woff\") format(\"woff\"),url(\"../../fonts/SourceSansPro-Regular.ttf\") format(\"truetype\");font-weight:400;font-style:normal}*{box-sizing:border-box}html{font-family:SourceSansPro,Arial,sans-serif;font-size:62.5%;color:#282828;background:#fff}body{padding:0;margin:0}.title{padding:0;margin:20px 0 0;font-size:5rem;text-align:center}@media screen and (max-width:800px){.title{font-size:4rem}}.title_sub{font-size:2rem;margin:15px 0 0;padding:0 10px}@media screen and (max-width:800px){.title_sub{font-size:1.6rem}}.epigraph{float:right;padding:0;margin:10px 15px 0 0;font-size:1.6rem;font-style:italic}@media screen and (max-width:800px){.epigraph{font-size:1.2rem}}.message{width:100%;overflow:auto;padding:13px 2%;margin-top:90px;border-top:2px dashed #282828;border-bottom:2px dashed #282828}.message__container{display:flex;justify-content:space-between;width:100%;border-radius:42px;background:#eaeaea;padding-right:15px}.message__title{font-size:1.6rem;text-align:center}.message__text{font-size:1.6rem;margin-left:20px;font-style:italic}.user-profile__img-container{flex-shrink:0;height:84px;width:84px;border:4px solid #e5e5e5;border-radius:50%}.user-profile__img{height:100%;width:100%;border-radius:50%}.main-content{display:grid;grid-template-columns:300px 1fr 200px;grid-template-rows:445px auto;grid-gap:25px;grid-template-areas:\"sidebar main infobar\" \"calendar main .\";padding:20px 20px 40px 0}@media screen and (max-width:1024px){.main-content{grid-template-columns:1fr 1fr;grid-template-rows:auto;grid-template-areas:\"sidebar sidebar\" \"main main\" \"calendar infobar\";column-gap:0;grid-row-gap:25px;padding:20px 0 40px}}.sidebar{grid-area:sidebar;background:#eaeaea;overflow-y:auto}@media screen and (max-width:1024px){.sidebar{overflow:hidden;overflow-x:scroll;height:auto;white-space:nowrap}.sidebar__item{white-space:normal}}.sidebar__title{padding:0;margin:0;text-align:center;font-size:1.7em;background:#bababa}.sidebar__item{position:relative;display:inline-block;padding:10px 20px}.sidebar__item:hover{background:#bababa;cursor:pointer}.sidebar__toggle{position:absolute;top:0;right:0;bottom:0;left:0;background:hsla(0,0%,100%,0)}.sidebar::-webkit-scrollbar{width:10px}.sidebar::-webkit-scrollbar-track{background:#eaeaea}.sidebar::-webkit-scrollbar-thumb{background:#666}.sidebar::-webkit-scrollbar-thumb:hover{background:#555}.calendar{grid-area:calendar;justify-self:end}@media screen and (max-width:1024px){.calendar{justify-self:center}}@media screen and (max-width:500px){.calendar{display:none}}.main{grid-area:main;background:linear-gradient(180deg,#dcdcdc,hsla(0,0%,86%,0) 80%)}.main,.news-info{border-radius:15px}.news-info{grid-area:infobar;display:flex;flex-direction:column;justify-content:space-between;background:#bababa;height:222px;padding:15px}@media screen and (max-width:1024px){.news-info{width:200px;justify-self:center}}.info-text-container{display:flex;flex-direction:column;flex-basis:80%;justify-content:space-between}.info{font-size:1.6rem;line-height:2.9rem}.info_article{text-decoration:underline}.info__icons{flex-basis:20%;font-size:1.8rem;display:flex;justify-content:space-around;align-items:flex-end;color:#888}.icon:hover{cursor:pointer;color:#e5e5e5}@font-face{font-family:SourceSansPro;src:url(\"fonts/SourceSansPro-Regular.eot\");src:local(\"\\263A\"),url(\"fonts/SourceSansPro-Regular.woff\") format(\"woff\"),url(\"fonts/SourceSansPro-Regular.ttf\") format(\"truetype\");font-weight:400;font-style:normal}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17859,14 +17741,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__favicons_favicons_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__favicons_favicons_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_calendar_calendar_js__ = __webpack_require__(239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_calendar_calendar_js__ = __webpack_require__(164);
 
 
 
 
 
-const html = __webpack_require__(229);
-const css = __webpack_require__(234);
+const html = __webpack_require__(154);
+const css = __webpack_require__(159);
 
 (function() {
   __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__blocks_calendar_calendar_js__["a" /* myCalendar */])();

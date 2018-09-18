@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 303);
+/******/ 	return __webpack_require__(__webpack_require__.s = 222);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1905,7 +1905,7 @@
             try {
                 oldLocale = globalLocale._abbr;
                 var aliasedRequire = require;
-                __webpack_require__(223)("./" + name);
+                __webpack_require__(148)("./" + name);
                 getSetGlobalLocale(oldLocale);
             } catch (e) {}
         }
@@ -4577,7 +4577,7 @@
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(224)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(149)(module)))
 
 /***/ }),
 /* 1 */
@@ -4586,10 +4586,10 @@
 "use strict";
 
 
-module.exports = __webpack_require__(222);
-module.exports.easing = __webpack_require__(270);
-module.exports.canvas = __webpack_require__(269);
-module.exports.options = __webpack_require__(271);
+module.exports = __webpack_require__(147);
+module.exports.easing = __webpack_require__(195);
+module.exports.canvas = __webpack_require__(194);
+module.exports.options = __webpack_require__(196);
 
 
 /***/ }),
@@ -4616,7 +4616,7 @@ module.exports = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__audio_player_audio_player__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__audio_player_audio_player__ = __webpack_require__(18);
 
 
 (function() {
@@ -4628,7 +4628,7 @@ module.exports = {
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-const faviconsContext = __webpack_require__(24);
+const faviconsContext = __webpack_require__(20);
 faviconsContext.keys().forEach(faviconsContext);
 
 /***/ }),
@@ -4638,7 +4638,7 @@ faviconsContext.keys().forEach(faviconsContext);
 "use strict";
 
 
-var color = __webpack_require__(228);
+var color = __webpack_require__(153);
 var helpers = __webpack_require__(1);
 
 function interpolate(start, view, model, ease) {
@@ -4837,82 +4837,60 @@ function toComment(sourceMap) {
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports) {
-
-module.exports = function escape(url) {
-    if (typeof url !== 'string') {
-        return url
-    }
-    // If url is already wrapped in quotes, remove them
-    if (/^['"].*['"]$/.test(url)) {
-        url = url.slice(1, -1);
-    }
-    // Should url be wrapped?
-    // See https://drafts.csswg.org/css-values-3/#urls
-    if (/["'() \t\n]/.test(url)) {
-        return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"'
-    }
-
-    return url
-}
-
-
-/***/ }),
-/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/android-chrome-192x192.png";
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/android-chrome-512x512.png";
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/apple-touch-icon.png";
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/browserconfig.xml";
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/favicon-16x16.png";
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/favicon-32x32.png";
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/favicon.ico";
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/mstile-150x150.png";
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicons/safari-pinned-tab.svg";
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -4968,7 +4946,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(18);
+var	fixUrls = __webpack_require__(17);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -5284,7 +5262,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports) {
 
 
@@ -5379,30 +5357,12 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/SourceSansPro-Regular.eot";
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/SourceSansPro-Regular.ttf";
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/SourceSansPro-Regular.woff";
-
-/***/ }),
-/* 22 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return myAudioPlayer; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sliders_sliders__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sliders_sliders__ = __webpack_require__(19);
 
 
 const myAudioPlayer = function() {
@@ -5484,7 +5444,7 @@ const myAudioPlayer = function() {
 
 
 /***/ }),
-/* 23 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5507,19 +5467,19 @@ const sliderWithTrack = function() {
 
 
 /***/ }),
-/* 24 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./android-chrome-192x192.png": 8,
-	"./android-chrome-512x512.png": 9,
-	"./apple-touch-icon.png": 10,
-	"./browserconfig.xml": 11,
-	"./favicon-16x16.png": 12,
-	"./favicon-32x32.png": 13,
-	"./favicon.ico": 14,
-	"./mstile-150x150.png": 15,
-	"./safari-pinned-tab.svg": 16
+	"./android-chrome-192x192.png": 7,
+	"./android-chrome-512x512.png": 8,
+	"./apple-touch-icon.png": 9,
+	"./browserconfig.xml": 10,
+	"./favicon-16x16.png": 11,
+	"./favicon-32x32.png": 12,
+	"./favicon.ico": 13,
+	"./mstile-150x150.png": 14,
+	"./safari-pinned-tab.svg": 15
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -5535,450 +5495,24 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 24;
+webpackContext.id = 20;
 
 /***/ }),
-/* 25 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = {};
-module.exports.Arc = __webpack_require__(265);
-module.exports.Line = __webpack_require__(266);
-module.exports.Point = __webpack_require__(267);
-module.exports.Rectangle = __webpack_require__(268);
+module.exports.Arc = __webpack_require__(190);
+module.exports.Line = __webpack_require__(191);
+module.exports.Point = __webpack_require__(192);
+module.exports.Rectangle = __webpack_require__(193);
 
 
 /***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/emblem.png";
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/header.jpg";
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Black.eot";
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Black.ttf";
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Black.woff";
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-BlackItalic.eot";
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-BlackItalic.ttf";
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-BlackItalic.woff";
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Bold.eot";
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Bold.ttf";
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Bold.woff";
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-BoldItalic.eot";
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-BoldItalic.ttf";
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-BoldItalic.woff";
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Hairline.eot";
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Hairline.ttf";
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Hairline.woff";
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-HairlineItalic.eot";
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-HairlineItalic.ttf";
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-HairlineItalic.woff";
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Heavy.eot";
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Heavy.ttf";
-
-/***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Heavy.woff";
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-HeavyItalic.eot";
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-HeavyItalic.ttf";
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-HeavyItalic.woff";
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Italic.eot";
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Italic.ttf";
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Italic.woff";
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Light.eot";
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Light.ttf";
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Light.woff";
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-LightItalic.eot";
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-LightItalic.ttf";
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-LightItalic.woff";
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Medium.eot";
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Medium.ttf";
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Medium.woff";
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-MediumItalic.eot";
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-MediumItalic.ttf";
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-MediumItalic.woff";
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Regular.eot";
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Regular.ttf";
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Regular.woff";
-
-/***/ }),
-/* 70 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Semibold.eot";
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Semibold.ttf";
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Semibold.woff";
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-SemiboldItalic.eot";
-
-/***/ }),
-/* 74 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-SemiboldItalic.ttf";
-
-/***/ }),
-/* 75 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-SemiboldItalic.woff";
-
-/***/ }),
-/* 76 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Thin.eot";
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Thin.ttf";
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-Thin.woff";
-
-/***/ }),
-/* 79 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-ThinItalic.eot";
-
-/***/ }),
-/* 80 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-ThinItalic.ttf";
-
-/***/ }),
-/* 81 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Lato-ThinItalic.woff";
-
-/***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Myriad Pro Bold SemiExtended.eot";
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Myriad Pro Bold SemiExtended.ttf";
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Myriad Pro Bold SemiExtended.woff";
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Myriad Pro Light SemiExtended.eot";
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Myriad Pro Light SemiExtended.ttf";
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/Myriad Pro Light SemiExtended.woff";
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/MyriadPro BlackSemiCn.eot";
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/MyriadPro BlackSemiCn.ttf";
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/MyriadPro BlackSemiCn.woff";
-
-/***/ }),
-/* 91 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/MyriadPro Bold.eot";
-
-/***/ }),
-/* 92 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/MyriadPro Bold.ttf";
-
-/***/ }),
-/* 93 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/MyriadPro Bold.woff";
-
-/***/ }),
-/* 94 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/MyriadPro Regular.eot";
-
-/***/ }),
-/* 95 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/MyriadPro Regular.ttf";
-
-/***/ }),
-/* 96 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "fonts/MyriadPro Regular.woff";
-
-/***/ }),
-/* 97 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6404,7 +5938,7 @@ module.exports = {
 
 
 /***/ }),
-/* 98 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6481,7 +6015,7 @@ module.exports = {
 
 
 /***/ }),
-/* 99 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6558,7 +6092,7 @@ module.exports = {
 
 
 /***/ }),
-/* 100 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6621,7 +6155,7 @@ module.exports = {
 
 
 /***/ }),
-/* 101 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6684,7 +6218,7 @@ module.exports = {
 
 
 /***/ }),
-/* 102 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6810,7 +6344,7 @@ module.exports = {
 
 
 /***/ }),
-/* 103 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6873,7 +6407,7 @@ module.exports = {
 
 
 /***/ }),
-/* 104 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -6981,7 +6515,7 @@ module.exports = {
 
 
 /***/ }),
-/* 105 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7044,7 +6578,7 @@ module.exports = {
 
 
 /***/ }),
-/* 106 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7183,7 +6717,7 @@ module.exports = {
 
 
 /***/ }),
-/* 107 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7292,7 +6826,7 @@ module.exports = {
 
 
 /***/ }),
-/* 108 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7428,7 +6962,7 @@ module.exports = {
 
 
 /***/ }),
-/* 109 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7522,7 +7056,7 @@ module.exports = {
 
 
 /***/ }),
-/* 110 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7584,7 +7118,7 @@ module.exports = {
 
 
 /***/ }),
-/* 111 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7707,7 +7241,7 @@ module.exports = {
 
 
 /***/ }),
-/* 112 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7830,7 +7364,7 @@ module.exports = {
 
 
 /***/ }),
-/* 113 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -7942,7 +7476,7 @@ module.exports = {
 
 
 /***/ }),
-/* 114 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8097,7 +7631,7 @@ module.exports = {
 
 
 /***/ }),
-/* 115 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8189,7 +7723,7 @@ module.exports = {
 
 
 /***/ }),
-/* 116 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8372,7 +7906,7 @@ module.exports = {
 
 
 /***/ }),
-/* 117 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8439,7 +7973,7 @@ module.exports = {
 
 
 /***/ }),
-/* 118 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8523,7 +8057,7 @@ module.exports = {
 
 
 /***/ }),
-/* 119 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8587,7 +8121,7 @@ module.exports = {
 
 
 /***/ }),
-/* 120 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8667,7 +8201,7 @@ module.exports = {
 
 
 /***/ }),
-/* 121 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8747,7 +8281,7 @@ module.exports = {
 
 
 /***/ }),
-/* 122 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8827,7 +8361,7 @@ module.exports = {
 
 
 /***/ }),
-/* 123 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -8930,7 +8464,7 @@ module.exports = {
 
 
 /***/ }),
-/* 124 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9034,7 +8568,7 @@ module.exports = {
 
 
 /***/ }),
-/* 125 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9105,7 +8639,7 @@ module.exports = {
 
 
 /***/ }),
-/* 126 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9172,7 +8706,7 @@ module.exports = {
 
 
 /***/ }),
-/* 127 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9243,7 +8777,7 @@ module.exports = {
 
 
 /***/ }),
-/* 128 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9314,7 +8848,7 @@ module.exports = {
 
 
 /***/ }),
-/* 129 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9380,7 +8914,7 @@ module.exports = {
 
 
 /***/ }),
-/* 130 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9451,7 +8985,7 @@ module.exports = {
 
 
 /***/ }),
-/* 131 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9526,7 +9060,7 @@ module.exports = {
 
 
 /***/ }),
-/* 132 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9622,7 +9156,7 @@ module.exports = {
 
 
 /***/ }),
-/* 133 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9709,7 +9243,7 @@ module.exports = {
 
 
 /***/ }),
-/* 134 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9805,7 +9339,7 @@ module.exports = {
 
 
 /***/ }),
-/* 135 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9889,7 +9423,7 @@ module.exports = {
 
 
 /***/ }),
-/* 136 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -9959,7 +9493,7 @@ module.exports = {
 
 
 /***/ }),
-/* 137 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10069,7 +9603,7 @@ module.exports = {
 
 
 /***/ }),
-/* 138 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10182,7 +9716,7 @@ module.exports = {
 
 
 /***/ }),
-/* 139 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10246,7 +9780,7 @@ module.exports = {
 
 
 /***/ }),
-/* 140 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10324,7 +9858,7 @@ module.exports = {
 
 
 /***/ }),
-/* 141 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10406,7 +9940,7 @@ module.exports = {
 
 
 /***/ }),
-/* 142 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10493,7 +10027,7 @@ module.exports = {
 
 
 /***/ }),
-/* 143 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10572,7 +10106,7 @@ module.exports = {
 
 
 /***/ }),
-/* 144 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10652,7 +10186,7 @@ module.exports = {
 
 
 /***/ }),
-/* 145 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10733,7 +10267,7 @@ module.exports = {
 
 
 /***/ }),
-/* 146 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10860,7 +10394,7 @@ module.exports = {
 
 
 /***/ }),
-/* 147 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -10988,7 +10522,7 @@ module.exports = {
 
 
 /***/ }),
-/* 148 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11089,7 +10623,7 @@ module.exports = {
 
 
 /***/ }),
-/* 149 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11217,7 +10751,7 @@ module.exports = {
 
 
 /***/ }),
-/* 150 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11375,7 +10909,7 @@ module.exports = {
 
 
 /***/ }),
-/* 151 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11489,7 +11023,7 @@ module.exports = {
 
 
 /***/ }),
-/* 152 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11588,7 +11122,7 @@ module.exports = {
 
 
 /***/ }),
-/* 153 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11674,7 +11208,7 @@ module.exports = {
 
 
 /***/ }),
-/* 154 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11810,7 +11344,7 @@ module.exports = {
 
 
 /***/ }),
-/* 155 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11883,7 +11417,7 @@ module.exports = {
 
 
 /***/ }),
-/* 156 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -11979,7 +11513,7 @@ module.exports = {
 
 
 /***/ }),
-/* 157 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12065,7 +11599,7 @@ module.exports = {
 
 
 /***/ }),
-/* 158 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12158,7 +11692,7 @@ module.exports = {
 
 
 /***/ }),
-/* 159 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12249,7 +11783,7 @@ module.exports = {
 
 
 /***/ }),
-/* 160 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12363,7 +11897,7 @@ module.exports = {
 
 
 /***/ }),
-/* 161 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12493,7 +12027,7 @@ module.exports = {
 
 
 /***/ }),
-/* 162 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12578,7 +12112,7 @@ module.exports = {
 
 
 /***/ }),
-/* 163 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12669,7 +12203,7 @@ module.exports = {
 
 
 /***/ }),
-/* 164 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12809,7 +12343,7 @@ module.exports = {
 
 
 /***/ }),
-/* 165 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -12883,7 +12417,7 @@ module.exports = {
 
 
 /***/ }),
-/* 166 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13005,7 +12539,7 @@ module.exports = {
 
 
 /***/ }),
-/* 167 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13106,7 +12640,7 @@ module.exports = {
 
 
 /***/ }),
-/* 168 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13222,7 +12756,7 @@ module.exports = {
 
 
 /***/ }),
-/* 169 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13290,7 +12824,7 @@ module.exports = {
 
 
 /***/ }),
-/* 170 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13384,7 +12918,7 @@ module.exports = {
 
 
 /***/ }),
-/* 171 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13469,7 +13003,7 @@ module.exports = {
 
 
 /***/ }),
-/* 172 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13577,7 +13111,7 @@ module.exports = {
 
 
 /***/ }),
-/* 173 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13741,7 +13275,7 @@ module.exports = {
 
 
 /***/ }),
-/* 174 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13827,7 +13361,7 @@ module.exports = {
 
 
 /***/ }),
-/* 175 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13913,7 +13447,7 @@ module.exports = {
 
 
 /***/ }),
-/* 176 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -13977,7 +13511,7 @@ module.exports = {
 
 
 /***/ }),
-/* 177 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14074,7 +13608,7 @@ module.exports = {
 
 
 /***/ }),
-/* 178 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14140,7 +13674,7 @@ module.exports = {
 
 
 /***/ }),
-/* 179 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14267,7 +13801,7 @@ module.exports = {
 
 
 /***/ }),
-/* 180 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14358,7 +13892,7 @@ module.exports = {
 
 
 /***/ }),
-/* 181 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14449,7 +13983,7 @@ module.exports = {
 
 
 /***/ }),
-/* 182 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14513,7 +14047,7 @@ module.exports = {
 
 
 /***/ }),
-/* 183 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14641,7 +14175,7 @@ module.exports = {
 
 
 /***/ }),
-/* 184 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14771,7 +14305,7 @@ module.exports = {
 
 
 /***/ }),
-/* 185 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14836,7 +14370,7 @@ module.exports = {
 
 
 /***/ }),
-/* 186 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14905,7 +14439,7 @@ module.exports = {
 
 
 /***/ }),
-/* 187 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -14984,7 +14518,7 @@ module.exports = {
 
 
 /***/ }),
-/* 188 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15170,7 +14704,7 @@ module.exports = {
 
 
 /***/ }),
-/* 189 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15272,7 +14806,7 @@ module.exports = {
 
 
 /***/ }),
-/* 190 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15336,7 +14870,7 @@ module.exports = {
 
 
 /***/ }),
-/* 191 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15411,7 +14945,7 @@ module.exports = {
 
 
 /***/ }),
-/* 192 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15571,7 +15105,7 @@ module.exports = {
 
 
 /***/ }),
-/* 193 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15748,7 +15282,7 @@ module.exports = {
 
 
 /***/ }),
-/* 194 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15820,7 +15354,7 @@ module.exports = {
 
 
 /***/ }),
-/* 195 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -15935,7 +15469,7 @@ module.exports = {
 
 
 /***/ }),
-/* 196 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16050,7 +15584,7 @@ module.exports = {
 
 
 /***/ }),
-/* 197 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16142,7 +15676,7 @@ module.exports = {
 
 
 /***/ }),
-/* 198 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16215,7 +15749,7 @@ module.exports = {
 
 
 /***/ }),
-/* 199 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16278,7 +15812,7 @@ module.exports = {
 
 
 /***/ }),
-/* 200 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16411,7 +15945,7 @@ module.exports = {
 
 
 /***/ }),
-/* 201 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16504,7 +16038,7 @@ module.exports = {
 
 
 /***/ }),
-/* 202 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16575,7 +16109,7 @@ module.exports = {
 
 
 /***/ }),
-/* 203 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16695,7 +16229,7 @@ module.exports = {
 
 
 /***/ }),
-/* 204 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16766,7 +16300,7 @@ module.exports = {
 
 
 /***/ }),
-/* 205 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16832,7 +16366,7 @@ module.exports = {
 
 
 /***/ }),
-/* 206 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -16958,7 +16492,7 @@ module.exports = {
 
 
 /***/ }),
-/* 207 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -17056,7 +16590,7 @@ module.exports = {
 
 
 /***/ }),
-/* 208 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17151,7 +16685,7 @@ module.exports = {
 
 
 /***/ }),
-/* 209 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17213,7 +16747,7 @@ module.exports = {
 
 
 /***/ }),
-/* 210 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17275,7 +16809,7 @@ module.exports = {
 
 
 /***/ }),
-/* 211 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js language configuration
@@ -17398,7 +16932,7 @@ module.exports = {
 
 
 /***/ }),
-/* 212 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17553,7 +17087,7 @@ module.exports = {
 
 
 /***/ }),
-/* 213 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17655,7 +17189,7 @@ module.exports = {
 
 
 /***/ }),
-/* 214 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17717,7 +17251,7 @@ module.exports = {
 
 
 /***/ }),
-/* 215 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17779,7 +17313,7 @@ module.exports = {
 
 
 /***/ }),
-/* 216 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17862,7 +17396,7 @@ module.exports = {
 
 
 /***/ }),
-/* 217 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17934,7 +17468,7 @@ module.exports = {
 
 
 /***/ }),
-/* 218 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -17998,7 +17532,7 @@ module.exports = {
 
 
 /***/ }),
-/* 219 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -18112,7 +17646,7 @@ module.exports = {
 
 
 /***/ }),
-/* 220 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -18219,7 +17753,7 @@ module.exports = {
 
 
 /***/ }),
-/* 221 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 //! moment.js locale configuration
@@ -18326,7 +17860,7 @@ module.exports = {
 
 
 /***/ }),
-/* 222 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18672,256 +18206,256 @@ helpers.getValueAtIndexOrDefault = helpers.valueAtIndexOrDefault;
 
 
 /***/ }),
-/* 223 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 99,
-	"./af.js": 99,
-	"./ar": 106,
-	"./ar-dz": 100,
-	"./ar-dz.js": 100,
-	"./ar-kw": 101,
-	"./ar-kw.js": 101,
-	"./ar-ly": 102,
-	"./ar-ly.js": 102,
-	"./ar-ma": 103,
-	"./ar-ma.js": 103,
-	"./ar-sa": 104,
-	"./ar-sa.js": 104,
-	"./ar-tn": 105,
-	"./ar-tn.js": 105,
-	"./ar.js": 106,
-	"./az": 107,
-	"./az.js": 107,
-	"./be": 108,
-	"./be.js": 108,
-	"./bg": 109,
-	"./bg.js": 109,
-	"./bm": 110,
-	"./bm.js": 110,
-	"./bn": 111,
-	"./bn.js": 111,
-	"./bo": 112,
-	"./bo.js": 112,
-	"./br": 113,
-	"./br.js": 113,
-	"./bs": 114,
-	"./bs.js": 114,
-	"./ca": 115,
-	"./ca.js": 115,
-	"./cs": 116,
-	"./cs.js": 116,
-	"./cv": 117,
-	"./cv.js": 117,
-	"./cy": 118,
-	"./cy.js": 118,
-	"./da": 119,
-	"./da.js": 119,
-	"./de": 122,
-	"./de-at": 120,
-	"./de-at.js": 120,
-	"./de-ch": 121,
-	"./de-ch.js": 121,
-	"./de.js": 122,
-	"./dv": 123,
-	"./dv.js": 123,
-	"./el": 124,
-	"./el.js": 124,
-	"./en-au": 125,
-	"./en-au.js": 125,
-	"./en-ca": 126,
-	"./en-ca.js": 126,
-	"./en-gb": 127,
-	"./en-gb.js": 127,
-	"./en-ie": 128,
-	"./en-ie.js": 128,
-	"./en-il": 129,
-	"./en-il.js": 129,
-	"./en-nz": 130,
-	"./en-nz.js": 130,
-	"./eo": 131,
-	"./eo.js": 131,
-	"./es": 134,
-	"./es-do": 132,
-	"./es-do.js": 132,
-	"./es-us": 133,
-	"./es-us.js": 133,
-	"./es.js": 134,
-	"./et": 135,
-	"./et.js": 135,
-	"./eu": 136,
-	"./eu.js": 136,
-	"./fa": 137,
-	"./fa.js": 137,
-	"./fi": 138,
-	"./fi.js": 138,
-	"./fo": 139,
-	"./fo.js": 139,
-	"./fr": 142,
-	"./fr-ca": 140,
-	"./fr-ca.js": 140,
-	"./fr-ch": 141,
-	"./fr-ch.js": 141,
-	"./fr.js": 142,
-	"./fy": 143,
-	"./fy.js": 143,
-	"./gd": 144,
-	"./gd.js": 144,
-	"./gl": 145,
-	"./gl.js": 145,
-	"./gom-latn": 146,
-	"./gom-latn.js": 146,
-	"./gu": 147,
-	"./gu.js": 147,
-	"./he": 148,
-	"./he.js": 148,
-	"./hi": 149,
-	"./hi.js": 149,
-	"./hr": 150,
-	"./hr.js": 150,
-	"./hu": 151,
-	"./hu.js": 151,
-	"./hy-am": 152,
-	"./hy-am.js": 152,
-	"./id": 153,
-	"./id.js": 153,
-	"./is": 154,
-	"./is.js": 154,
-	"./it": 155,
-	"./it.js": 155,
-	"./ja": 156,
-	"./ja.js": 156,
-	"./jv": 157,
-	"./jv.js": 157,
-	"./ka": 158,
-	"./ka.js": 158,
-	"./kk": 159,
-	"./kk.js": 159,
-	"./km": 160,
-	"./km.js": 160,
-	"./kn": 161,
-	"./kn.js": 161,
-	"./ko": 162,
-	"./ko.js": 162,
-	"./ky": 163,
-	"./ky.js": 163,
-	"./lb": 164,
-	"./lb.js": 164,
-	"./lo": 165,
-	"./lo.js": 165,
-	"./lt": 166,
-	"./lt.js": 166,
-	"./lv": 167,
-	"./lv.js": 167,
-	"./me": 168,
-	"./me.js": 168,
-	"./mi": 169,
-	"./mi.js": 169,
-	"./mk": 170,
-	"./mk.js": 170,
-	"./ml": 171,
-	"./ml.js": 171,
-	"./mn": 172,
-	"./mn.js": 172,
-	"./mr": 173,
-	"./mr.js": 173,
-	"./ms": 175,
-	"./ms-my": 174,
-	"./ms-my.js": 174,
-	"./ms.js": 175,
-	"./mt": 176,
-	"./mt.js": 176,
-	"./my": 177,
-	"./my.js": 177,
-	"./nb": 178,
-	"./nb.js": 178,
-	"./ne": 179,
-	"./ne.js": 179,
-	"./nl": 181,
-	"./nl-be": 180,
-	"./nl-be.js": 180,
-	"./nl.js": 181,
-	"./nn": 182,
-	"./nn.js": 182,
-	"./pa-in": 183,
-	"./pa-in.js": 183,
-	"./pl": 184,
-	"./pl.js": 184,
-	"./pt": 186,
-	"./pt-br": 185,
-	"./pt-br.js": 185,
-	"./pt.js": 186,
-	"./ro": 187,
-	"./ro.js": 187,
-	"./ru": 188,
-	"./ru.js": 188,
-	"./sd": 189,
-	"./sd.js": 189,
-	"./se": 190,
-	"./se.js": 190,
-	"./si": 191,
-	"./si.js": 191,
-	"./sk": 192,
-	"./sk.js": 192,
-	"./sl": 193,
-	"./sl.js": 193,
-	"./sq": 194,
-	"./sq.js": 194,
-	"./sr": 196,
-	"./sr-cyrl": 195,
-	"./sr-cyrl.js": 195,
-	"./sr.js": 196,
-	"./ss": 197,
-	"./ss.js": 197,
-	"./sv": 198,
-	"./sv.js": 198,
-	"./sw": 199,
-	"./sw.js": 199,
-	"./ta": 200,
-	"./ta.js": 200,
-	"./te": 201,
-	"./te.js": 201,
-	"./tet": 202,
-	"./tet.js": 202,
-	"./tg": 203,
-	"./tg.js": 203,
-	"./th": 204,
-	"./th.js": 204,
-	"./tl-ph": 205,
-	"./tl-ph.js": 205,
-	"./tlh": 206,
-	"./tlh.js": 206,
-	"./tr": 207,
-	"./tr.js": 207,
-	"./tzl": 208,
-	"./tzl.js": 208,
-	"./tzm": 210,
-	"./tzm-latn": 209,
-	"./tzm-latn.js": 209,
-	"./tzm.js": 210,
-	"./ug-cn": 211,
-	"./ug-cn.js": 211,
-	"./uk": 212,
-	"./uk.js": 212,
-	"./ur": 213,
-	"./ur.js": 213,
-	"./uz": 215,
-	"./uz-latn": 214,
-	"./uz-latn.js": 214,
-	"./uz.js": 215,
-	"./vi": 216,
-	"./vi.js": 216,
-	"./x-pseudo": 217,
-	"./x-pseudo.js": 217,
-	"./yo": 218,
-	"./yo.js": 218,
-	"./zh-cn": 219,
-	"./zh-cn.js": 219,
-	"./zh-hk": 220,
-	"./zh-hk.js": 220,
-	"./zh-tw": 221,
-	"./zh-tw.js": 221
+	"./af": 24,
+	"./af.js": 24,
+	"./ar": 31,
+	"./ar-dz": 25,
+	"./ar-dz.js": 25,
+	"./ar-kw": 26,
+	"./ar-kw.js": 26,
+	"./ar-ly": 27,
+	"./ar-ly.js": 27,
+	"./ar-ma": 28,
+	"./ar-ma.js": 28,
+	"./ar-sa": 29,
+	"./ar-sa.js": 29,
+	"./ar-tn": 30,
+	"./ar-tn.js": 30,
+	"./ar.js": 31,
+	"./az": 32,
+	"./az.js": 32,
+	"./be": 33,
+	"./be.js": 33,
+	"./bg": 34,
+	"./bg.js": 34,
+	"./bm": 35,
+	"./bm.js": 35,
+	"./bn": 36,
+	"./bn.js": 36,
+	"./bo": 37,
+	"./bo.js": 37,
+	"./br": 38,
+	"./br.js": 38,
+	"./bs": 39,
+	"./bs.js": 39,
+	"./ca": 40,
+	"./ca.js": 40,
+	"./cs": 41,
+	"./cs.js": 41,
+	"./cv": 42,
+	"./cv.js": 42,
+	"./cy": 43,
+	"./cy.js": 43,
+	"./da": 44,
+	"./da.js": 44,
+	"./de": 47,
+	"./de-at": 45,
+	"./de-at.js": 45,
+	"./de-ch": 46,
+	"./de-ch.js": 46,
+	"./de.js": 47,
+	"./dv": 48,
+	"./dv.js": 48,
+	"./el": 49,
+	"./el.js": 49,
+	"./en-au": 50,
+	"./en-au.js": 50,
+	"./en-ca": 51,
+	"./en-ca.js": 51,
+	"./en-gb": 52,
+	"./en-gb.js": 52,
+	"./en-ie": 53,
+	"./en-ie.js": 53,
+	"./en-il": 54,
+	"./en-il.js": 54,
+	"./en-nz": 55,
+	"./en-nz.js": 55,
+	"./eo": 56,
+	"./eo.js": 56,
+	"./es": 59,
+	"./es-do": 57,
+	"./es-do.js": 57,
+	"./es-us": 58,
+	"./es-us.js": 58,
+	"./es.js": 59,
+	"./et": 60,
+	"./et.js": 60,
+	"./eu": 61,
+	"./eu.js": 61,
+	"./fa": 62,
+	"./fa.js": 62,
+	"./fi": 63,
+	"./fi.js": 63,
+	"./fo": 64,
+	"./fo.js": 64,
+	"./fr": 67,
+	"./fr-ca": 65,
+	"./fr-ca.js": 65,
+	"./fr-ch": 66,
+	"./fr-ch.js": 66,
+	"./fr.js": 67,
+	"./fy": 68,
+	"./fy.js": 68,
+	"./gd": 69,
+	"./gd.js": 69,
+	"./gl": 70,
+	"./gl.js": 70,
+	"./gom-latn": 71,
+	"./gom-latn.js": 71,
+	"./gu": 72,
+	"./gu.js": 72,
+	"./he": 73,
+	"./he.js": 73,
+	"./hi": 74,
+	"./hi.js": 74,
+	"./hr": 75,
+	"./hr.js": 75,
+	"./hu": 76,
+	"./hu.js": 76,
+	"./hy-am": 77,
+	"./hy-am.js": 77,
+	"./id": 78,
+	"./id.js": 78,
+	"./is": 79,
+	"./is.js": 79,
+	"./it": 80,
+	"./it.js": 80,
+	"./ja": 81,
+	"./ja.js": 81,
+	"./jv": 82,
+	"./jv.js": 82,
+	"./ka": 83,
+	"./ka.js": 83,
+	"./kk": 84,
+	"./kk.js": 84,
+	"./km": 85,
+	"./km.js": 85,
+	"./kn": 86,
+	"./kn.js": 86,
+	"./ko": 87,
+	"./ko.js": 87,
+	"./ky": 88,
+	"./ky.js": 88,
+	"./lb": 89,
+	"./lb.js": 89,
+	"./lo": 90,
+	"./lo.js": 90,
+	"./lt": 91,
+	"./lt.js": 91,
+	"./lv": 92,
+	"./lv.js": 92,
+	"./me": 93,
+	"./me.js": 93,
+	"./mi": 94,
+	"./mi.js": 94,
+	"./mk": 95,
+	"./mk.js": 95,
+	"./ml": 96,
+	"./ml.js": 96,
+	"./mn": 97,
+	"./mn.js": 97,
+	"./mr": 98,
+	"./mr.js": 98,
+	"./ms": 100,
+	"./ms-my": 99,
+	"./ms-my.js": 99,
+	"./ms.js": 100,
+	"./mt": 101,
+	"./mt.js": 101,
+	"./my": 102,
+	"./my.js": 102,
+	"./nb": 103,
+	"./nb.js": 103,
+	"./ne": 104,
+	"./ne.js": 104,
+	"./nl": 106,
+	"./nl-be": 105,
+	"./nl-be.js": 105,
+	"./nl.js": 106,
+	"./nn": 107,
+	"./nn.js": 107,
+	"./pa-in": 108,
+	"./pa-in.js": 108,
+	"./pl": 109,
+	"./pl.js": 109,
+	"./pt": 111,
+	"./pt-br": 110,
+	"./pt-br.js": 110,
+	"./pt.js": 111,
+	"./ro": 112,
+	"./ro.js": 112,
+	"./ru": 113,
+	"./ru.js": 113,
+	"./sd": 114,
+	"./sd.js": 114,
+	"./se": 115,
+	"./se.js": 115,
+	"./si": 116,
+	"./si.js": 116,
+	"./sk": 117,
+	"./sk.js": 117,
+	"./sl": 118,
+	"./sl.js": 118,
+	"./sq": 119,
+	"./sq.js": 119,
+	"./sr": 121,
+	"./sr-cyrl": 120,
+	"./sr-cyrl.js": 120,
+	"./sr.js": 121,
+	"./ss": 122,
+	"./ss.js": 122,
+	"./sv": 123,
+	"./sv.js": 123,
+	"./sw": 124,
+	"./sw.js": 124,
+	"./ta": 125,
+	"./ta.js": 125,
+	"./te": 126,
+	"./te.js": 126,
+	"./tet": 127,
+	"./tet.js": 127,
+	"./tg": 128,
+	"./tg.js": 128,
+	"./th": 129,
+	"./th.js": 129,
+	"./tl-ph": 130,
+	"./tl-ph.js": 130,
+	"./tlh": 131,
+	"./tlh.js": 131,
+	"./tr": 132,
+	"./tr.js": 132,
+	"./tzl": 133,
+	"./tzl.js": 133,
+	"./tzm": 135,
+	"./tzm-latn": 134,
+	"./tzm-latn.js": 134,
+	"./tzm.js": 135,
+	"./ug-cn": 136,
+	"./ug-cn.js": 136,
+	"./uk": 137,
+	"./uk.js": 137,
+	"./ur": 138,
+	"./ur.js": 138,
+	"./uz": 140,
+	"./uz-latn": 139,
+	"./uz-latn.js": 139,
+	"./uz.js": 140,
+	"./vi": 141,
+	"./vi.js": 141,
+	"./x-pseudo": 142,
+	"./x-pseudo.js": 142,
+	"./yo": 143,
+	"./yo.js": 143,
+	"./zh-cn": 144,
+	"./zh-cn.js": 144,
+	"./zh-hk": 145,
+	"./zh-hk.js": 145,
+	"./zh-tw": 146,
+	"./zh-tw.js": 146
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -18937,10 +18471,10 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 223;
+webpackContext.id = 148;
 
 /***/ }),
-/* 224 */
+/* 149 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -18968,7 +18502,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 225 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19305,7 +18839,7 @@ module.exports = {
 
 
 /***/ }),
-/* 226 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19694,15 +19228,15 @@ module.exports = {
 
 
 /***/ }),
-/* 227 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var helpers = __webpack_require__(1);
-var basic = __webpack_require__(272);
-var dom = __webpack_require__(273);
+var basic = __webpack_require__(197);
+var dom = __webpack_require__(198);
 
 // @TODO Make possible to select another platform at build time.
 var implementation = dom._enabled ? dom : basic;
@@ -19775,12 +19309,12 @@ module.exports = helpers.extend({
 
 
 /***/ }),
-/* 228 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
-var convert = __webpack_require__(286);
-var string = __webpack_require__(284);
+var convert = __webpack_require__(211);
+var string = __webpack_require__(209);
 
 var Color = function (obj) {
 	if (obj instanceof Color) {
@@ -20266,26 +19800,26 @@ module.exports = Color;
 
 
 /***/ }),
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */
 /***/ (function(module, exports) {
 
-module.exports = "<!DOCTYPE html><!DOCTYPE js><html lang=\"en\"><head><meta charset=\"UTF-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../../favicons/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../../favicons/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../../favicons/favicon-16x16.png\"/><link rel=\"manifest\" href=\"../../favicons/site.webmanifest\"/><link rel=\"mask-icon\" href=\"../../favicons/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><title>My Site</title></head><body><script src=\"https://use.fontawesome.com/releases/v5.0.7/js/all.js\" defer=\"defer\"></script><script defer=\"defer\" src=\"https://use.fontawesome.com/releases/v5.0.9/js/all.js\" integrity=\"sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl\" crossorigin=\"anonymous\"></script><link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"/><header><section class=\"header\"><nav class=\"menu\"><a class=\"menu__item\" href=\"../../index.html\">Главная</a><a class=\"menu__item\" href=\"../gallery/gallery.html\">Галлерея</a><a class=\"menu__item\" href=\"../members/members.html\">Клубяне</a><a class=\"menu__item\" href=\"../keldim/keldim.html\">Склад</a><a class=\"menu__item\" href=\"../about/about.html\">О нас</a></nav><article class=\"header__board\"><div class=\"header__emblem\"></div><div class=\"header__text\">Альп-клуб ENERGY</div><div class=\"header__search\"><form class=\"search-form\"><div class=\"search\"><input class=\"search__input search__input_grey\" type=\"search\" placeholder=\"Search...\" name=\"search\" maxlength=\"37\" autocomplete=\"on\"/><button class=\"search__button\" type=\"submit\"><i class=\"fa fa-search\"></i></button></div></form></div><div class=\"header__audio\"><section class=\"audio-player\"><audio class=\"audio\" id=\"song\" preload=\"metadata\"><source src=\"../../audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3\" type=\"audio/mpeg\"/></audio><div class=\"audio__btn\" id=\"songPlay\"> <i class=\"fas fa-play\"></i></div><div class=\"audio__btn\" id=\"songStop\"><i class=\"fas fa-stop\"></i></div><div class=\"audio__slider\"><form class=\"slider-form\"><input class=\"slider slider_red slider_nopopup slider_none\" id=\"song-meter\" type=\"range\" value=\"0\" min=\"0\" max=\"100\" step=\"1\"/><div class=\"slider__grade slider__grade_none\"><span class=\"slider__value\">0</span><span class=\"slider__value\">25</span><span class=\"slider__value\">50</span><span class=\"slider__value\">75</span><span class=\"slider__value\">100</span></div></form></div><div class=\"audio__timer\">0:00</div><div class=\"audio__btn\" id=\"songVolume\"><i class=\"fas fa-volume-up\"></i></div><div class=\"audio__volume-meter\"><form class=\"slider-form\"><input class=\"slider slider_green slider_none slider_track\" id=\"song-volume\" type=\"range\" value=\"0\" min=\"0\" max=\"100\" step=\"1\"/><div class=\"slider__grade slider__grade_grade\"><span class=\"slider__value\">0</span><span class=\"slider__value\">25</span><span class=\"slider__value\">50</span><span class=\"slider__value\">75</span><span class=\"slider__value\">100</span></div></form></div></section></div></article></section></header><main><h1 class=\"keldim__title\">Склад</h1><p class=\"keldim__about\">Здесь вы можете посмотреть каким снаряжением располагает наш клуб, а так же узнать сколько его имеется в наличии на данный момент.</p><section class=\"keldim-pie-chart__wrapper\"><div class=\"keldim-pie-chart__item\">   <h2 class=\"keldim-pie-chart__text\">Имеется всего:</h2><div class=\"keldim-pie-chart__container\"><canvas id=\"myChartAll\" width=\"100\" height=\"100\"></canvas></div></div><div class=\"legend__container\"><div class=\"legend__item\">Веревки</div><div class=\"legend__item\">Карабины</div><div class=\"legend__item\">Жумары</div><div class=\"legend__item\">Корзинки</div><div class=\"legend__item\">Беседки</div><div class=\"legend__item\">Оттяжки</div></div><div class=\"keldim-pie-chart__item\"><h2 class=\"keldim-pie-chart__text\">Имеется в наличии:</h2><div class=\"keldim-pie-chart__container\"><canvas id=\"myChartCurrent\" width=\"100\" height=\"100\"></canvas></div></div></section><article class=\"keldim__stock\"><div class=\"storage-item storage-item_odd\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/rope.jpg\"/></div><h1 class=\"storage-item__title\">Веревки</h1><p class=\"storage-item__text\">Альпинистская верёвка — специальная верёвка с особыми динамическими и прочностными качествами, применяемая в альпинизме, скалолазании и спелеологии.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"15\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"7\" readonly=\"readonly\"/></p></div></div><div class=\"storage-item storage-item_even\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/karabin.jpg\"/></div><h1 class=\"storage-item__title\">Карабины</h1><p class=\"storage-item__text\">Караби́н — быстродействующее соединительное звено между двумя предметами, имеющими петли. Карабин имеет форму скобы с пружинной защёлкой.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"60\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"56\" readonly=\"readonly\"/></p></div></div><div class=\"storage-item storage-item_odd\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/zhumar.jpg\"/></div><h1 class=\"storage-item__title\">Жумары</h1><p class=\"storage-item__text\">Жума́р — элемент снаряжения альпинистов, спелеологов, спасателей и скалолазов, применяемый в верёвочной технике для подъёма по вертикальным перилам.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"8\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"4\" readonly=\"readonly\"/></p></div></div><div class=\"storage-item storage-item_even\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/korzinka.jpg\"/></div><h1 class=\"storage-item__title\">Корзинки</h1><p class=\"storage-item__text\">Корзинка — это спусковое и страховочное устройство. С корзинкой удобно работать на двойной верёвке, она не крутит верёвку при спуске и сама блокируется при страховке нижнего участника.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"10\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"2\" readonly=\"readonly\"/></p></div></div><div class=\"storage-item storage-item_odd\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/besedka.jpg\"/></div><h1 class=\"storage-item__title\">Беседки</h1><p class=\"storage-item__text\">Страховочная система — элемент скалолазного и альпинистского снаряжения, который спортсмен надевает на себя, и к которому с помощью узла «восьмёрка» или карабина крепится верёвка.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"10\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"8\" readonly=\"readonly\"/></p></div></div><div class=\"storage-item storage-item_even\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/ottyajka.jpg\"/></div><h1 class=\"storage-item__title\">Оттяжки</h1><p class=\"storage-item__text\">Оттяжка является элементом снаряжения альпиниста и скалолаза, служащим для включения страховочного элемента в страховочную цепь. Представляет собой комбинацию двух карабинов и стропы.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"30\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"12\" readonly=\"readonly\"/></p></div></div></article><section class=\"keldim__admin-container\"><span class=\"admin__text\">Ответственный за склад - Арсений Курьин. По вопросам выдачи снаряжения обращаться к нему.</span><div class=\"admin__info\"><div class=\"user-profile\"><div class=\"user-profile__img-container\"><img class=\"user-profile__img\" src=\"../../images/senya.png\" alt=\"avatar\"/></div><div class=\"user-profile__info user-profile__info_grey-orange\"><div class=\"user-profile__name user-profile__name_grey-orange\">Арсений Курьин</div><div class=\"user-profile__spec user-profile__spec_grey-orange\">Кладовой</div><div class=\"icon__container\"><a class=\"user-profile__icon user-profile__icon_grey-orange\" href=\"/mock-address/change-me\"><i class=\"fab fa-facebook-f\"></i></a><a class=\"user-profile__icon user-profile__icon_grey-orange user-profile__icon_grey-orange_red\" href=\"/mock-address/change-me\"><i class=\"fab fa-twitter\"></i></a><a class=\"user-profile__icon user-profile__icon_grey-orange\" href=\"/mock-address/change-me\"><i class=\"fas fa-basketball-ball\"></i></a></div></div></div></div></section></main></body><footer><div class=\"footer__container\"><section class=\"footer__container_contact\"><span class=\"footer__text footer__text_first\">Контактная информация:</span><span class=\"footer__text\">Лемешенко Никита</span><span class=\"footer__text\">Тел: +77056060155</span><span class=\"footer__text footer__text_last\">E-mail: allbehail@mail.ru</span></section><section class=\"footer__container_imgage\"><img class=\"footer__image\" src=\"../../images/alp-logo.gif\"/></section><section class=\"footer__container_adress\"><span class=\"footer__text\">Клуб расположен по адрессу:</span><span class=\"footer__text\">пр. Кирова 2 / пр. Ленина 45</span><span class=\"footer__text\">Общежитие ТПУ №2</span></section></div></footer><script src=\"keldim.bundle.js\"></script></html>"
+module.exports = "<!DOCTYPE html><!DOCTYPE js><html lang=\"en\"><head><meta charset=\"UTF-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/><meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"../../favicons/apple-touch-icon.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"../../favicons/favicon-32x32.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"../../favicons/favicon-16x16.png\"/><link rel=\"manifest\" href=\"../../favicons/site.webmanifest\"/><link rel=\"mask-icon\" href=\"../../favicons/safari-pinned-tab.svg\" color=\"#5bbad5\"/><meta name=\"msapplication-TileColor\" content=\"#da532c\"/><meta name=\"theme-color\" content=\"#ffffff\"/><title>My Site</title></head><body><script src=\"https://use.fontawesome.com/releases/v5.0.7/js/all.js\" defer=\"defer\"></script><script defer=\"defer\" src=\"https://use.fontawesome.com/releases/v5.0.9/js/all.js\" integrity=\"sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl\" crossorigin=\"anonymous\"></script><link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\"/><header><section class=\"header\"><nav class=\"menu\"><a class=\"menu__item\" href=\"../../index.html\">Главная</a><a class=\"menu__item\" href=\"../gallery/gallery.html\">Галлерея</a><a class=\"menu__item\" href=\"../members/members.html\">Клубяне</a><a class=\"menu__item\" href=\"../keldim/keldim.html\">Склад</a><a class=\"menu__item\" href=\"../about/about.html\">О нас</a></nav><article class=\"header__board\"><div class=\"header__emblem\"></div><div class=\"header__text\">Альп-клуб ENERGY</div><div class=\"header__search\"><form class=\"search-form\"><div class=\"search\"><input class=\"search__input search__input_grey\" type=\"search\" placeholder=\"Search...\" name=\"search\" maxlength=\"37\" autocomplete=\"on\"/><button class=\"search__button\" type=\"submit\"><i class=\"fa fa-search\"></i></button></div></form></div><div class=\"header__audio\"><section class=\"audio-player\"><audio class=\"audio\" id=\"song\" preload=\"metadata\"><source src=\"../../audio/Vladimir Visockiy - Zdes' vam ne ravnina.mp3\" type=\"audio/mpeg\"/></audio><div class=\"audio__btn\" id=\"songPlay\"> <i class=\"fas fa-play\"></i></div><div class=\"audio__btn\" id=\"songStop\"><i class=\"fas fa-stop\"></i></div><div class=\"audio__slider\"><form class=\"slider-form\"><input class=\"slider slider_red slider_nopopup slider_none\" id=\"song-meter\" type=\"range\" value=\"0\" min=\"0\" max=\"100\" step=\"1\"/><div class=\"slider__grade slider__grade_none\"><span class=\"slider__value\">0</span><span class=\"slider__value\">25</span><span class=\"slider__value\">50</span><span class=\"slider__value\">75</span><span class=\"slider__value\">100</span></div></form></div><div class=\"audio__timer\">0:00</div><div class=\"audio__btn\" id=\"songVolume\"><i class=\"fas fa-volume-up\"></i></div><div class=\"audio__volume-meter\"><form class=\"slider-form\"><input class=\"slider slider_green slider_none slider_track\" id=\"song-volume\" type=\"range\" value=\"0\" min=\"0\" max=\"100\" step=\"1\"/><div class=\"slider__grade slider__grade_grade\"><span class=\"slider__value\">0</span><span class=\"slider__value\">25</span><span class=\"slider__value\">50</span><span class=\"slider__value\">75</span><span class=\"slider__value\">100</span></div></form></div></section></div></article></section></header><main><h1 class=\"keldim__title\">Склад</h1><p class=\"keldim__about\">Здесь вы можете посмотреть каким снаряжением располагает наш клуб, а так же узнать сколько его имеется в наличии на данный момент.</p><section class=\"keldim-pie-chart__wrapper\"><div class=\"keldim-pie-chart__item\">   <h2 class=\"keldim-pie-chart__text\">Имеется всего:</h2><div class=\"keldim-pie-chart__container\"><canvas id=\"myChartAll\" width=\"100\" height=\"100\"></canvas></div></div><div class=\"legend__container\"><div class=\"legend__item\">Веревки</div><div class=\"legend__item\">Карабины</div><div class=\"legend__item\">Жумары</div><div class=\"legend__item\">Корзинки</div><div class=\"legend__item\">Беседки</div><div class=\"legend__item\">Оттяжки</div></div><div class=\"keldim-pie-chart__item\"><h2 class=\"keldim-pie-chart__text\">Имеется в наличии:</h2><div class=\"keldim-pie-chart__container\"><canvas id=\"myChartCurrent\" width=\"100\" height=\"100\"></canvas></div></div></section><article class=\"keldim__stock\"><div class=\"storage-item storage-item_odd\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/rope.jpg\"/></div><h1 class=\"storage-item__title\">Веревки</h1><p class=\"storage-item__text\">Альпинистская верёвка — специальная верёвка с особыми динамическими и прочностными качествами, применяемая в альпинизме, скалолазании и спелеологии.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"15\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"7\" readonly=\"readonly\"/></p></div></div><div class=\"storage-item storage-item_even\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/karabin.jpg\"/></div><h1 class=\"storage-item__title\">Карабины</h1><p class=\"storage-item__text\">Караби́н — быстродействующее соединительное звено между двумя предметами, имеющими петли. Карабин имеет форму скобы с пружинной защёлкой.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"60\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"56\" readonly=\"readonly\"/></p></div></div><div class=\"storage-item storage-item_odd\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/zhumar.jpg\"/></div><h1 class=\"storage-item__title\">Жумары</h1><p class=\"storage-item__text\">Жума́р — элемент снаряжения альпинистов, спелеологов, спасателей и скалолазов, применяемый в верёвочной технике для подъёма по вертикальным перилам.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"8\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"4\" readonly=\"readonly\"/></p></div></div><div class=\"storage-item storage-item_even\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/korzinka.jpg\"/></div><h1 class=\"storage-item__title\">Корзинки</h1><p class=\"storage-item__text\">Корзинка — это спусковое и страховочное устройство. С корзинкой удобно работать на двойной верёвке, она не крутит верёвку при спуске и сама блокируется при страховке нижнего участника.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"10\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"2\" readonly=\"readonly\"/></p></div></div><div class=\"storage-item storage-item_odd\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/besedka.jpg\"/></div><h1 class=\"storage-item__title\">Беседки</h1><p class=\"storage-item__text\">Страховочная система — элемент скалолазного и альпинистского снаряжения, который спортсмен надевает на себя, и к которому с помощью узла «восьмёрка» или карабина крепится верёвка.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"10\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"8\" readonly=\"readonly\"/></p></div></div><div class=\"storage-item storage-item_even\"><div class=\"storage-item-img__container\"><img class=\"storage-item__img\" src=\"../../images/ottyajka.jpg\"/></div><h1 class=\"storage-item__title\">Оттяжки</h1><p class=\"storage-item__text\">Оттяжка является элементом снаряжения альпиниста и скалолаза, служащим для включения страховочного элемента в страховочную цепь. Представляет собой комбинацию двух карабинов и стропы.</p><div class=\"storage-item__value\"><p class=\"storage-item__count\">Всего имеется:<input class=\"storage-item__number storage-item__number_all\" type=\"text\" value=\"30\" readonly=\"readonly\"/></p><p class=\"storage-item__count\">В наличии:<input class=\"storage-item__number storage-item__number_current\" type=\"text\" value=\"12\" readonly=\"readonly\"/></p></div></div></article><section class=\"keldim__admin-container\"><span class=\"admin__text\">Ответственный за склад - Арсений Курьин. По вопросам выдачи снаряжения обращаться к нему.</span><div class=\"admin__info\"><div class=\"user-profile\"><div class=\"user-profile__img-container\"><img class=\"user-profile__img\" src=\"../../images/senya.jpg\" alt=\"avatar\"/></div><div class=\"user-profile__info user-profile__info_grey-orange\"><div class=\"user-profile__name user-profile__name_grey-orange\">Арсений Курьин</div><div class=\"user-profile__spec user-profile__spec_grey-orange\">Кладовой</div><div class=\"icon__container\"><a class=\"user-profile__icon user-profile__icon_grey-orange\" href=\"/mock-address/change-me\"><i class=\"fab fa-facebook-f\"></i></a><a class=\"user-profile__icon user-profile__icon_grey-orange user-profile__icon_grey-orange_red\" href=\"/mock-address/change-me\"><i class=\"fab fa-twitter\"></i></a><a class=\"user-profile__icon user-profile__icon_grey-orange\" href=\"/mock-address/change-me\"><i class=\"fas fa-basketball-ball\"></i></a></div></div></div></div></section></main></body><footer><div class=\"footer__container\"><section class=\"footer__container_contact\"><span class=\"footer__text footer__text_first\">Контактная информация:</span><span class=\"footer__text\">Лемешенко Никита</span><span class=\"footer__text\">Тел: +77056060155</span><span class=\"footer__text footer__text_last\">E-mail: allbehail@mail.ru</span></section><section class=\"footer__container_imgage\"><img class=\"footer__image\" src=\"../../images/alp-logo.png\" alt=\"alp-logo\"/></section><section class=\"footer__container_adress\"><span class=\"footer__text\">Клуб расположен по адрессу:</span><span class=\"footer__text\">пр. Кирова 2 / пр. Ленина 45</span><span class=\"footer__text\">Общежитие ТПУ №2</span></section></div></footer><script src=\"keldim.bundle.js\"></script></html>"
 
 /***/ }),
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(291);
+var content = __webpack_require__(216);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -20293,14 +19827,14 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(17)(content, options);
+var update = __webpack_require__(16)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/stylus-loader/index.js!./keldim.styl", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/stylus-loader/index.js!./keldim.styl");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js?url=false!../../../node_modules/stylus-loader/index.js!./keldim.styl", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js?url=false!../../../node_modules/stylus-loader/index.js!./keldim.styl");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -20310,14 +19844,14 @@ if(false) {
 }
 
 /***/ }),
-/* 238 */,
-/* 239 */,
-/* 240 */
+/* 163 */,
+/* 164 */,
+/* 165 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return myChartJs; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_chart_js__);
 
 
@@ -20361,63 +19895,63 @@ const myChartJs = function(idOfCanvas, dataForChart) {
 
 
 /***/ }),
-/* 241 */,
-/* 242 */
+/* 166 */,
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * @namespace Chart
  */
-var Chart = __webpack_require__(261)();
+var Chart = __webpack_require__(186)();
 
 Chart.helpers = __webpack_require__(1);
 
 // @todo dispatch these helpers into appropriated helpers/helpers.* file and write unit tests!
-__webpack_require__(260)(Chart);
+__webpack_require__(185)(Chart);
 
 Chart.defaults = __webpack_require__(2);
 Chart.Element = __webpack_require__(5);
-Chart.elements = __webpack_require__(25);
-Chart.Interaction = __webpack_require__(225);
-Chart.layouts = __webpack_require__(97);
-Chart.platform = __webpack_require__(227);
-Chart.plugins = __webpack_require__(226);
-Chart.Ticks = __webpack_require__(98);
+Chart.elements = __webpack_require__(21);
+Chart.Interaction = __webpack_require__(150);
+Chart.layouts = __webpack_require__(22);
+Chart.platform = __webpack_require__(152);
+Chart.plugins = __webpack_require__(151);
+Chart.Ticks = __webpack_require__(23);
 
-__webpack_require__(257)(Chart);
-__webpack_require__(258)(Chart);
-__webpack_require__(259)(Chart);
-__webpack_require__(263)(Chart);
-__webpack_require__(262)(Chart);
-__webpack_require__(264)(Chart);
+__webpack_require__(182)(Chart);
+__webpack_require__(183)(Chart);
+__webpack_require__(184)(Chart);
+__webpack_require__(188)(Chart);
+__webpack_require__(187)(Chart);
+__webpack_require__(189)(Chart);
 
-__webpack_require__(280)(Chart);
-__webpack_require__(278)(Chart);
-__webpack_require__(279)(Chart);
-__webpack_require__(281)(Chart);
-__webpack_require__(282)(Chart);
-__webpack_require__(283)(Chart);
+__webpack_require__(205)(Chart);
+__webpack_require__(203)(Chart);
+__webpack_require__(204)(Chart);
+__webpack_require__(206)(Chart);
+__webpack_require__(207)(Chart);
+__webpack_require__(208)(Chart);
 
 // Controllers must be loaded after elements
 // See Chart.core.datasetController.dataElementType
-__webpack_require__(250)(Chart);
-__webpack_require__(251)(Chart);
-__webpack_require__(252)(Chart);
-__webpack_require__(253)(Chart);
-__webpack_require__(254)(Chart);
-__webpack_require__(255)(Chart);
-__webpack_require__(256)(Chart);
+__webpack_require__(175)(Chart);
+__webpack_require__(176)(Chart);
+__webpack_require__(177)(Chart);
+__webpack_require__(178)(Chart);
+__webpack_require__(179)(Chart);
+__webpack_require__(180)(Chart);
+__webpack_require__(181)(Chart);
 
-__webpack_require__(243)(Chart);
-__webpack_require__(244)(Chart);
-__webpack_require__(245)(Chart);
-__webpack_require__(246)(Chart);
-__webpack_require__(247)(Chart);
-__webpack_require__(248)(Chart);
-__webpack_require__(249)(Chart);
+__webpack_require__(168)(Chart);
+__webpack_require__(169)(Chart);
+__webpack_require__(170)(Chart);
+__webpack_require__(171)(Chart);
+__webpack_require__(172)(Chart);
+__webpack_require__(173)(Chart);
+__webpack_require__(174)(Chart);
 
 // Loading built-it plugins
-var plugins = __webpack_require__(274);
+var plugins = __webpack_require__(199);
 for (var k in plugins) {
 	if (plugins.hasOwnProperty(k)) {
 		Chart.plugins.register(plugins[k]);
@@ -20490,7 +20024,7 @@ Chart.layoutService = Chart.layouts;
 
 
 /***/ }),
-/* 243 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20508,7 +20042,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 244 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20525,7 +20059,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 245 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20543,7 +20077,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 246 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20561,7 +20095,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 247 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20579,7 +20113,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 248 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20597,7 +20131,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 249 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20612,14 +20146,14 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 250 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(25);
+var elements = __webpack_require__(21);
 var helpers = __webpack_require__(1);
 
 defaults._set('bar', {
@@ -21123,14 +20657,14 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 251 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(25);
+var elements = __webpack_require__(21);
 var helpers = __webpack_require__(1);
 
 defaults._set('bubble', {
@@ -21310,14 +20844,14 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 252 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(25);
+var elements = __webpack_require__(21);
 var helpers = __webpack_require__(1);
 
 defaults._set('doughnut', {
@@ -21616,14 +21150,14 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 253 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(25);
+var elements = __webpack_require__(21);
 var helpers = __webpack_require__(1);
 
 defaults._set('line', {
@@ -21956,14 +21490,14 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 254 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(25);
+var elements = __webpack_require__(21);
 var helpers = __webpack_require__(1);
 
 defaults._set('polarArea', {
@@ -22185,14 +21719,14 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 255 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(25);
+var elements = __webpack_require__(21);
 var helpers = __webpack_require__(1);
 
 defaults._set('radar', {
@@ -22360,7 +21894,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 256 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22409,7 +21943,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 257 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22588,7 +22122,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 258 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22596,10 +22130,10 @@ module.exports = function(Chart) {
 
 var defaults = __webpack_require__(2);
 var helpers = __webpack_require__(1);
-var Interaction = __webpack_require__(225);
-var layouts = __webpack_require__(97);
-var platform = __webpack_require__(227);
-var plugins = __webpack_require__(226);
+var Interaction = __webpack_require__(150);
+var layouts = __webpack_require__(22);
+var platform = __webpack_require__(152);
+var plugins = __webpack_require__(151);
 
 module.exports = function(Chart) {
 
@@ -23542,7 +23076,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 259 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23879,7 +23413,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 260 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23887,7 +23421,7 @@ module.exports = function(Chart) {
 /* global document: false */
 
 
-var color = __webpack_require__(228);
+var color = __webpack_require__(153);
 var defaults = __webpack_require__(2);
 var helpers = __webpack_require__(1);
 
@@ -24497,7 +24031,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 261 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24553,7 +24087,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 262 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24562,7 +24096,7 @@ module.exports = function() {
 var defaults = __webpack_require__(2);
 var Element = __webpack_require__(5);
 var helpers = __webpack_require__(1);
-var Ticks = __webpack_require__(98);
+var Ticks = __webpack_require__(23);
 
 defaults._set('scale', {
 	display: true,
@@ -25496,7 +25030,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 263 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25504,7 +25038,7 @@ module.exports = function(Chart) {
 
 var defaults = __webpack_require__(2);
 var helpers = __webpack_require__(1);
-var layouts = __webpack_require__(97);
+var layouts = __webpack_require__(22);
 
 module.exports = function(Chart) {
 
@@ -25549,7 +25083,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 264 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26504,7 +26038,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 265 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26618,7 +26152,7 @@ module.exports = Element.extend({
 
 
 /***/ }),
-/* 266 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26716,7 +26250,7 @@ module.exports = Element.extend({
 
 
 /***/ }),
-/* 267 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26829,7 +26363,7 @@ module.exports = Element.extend({
 
 
 /***/ }),
-/* 268 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27053,13 +26587,13 @@ module.exports = Element.extend({
 
 
 /***/ }),
-/* 269 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var helpers = __webpack_require__(222);
+var helpers = __webpack_require__(147);
 
 /**
  * @namespace Chart.helpers.canvas
@@ -27274,13 +26808,13 @@ helpers.drawRoundedRectangle = function(ctx) {
 
 
 /***/ }),
-/* 270 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var helpers = __webpack_require__(222);
+var helpers = __webpack_require__(147);
 
 /**
  * Easing functions adapted from Robert Penner's easing equations.
@@ -27531,13 +27065,13 @@ helpers.easingEffects = effects;
 
 
 /***/ }),
-/* 271 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var helpers = __webpack_require__(222);
+var helpers = __webpack_require__(147);
 
 /**
  * @alias Chart.helpers.options
@@ -27634,7 +27168,7 @@ module.exports = {
 
 
 /***/ }),
-/* 272 */
+/* 197 */
 /***/ (function(module, exports) {
 
 /**
@@ -27655,7 +27189,7 @@ module.exports = {
 
 
 /***/ }),
-/* 273 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28119,20 +27653,20 @@ helpers.removeEvent = removeEventListener;
 
 
 /***/ }),
-/* 274 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 module.exports = {};
-module.exports.filler = __webpack_require__(275);
-module.exports.legend = __webpack_require__(276);
-module.exports.title = __webpack_require__(277);
+module.exports.filler = __webpack_require__(200);
+module.exports.legend = __webpack_require__(201);
+module.exports.title = __webpack_require__(202);
 
 
 /***/ }),
-/* 275 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28145,7 +27679,7 @@ module.exports.title = __webpack_require__(277);
 
 
 var defaults = __webpack_require__(2);
-var elements = __webpack_require__(25);
+var elements = __webpack_require__(21);
 var helpers = __webpack_require__(1);
 
 defaults._set('global', {
@@ -28457,7 +27991,7 @@ module.exports = {
 
 
 /***/ }),
-/* 276 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28466,7 +28000,7 @@ module.exports = {
 var defaults = __webpack_require__(2);
 var Element = __webpack_require__(5);
 var helpers = __webpack_require__(1);
-var layouts = __webpack_require__(97);
+var layouts = __webpack_require__(22);
 
 var noop = helpers.noop;
 
@@ -29040,7 +28574,7 @@ module.exports = {
 
 
 /***/ }),
-/* 277 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29049,7 +28583,7 @@ module.exports = {
 var defaults = __webpack_require__(2);
 var Element = __webpack_require__(5);
 var helpers = __webpack_require__(1);
-var layouts = __webpack_require__(97);
+var layouts = __webpack_require__(22);
 
 var noop = helpers.noop;
 
@@ -29299,7 +28833,7 @@ module.exports = {
 
 
 /***/ }),
-/* 278 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29439,7 +28973,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 279 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29447,7 +28981,7 @@ module.exports = function(Chart) {
 
 var defaults = __webpack_require__(2);
 var helpers = __webpack_require__(1);
-var Ticks = __webpack_require__(98);
+var Ticks = __webpack_require__(23);
 
 module.exports = function(Chart) {
 
@@ -29637,7 +29171,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 280 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29830,14 +29364,14 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 281 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var helpers = __webpack_require__(1);
-var Ticks = __webpack_require__(98);
+var Ticks = __webpack_require__(23);
 
 /**
  * Generate a set of logarithmic ticks
@@ -30184,7 +29718,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 282 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30192,7 +29726,7 @@ module.exports = function(Chart) {
 
 var defaults = __webpack_require__(2);
 var helpers = __webpack_require__(1);
-var Ticks = __webpack_require__(98);
+var Ticks = __webpack_require__(23);
 
 module.exports = function(Chart) {
 
@@ -30720,7 +30254,7 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 283 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31510,11 +31044,11 @@ module.exports = function(Chart) {
 
 
 /***/ }),
-/* 284 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* MIT license */
-var colorNames = __webpack_require__(287);
+var colorNames = __webpack_require__(212);
 
 module.exports = {
    getRgba: getRgba,
@@ -31737,7 +31271,7 @@ for (var name in colorNames) {
 
 
 /***/ }),
-/* 285 */
+/* 210 */
 /***/ (function(module, exports) {
 
 /* MIT license */
@@ -32441,10 +31975,10 @@ for (var key in cssKeywords) {
 
 
 /***/ }),
-/* 286 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var conversions = __webpack_require__(285);
+var conversions = __webpack_require__(210);
 
 var convert = function() {
    return new Converter();
@@ -32538,7 +32072,7 @@ Converter.prototype.getValues = function(space) {
 module.exports = convert;
 
 /***/ }),
-/* 287 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32697,50 +32231,43 @@ module.exports = {
 
 
 /***/ }),
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(7);
 exports = module.exports = __webpack_require__(6)(false);
 // imports
 
 
 // module
-exports.push([module.i, ".search{display:flex;width:288px}@media screen and (max-width:480px){.search{width:170px}}.search__input{flex-basis:255px;border:none;border-radius:5px 0 0 5px;min-height:30px;padding:5px 0 7px 8px;font-family:SourceSansPro,Arial,sans-serif}.search__input font-size 1.4rem_grey{background:#f3ece8;color:#888}@media screen and (max-width:480px){.search__input{width:137px}}.search__button{flex-basis:33px;min-height:30px;background:#4b4b4b;border:none;outline:none;border-radius:0 5px 5px 0;color:#fff;cursor:pointer}.search__button:hover{background:#282828}.slider{-webkit-appearance:none;appearance:none;width:100%;max-width:37.14vw;height:5px;background:#e5e5e5;outline:none;border-radius:3px}.slider::-webkit-slider-thumb{position:relative;-webkit-appearance:none;appearance:none;width:19px;height:19px;border-radius:50%;cursor:pointer}.slider_red::-webkit-slider-thumb{background:#e75735}.slider_green::-webkit-slider-thumb{background:#4eb7a8}.slider_track{background:-webkit-linear-gradient(left,#4eb7a8,#4eb7a8 1%,#e5e5e5 0,#e5e5e5)}.slider__grade{display:none}.slider__grade_true{display:flex;justify-content:space-between;margin-top:12px;max-width:37.14vw;width:100%}.slider__value{color:#d1d1d1;font-size:1.1rem}.audio-player{display:flex;align-items:center}.audio__btn{font-size:1.4rem;background:#4b4b4b;padding:5px 10px;margin-right:5px;cursor:pointer;border-radius:5px;color:#fff}.audio__btn:hover{background:#282828}#songVolume{margin-left:5px;width:35px}.audio__slider{flex-grow:1}.audio__timer{height:28px;width:48px;font-family:Lato,Arial,sans-serif;font-weight:700;font-style:normal;font-size:1.4rem;color:#fff;text-align:center;background:#4b4b4b;border-radius:5px;margin-left:10px}.audio__timer:before{content:\"\";height:28px;display:inline-block;vertical-align:middle}.audio__volume-meter{margin-top:-5px}.header{width:100%;background-image:url(" + escape(__webpack_require__(27)) + ");background-repeat:no-repeat;background-size:cover;padding:2% 1% 10%}.menu{display:flex;justify-content:center;padding:0;margin:0}.menu__item{font-family:Lato,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.6rem;margin:0 1vw;padding:8px 15px;background:rgba(75,75,75,.5);text-align:center;border-radius:5px 5px 0 0;border:2px solid #282828;border-bottom:0;cursor:pointer;text-decoration:none;color:#f3ece8}.menu__item:hover{background:-webkit-linear-gradient(hsla(0,0%,49%,.5),rgba(45,45,45,.5))}@media screen and (max-width:480px){.menu__item{padding:5px;margin:0;font-size:1.3rem}}.header__board{display:grid;grid-template-columns:1fr 2fr 1fr;grid-template-rows:50px 80px auto;grid-template-areas:\"emblem search search\" \"text text text\" \"audio audio audio\";position:relative;width:100%;padding:10px;background:rgba(75,75,75,.5);border:2px solid #282828;border-radius:5px 5px 0 0}@media screen and (max-width:800px){.header__board{grid-template-rows:auto}}.header__emblem{display:inline-block;grid-area:emblem;background:url(" + escape(__webpack_require__(26)) + ") no-repeat 50% 50%;background-size:cover;height:80px;width:80px}@media screen and (max-width:480px){.header__emblem{height:50px;width:50px}}.header__text{display:inline-block;grid-area:text;align-self:start;font-family:Lato,Arial,sans-serif;font-weight:200;font-style:italic;font-size:4.5rem;color:#f3ece8;text-align:center}.header__search{grid-area:search;justify-self:end;align-self:start}.header__audio{grid-area:audio;justify-self:center}.footer__container{display:flex;justify-content:space-around;align-items:center;width:100%;padding:15px;background:#282828;font-family:Lato,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.2rem;color:#fff}.footer__container_adress{margin-left:10px}.footer__text{display:block;padding-bottom:5px}.footer__text_first{padding-bottom:10px}.footer__text_last{padding:0}.footer__container_imgage{width:160px;height:160px}@media screen and (max-width:700px){.footer__container_imgage{width:100px;height:100px}}.footer__image{width:100%;height:100%}.user-profile{min-width:300px}.user-profile__img-container{float:left;height:84px;width:84px;border:4px solid #e5e5e5;border-radius:50%}.user-profile__img{height:100%;width:100%;border-radius:50%}.user-profile__info{display:flex;flex-direction:column;align-items:center;min-width:163px;float:left;position:relative;border-radius:7px;border:none;margin-left:12px;padding:12px 16px 16px}.user-profile__info:before{position:absolute;top:45%;right:100%;margin-top:-3px;content:\"\";border-style:solid;border-width:5px}.user-profile__info_grey-orange{background:#e5e5e5}.user-profile__info_grey-orange:before{border-color:transparent #e5e5e5 transparent transparent}.user-profile__info_green-white{background:#4eb7a8}.user-profile__info_green-white:before{border-color:transparent #4eb7a8 transparent transparent}.user-profile__name{font-family:Lato,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.8rem}.user-profile__name_grey-orange{color:#e75735}.user-profile__name_green-white{color:#fff}.user-profile__spec{font-size:1.1rem;margin-top:6px}.user-profile__spec_grey-orange{color:#4f4f4f}.user-profile__spec_green-white{color:#fff}.icon__container{display:flex;justify-content:space-between;width:95px;margin-top:14px}.user-profile__icon{cursor:pointer;font-size:1.6rem}.user-profile__icon_grey-orange{color:#757575}.user-profile__icon_grey-orange:hover{color:#fff}.user-profile__icon_grey-orange_red{color:#e75735}.user-profile__icon_grey-orange_red:hover{color:#ffaf64}.user-profile__icon_green-white{color:#fff}.user-profile__icon_green-white:hover{color:#44f444}.storage-item{border-radius:5px;padding:15px}.storage-item_odd{background:#282828}.storage-item_even{background:#4b4b4b}.storage-item-img__container{height:170px;width:170px;float:right;padding-left:5px}.storage-item__img{height:100%;width:100%}.storage-item__title{font-size:2rem;color:#fff;text-align:center;padding:0;margin:0}.storage-item__text{font-size:1.4rem;color:#fff;padding:0}.storage-item__value{font-size:1.2rem;color:#fff}.storage-item__count{padding:3px 0;margin:0}.storage-item__number{width:30px;margin-left:5px;outline:none;border:none;border-radius:3px;background:#828282;color:#fff;text-align:center}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(28)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(30)) + ") format(\"woff\"),url(" + escape(__webpack_require__(29)) + ") format(\"truetype\");font-weight:900;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(31)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(33)) + ") format(\"woff\"),url(" + escape(__webpack_require__(32)) + ") format(\"truetype\");font-weight:900;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(34)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(36)) + ") format(\"woff\"),url(" + escape(__webpack_require__(35)) + ") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(37)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(39)) + ") format(\"woff\"),url(" + escape(__webpack_require__(38)) + ") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(40)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(42)) + ") format(\"woff\"),url(" + escape(__webpack_require__(41)) + ") format(\"truetype\");font-weight:100;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(43)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(45)) + ") format(\"woff\"),url(" + escape(__webpack_require__(44)) + ") format(\"truetype\");font-weight:100;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(46)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(48)) + ") format(\"woff\"),url(" + escape(__webpack_require__(47)) + ") format(\"truetype\");font-weight:800;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(49)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(51)) + ") format(\"woff\"),url(" + escape(__webpack_require__(50)) + ") format(\"truetype\");font-weight:800;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(52)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(54)) + ") format(\"woff\"),url(" + escape(__webpack_require__(53)) + ") format(\"truetype\");font-weight:400;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(55)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(57)) + ") format(\"woff\"),url(" + escape(__webpack_require__(56)) + ") format(\"truetype\");font-weight:300;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(58)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(60)) + ") format(\"woff\"),url(" + escape(__webpack_require__(59)) + ") format(\"truetype\");font-weight:300;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(61)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(63)) + ") format(\"woff\"),url(" + escape(__webpack_require__(62)) + ") format(\"truetype\");font-weight:500;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(64)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(66)) + ") format(\"woff\"),url(" + escape(__webpack_require__(65)) + ") format(\"truetype\");font-weight:500;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(67)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(69)) + ") format(\"woff\"),url(" + escape(__webpack_require__(68)) + ") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(70)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(72)) + ") format(\"woff\"),url(" + escape(__webpack_require__(71)) + ") format(\"truetype\");font-weight:600;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(73)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(75)) + ") format(\"woff\"),url(" + escape(__webpack_require__(74)) + ") format(\"truetype\");font-weight:600;font-style:italic}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(76)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(78)) + ") format(\"woff\"),url(" + escape(__webpack_require__(77)) + ") format(\"truetype\");font-weight:200;font-style:normal}@font-face{font-family:Lato;src:url(" + escape(__webpack_require__(79)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(81)) + ") format(\"woff\"),url(" + escape(__webpack_require__(80)) + ") format(\"truetype\");font-weight:200;font-style:italic}@font-face{font-family:Myriad Pro SemiExtended;src:url(" + escape(__webpack_require__(82)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(84)) + ") format(\"woff\"),url(" + escape(__webpack_require__(83)) + ") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Myriad Pro SemiExtended;src:url(" + escape(__webpack_require__(85)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(87)) + ") format(\"woff\"),url(" + escape(__webpack_require__(86)) + ") format(\"truetype\");font-weight:300;font-style:normal}@font-face{font-family:MyriadPro SemiCn;src:url(" + escape(__webpack_require__(88)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(90)) + ") format(\"woff\"),url(" + escape(__webpack_require__(89)) + ") format(\"truetype\");font-weight:900;font-style:normal}@font-face{font-family:MyriadPro;src:url(" + escape(__webpack_require__(91)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(93)) + ") format(\"woff\"),url(" + escape(__webpack_require__(92)) + ") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:MyriadPro;src:url(" + escape(__webpack_require__(94)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(96)) + ") format(\"woff\"),url(" + escape(__webpack_require__(95)) + ") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:SourceSansPro;src:url(" + escape(__webpack_require__(19)) + ");src:local(\"\\263A\"),url(" + escape(__webpack_require__(21)) + ") format(\"woff\"),url(" + escape(__webpack_require__(20)) + ") format(\"truetype\");font-weight:400;font-style:normal}*{box-sizing:border-box}html{font-family:SourceSansPro,Arial,sans-serif;font-size:62.5%;color:#282828;background:#fff}body{padding:0;margin:0}.keldim__title{padding:0;margin:20px 0 0;font-size:5rem;text-align:center}.keldim__about{font-size:2rem;color:#fff;text-align:center;background:#282828;margin-top:20px;padding:15px 10px}@media screen and (max-width:700px){.keldim__about{font-size:1.6rem}}.keldim-pie-chart__wrapper{display:flex;justify-content:space-around;padding-bottom:20px}.keldim-pie-chart__text{font-size:2rem;text-align:center;padding-bottom:10px;padding:10px;margin:0}@media screen and (max-width:700px){.keldim-pie-chart__text{font-size:1.8rem}}.keldim-pie-chart__container{height:250px;width:250px}@media screen and (max-width:700px){.keldim-pie-chart__container{height:200px;width:200px}}.legend__container{display:flex;justify-content:space-around;flex-direction:column}@media screen and (max-width:700px){.legend__container{display:none}}.legend__item:first-child:before,.legend__item:nth-child(2):before,.legend__item:nth-child(3):before,.legend__item:nth-child(4):before,.legend__item:nth-child(5):before,.legend__item:nth-child(6):before{content:\"\";padding:0 20px;margin-right:5px;background:#e49842}.legend__item:nth-child(2):before{background:#f9f944}.legend__item:nth-child(3):before{background:#23a296}.legend__item:nth-child(4):before{background:#8560d5}.legend__item:nth-child(5):before{background:#4aa737}.legend__item:nth-child(6):before{background:#a04f4f}.keldim__stock{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));grid-gap:15px;border-top:2px solid #282828;padding:40px 2%}.keldim__item{border-radius:5px;padding:15px}.keldim__item_left{background:#282828}.keldim__item_right{background:#4b4b4b}.image__container{height:170px;width:170px;float:right;padding-left:5px}.keldim__img{height:100%;width:100%}.item__title{font-size:2rem;color:#fff;text-align:center;padding:0;margin:0}.item__text{font-size:1.4rem;color:#fff;padding:0}.item__value{font-size:1.2rem;color:#fff}.item__count{padding:3px 0;margin:0}.item__number{width:30px;margin-left:5px;outline:none;border:none;border-radius:3px;background:#828282;color:#fff;text-align:center}.keldim__admin-container{display:flex;justify-content:space-around;align-items:center;border-top:2px solid #282828;padding:25px 5%}@media screen and (max-width:700px){.keldim__admin-container{flex-direction:column}}.admin__text{font-size:1.6rem}.admin__info{display:inline-block;margin-left:20px}@media screen and (max-width:700px){.admin__info{margin-top:20px}}", ""]);
+exports.push([module.i, ".search{display:flex;width:288px}@media screen and (max-width:480px){.search{width:170px}}.search__input{flex-basis:255px;border:none;border-radius:5px 0 0 5px;min-height:30px;padding:5px 0 7px 8px;font-family:SourceSansPro,Arial,sans-serif}.search__input font-size 1.4rem_grey{background:#f3ece8;color:#888}@media screen and (max-width:480px){.search__input{width:137px}}.search__button{flex-basis:33px;min-height:30px;background:#4b4b4b;border:none;outline:none;border-radius:0 5px 5px 0;color:#fff;cursor:pointer}.search__button:hover{background:#282828}.slider{-webkit-appearance:none;appearance:none;width:100%;max-width:37.14vw;height:5px;background:#e5e5e5;outline:none;border-radius:3px}.slider::-webkit-slider-thumb{position:relative;-webkit-appearance:none;appearance:none;width:19px;height:19px;border-radius:50%;cursor:pointer}.slider_red::-webkit-slider-thumb{background:#e75735}.slider_green::-webkit-slider-thumb{background:#4eb7a8}.slider_track{background:-webkit-linear-gradient(left,#4eb7a8,#4eb7a8 1%,#e5e5e5 0,#e5e5e5)}.slider__grade{display:none}.slider__grade_true{display:flex;justify-content:space-between;margin-top:12px;max-width:37.14vw;width:100%}.slider__value{color:#d1d1d1;font-size:1.1rem}.audio-player{display:flex;align-items:center}.audio__btn{font-size:1.4rem;background:#4b4b4b;padding:5px 10px;margin-right:5px;cursor:pointer;border-radius:5px;color:#fff}.audio__btn:hover{background:#282828}#songVolume{margin-left:5px;width:35px}.audio__slider{flex-grow:1}.audio__timer{height:28px;width:48px;font-family:Lato,Arial,sans-serif;font-weight:700;font-style:normal;font-size:1.4rem;color:#fff;text-align:center;background:#4b4b4b;border-radius:5px;margin-left:10px}.audio__timer:before{content:\"\";height:28px;display:inline-block;vertical-align:middle}.audio__volume-meter{margin-top:-5px}.header{width:100%;background-image:url(\"../../images/header.jpg\");background-repeat:no-repeat;background-size:cover;padding:2% 1% 10%}.menu{display:flex;justify-content:center;padding:0;margin:0}.menu__item{font-family:Lato,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.6rem;margin:0 1vw;padding:8px 15px;background:rgba(75,75,75,.5);text-align:center;border-radius:5px 5px 0 0;border:2px solid #282828;border-bottom:0;cursor:pointer;text-decoration:none;color:#f3ece8}.menu__item:hover{background:-webkit-linear-gradient(hsla(0,0%,49%,.5),rgba(45,45,45,.5))}@media screen and (max-width:480px){.menu__item{padding:5px;margin:0;font-size:1.3rem}}.header__board{display:grid;grid-template-columns:1fr 2fr 1fr;grid-template-rows:50px 80px auto;grid-template-areas:\"emblem search search\" \"text text text\" \"audio audio audio\";position:relative;width:100%;padding:10px;background:rgba(75,75,75,.5);border:2px solid #282828;border-radius:5px 5px 0 0}@media screen and (max-width:800px){.header__board{grid-template-rows:auto}}.header__emblem{display:inline-block;grid-area:emblem;background:url(\"../../images/emblem.png\") no-repeat 50% 50%;background-size:cover;height:80px;width:80px}@media screen and (max-width:480px){.header__emblem{height:50px;width:50px}}.header__text{display:inline-block;grid-area:text;align-self:start;font-family:Lato,Arial,sans-serif;font-weight:200;font-style:italic;font-size:4.5rem;color:#f3ece8;text-align:center}.header__search{grid-area:search;justify-self:end;align-self:start}.header__audio{grid-area:audio;justify-self:center}.footer__container{display:flex;justify-content:space-around;align-items:center;width:100%;padding:15px;background:#282828;font-family:Lato,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.2rem;color:#fff}.footer__container_adress{margin-left:10px}.footer__text{display:block;padding-bottom:5px}.footer__text_first{padding-bottom:10px}.footer__text_last{padding:0}.footer__container_imgage{width:160px;height:160px;border-radius:50%}@media screen and (max-width:700px){.footer__container_imgage{width:100px;height:100px}}.footer__image{width:100%;height:100%;border-radius:50%}.user-profile{min-width:300px}.user-profile__img-container{float:left;height:84px;width:84px;border:4px solid #e5e5e5;border-radius:50%}.user-profile__img{height:100%;width:100%;border-radius:50%}.user-profile__info{display:flex;flex-direction:column;align-items:center;min-width:163px;float:left;position:relative;border-radius:7px;border:none;margin-left:12px;padding:12px 16px 16px}.user-profile__info:before{position:absolute;top:45%;right:100%;margin-top:-3px;content:\"\";border-style:solid;border-width:5px}.user-profile__info_grey-orange{background:#e5e5e5}.user-profile__info_grey-orange:before{border-color:transparent #e5e5e5 transparent transparent}.user-profile__info_green-white{background:#4eb7a8}.user-profile__info_green-white:before{border-color:transparent #4eb7a8 transparent transparent}.user-profile__name{font-family:Lato,Arial,sans-serif;font-weight:400;font-style:normal;font-size:1.8rem}.user-profile__name_grey-orange{color:#e75735}.user-profile__name_green-white{color:#fff}.user-profile__spec{font-size:1.1rem;margin-top:6px}.user-profile__spec_grey-orange{color:#4f4f4f}.user-profile__spec_green-white{color:#fff}.icon__container{display:flex;justify-content:space-between;width:95px;margin-top:14px}.user-profile__icon{cursor:pointer;font-size:1.6rem}.user-profile__icon_grey-orange{color:#757575}.user-profile__icon_grey-orange:hover{color:#fff}.user-profile__icon_grey-orange_red{color:#e75735}.user-profile__icon_grey-orange_red:hover{color:#ffaf64}.user-profile__icon_green-white{color:#fff}.user-profile__icon_green-white:hover{color:#44f444}.storage-item{border-radius:5px;padding:15px}.storage-item_odd{background:#282828}.storage-item_even{background:#4b4b4b}.storage-item-img__container{height:170px;width:170px;float:right;padding-left:5px}.storage-item__img{height:100%;width:100%}.storage-item__title{font-size:2rem;color:#fff;text-align:center;padding:0;margin:0}.storage-item__text{font-size:1.4rem;color:#fff;padding:0}.storage-item__value{font-size:1.2rem;color:#fff}.storage-item__count{padding:3px 0;margin:0}.storage-item__number{width:30px;margin-left:5px;outline:none;border:none;border-radius:3px;background:#828282;color:#fff;text-align:center}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Black.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Black.woff\") format(\"woff\"),url(\"../../fonts/Lato-Black.ttf\") format(\"truetype\");font-weight:900;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-BlackItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-BlackItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-BlackItalic.ttf\") format(\"truetype\");font-weight:900;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Bold.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Bold.woff\") format(\"woff\"),url(\"../../fonts/Lato-Bold.ttf\") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-BoldItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-BoldItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-BoldItalic.ttf\") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Hairline.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Hairline.woff\") format(\"woff\"),url(\"../../fonts/Lato-Hairline.ttf\") format(\"truetype\");font-weight:100;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-HairlineItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-HairlineItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-HairlineItalic.ttf\") format(\"truetype\");font-weight:100;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Heavy.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Heavy.woff\") format(\"woff\"),url(\"../../fonts/Lato-Heavy.ttf\") format(\"truetype\");font-weight:800;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-HeavyItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-HeavyItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-HeavyItalic.ttf\") format(\"truetype\");font-weight:800;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Italic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Italic.woff\") format(\"woff\"),url(\"../../fonts/Lato-Italic.ttf\") format(\"truetype\");font-weight:400;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Light.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Light.woff\") format(\"woff\"),url(\"../../fonts/Lato-Light.ttf\") format(\"truetype\");font-weight:300;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-LightItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-LightItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-LightItalic.ttf\") format(\"truetype\");font-weight:300;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Medium.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Medium.woff\") format(\"woff\"),url(\"../../fonts/Lato-Medium.ttf\") format(\"truetype\");font-weight:500;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-MediumItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-MediumItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-MediumItalic.ttf\") format(\"truetype\");font-weight:500;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Regular.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Regular.woff\") format(\"woff\"),url(\"../../fonts/Lato-Regular.ttf\") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Semibold.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Semibold.woff\") format(\"woff\"),url(\"../../fonts/Lato-Semibold.ttf\") format(\"truetype\");font-weight:600;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-SemiboldItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-SemiboldItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-SemiboldItalic.ttf\") format(\"truetype\");font-weight:600;font-style:italic}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-Thin.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-Thin.woff\") format(\"woff\"),url(\"../../fonts/Lato-Thin.ttf\") format(\"truetype\");font-weight:200;font-style:normal}@font-face{font-family:Lato;src:url(\"../../fonts/Lato-ThinItalic.eot\");src:local(\"\\263A\"),url(\"../../fonts/Lato-ThinItalic.woff\") format(\"woff\"),url(\"../../fonts/Lato-ThinItalic.ttf\") format(\"truetype\");font-weight:200;font-style:italic}@font-face{font-family:Myriad Pro SemiExtended;src:url(\"../../fonts/Myriad Pro Bold SemiExtended.eot\");src:local(\"\\263A\"),url(\"../../fonts/Myriad Pro Bold SemiExtended.woff\") format(\"woff\"),url(\"../../fonts/Myriad Pro Bold SemiExtended.ttf\") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:Myriad Pro SemiExtended;src:url(\"../../fonts/Myriad Pro Light SemiExtended.eot\");src:local(\"\\263A\"),url(\"../../fonts/Myriad Pro Light SemiExtended.woff\") format(\"woff\"),url(\"../../fonts/Myriad Pro Light SemiExtended.ttf\") format(\"truetype\");font-weight:300;font-style:normal}@font-face{font-family:MyriadPro SemiCn;src:url(\"../../fonts/MyriadPro BlackSemiCn.eot\");src:local(\"\\263A\"),url(\"../../fonts/MyriadPro BlackSemiCn.woff\") format(\"woff\"),url(\"../../fonts/MyriadPro BlackSemiCn.ttf\") format(\"truetype\");font-weight:900;font-style:normal}@font-face{font-family:MyriadPro;src:url(\"../../fonts/MyriadPro Bold.eot\");src:local(\"\\263A\"),url(\"../../fonts/MyriadPro Bold.woff\") format(\"woff\"),url(\"../../fonts/MyriadPro Bold.ttf\") format(\"truetype\");font-weight:700;font-style:normal}@font-face{font-family:MyriadPro;src:url(\"../../fonts/MyriadPro Regular.eot\");src:local(\"\\263A\"),url(\"../../fonts/MyriadPro Regular.woff\") format(\"woff\"),url(\"../../fonts/MyriadPro Regular.ttf\") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:SourceSansPro;src:url(\"../../fonts/SourceSansPro-Regular.eot\");src:local(\"\\263A\"),url(\"../../fonts/SourceSansPro-Regular.woff\") format(\"woff\"),url(\"../../fonts/SourceSansPro-Regular.ttf\") format(\"truetype\");font-weight:400;font-style:normal}*{box-sizing:border-box}html{font-family:SourceSansPro,Arial,sans-serif;font-size:62.5%;color:#282828;background:#fff}body{padding:0;margin:0}.keldim__title{padding:0;margin:20px 0 0;font-size:5rem;text-align:center}.keldim__about{font-size:2rem;color:#fff;text-align:center;background:#282828;margin-top:20px;padding:15px 10px}@media screen and (max-width:700px){.keldim__about{font-size:1.6rem}}.keldim-pie-chart__wrapper{display:flex;justify-content:space-around;padding-bottom:20px}.keldim-pie-chart__text{font-size:2rem;text-align:center;padding-bottom:10px;padding:10px;margin:0}@media screen and (max-width:700px){.keldim-pie-chart__text{font-size:1.8rem}}.keldim-pie-chart__container{height:250px;width:250px}@media screen and (max-width:700px){.keldim-pie-chart__container{height:200px;width:200px}}.legend__container{display:flex;justify-content:space-around;flex-direction:column}@media screen and (max-width:700px){.legend__container{display:none}}.legend__item:first-child:before,.legend__item:nth-child(2):before,.legend__item:nth-child(3):before,.legend__item:nth-child(4):before,.legend__item:nth-child(5):before,.legend__item:nth-child(6):before{content:\"\";padding:0 20px;margin-right:5px;background:#e49842}.legend__item:nth-child(2):before{background:#f9f944}.legend__item:nth-child(3):before{background:#23a296}.legend__item:nth-child(4):before{background:#8560d5}.legend__item:nth-child(5):before{background:#4aa737}.legend__item:nth-child(6):before{background:#a04f4f}.keldim__stock{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));grid-gap:15px;border-top:2px solid #282828;padding:40px 2%}.keldim__item{border-radius:5px;padding:15px}.keldim__item_left{background:#282828}.keldim__item_right{background:#4b4b4b}.image__container{height:170px;width:170px;float:right;padding-left:5px}.keldim__img{height:100%;width:100%}.item__title{font-size:2rem;color:#fff;text-align:center;padding:0;margin:0}.item__text{font-size:1.4rem;color:#fff;padding:0}.item__value{font-size:1.2rem;color:#fff}.item__count{padding:3px 0;margin:0}.item__number{width:30px;margin-left:5px;outline:none;border:none;border-radius:3px;background:#828282;color:#fff;text-align:center}.keldim__admin-container{display:flex;justify-content:space-around;align-items:center;border-top:2px solid #282828;padding:25px 5%}@media screen and (max-width:700px){.keldim__admin-container{flex-direction:column}}.admin__text{font-size:1.6rem}.admin__info{display:inline-block;margin-left:20px}@media screen and (max-width:700px){.admin__info{margin-top:20px}}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blocks_header_header__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_prc_charts_pie_charts__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_prc_charts_pie_charts__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__favicons_favicons__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__favicons_favicons___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__favicons_favicons__);
 
 
 
 
-var html = __webpack_require__(232);
-const css = __webpack_require__(237);
+var html = __webpack_require__(157);
+const css = __webpack_require__(162);
 
 (function() {
   const keldimItems = [...document.querySelectorAll('.storage-item__number_all')];
