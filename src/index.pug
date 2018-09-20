@@ -36,18 +36,19 @@ html(lang="en")
             section.main-content
                 aside.sidebar
                     p.sidebar__title Новости
-                    .sidebar__item
-                        .sidebar__toggle
-                        +events('25', 'Мая', 'День рождения клуба!', 'images/event2.jpg')
-                    .sidebar__item
-                        .sidebar__toggle
-                        +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'images/news1.jpg')
-                    .sidebar__item
-                        .sidebar__toggle
-                        +events('25', 'Мая', 'День рождения клуба!', 'images/event2.jpg')
-                    .sidebar__item
-                        .sidebar__toggle
-                        +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'images/news1.jpg')
+                    .sidebar__items-container    
+                        .sidebar__item
+                            .sidebar__toggle
+                            +events('25', 'Мая', 'День рождения клуба!', 'images/event2.jpg')
+                        .sidebar__item
+                            .sidebar__toggle
+                            +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'images/news1.jpg')
+                        .sidebar__item
+                            .sidebar__toggle
+                            +events('25', 'Мая', 'День рождения клуба!', 'images/event2.jpg')
+                        .sidebar__item
+                            .sidebar__toggle
+                            +news('17 мая', 'Первые среди клубов!', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'images/news1.jpg')
                 section.calendar
                     +calendar()
                 article.main
